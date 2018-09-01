@@ -1,0 +1,183 @@
+@keyframes toggle{
+	from{
+		opacity: 0;
+ 
+	}
+	30%,
+	50%,
+	80%{
+		opacity: 1;
+	}
+	90%{
+		opacity: 0.6;
+	}
+	100%{
+		opacity: 0;
+	 
+	}
+	
+}
+.animated-toggle{
+	animation-name: toggle;
+	animation-duration: 2s;
+}
+@keyframes hide{
+	from{
+		opacity: 1;
+	}
+	30%{
+		opacity: 0.6;
+	}
+	60%{
+		opacity: 0.3;
+	}
+	70%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+.animated-hide{
+	animation-name:hide;
+}
+@keyframes show{
+	from{
+		opacity: 0;
+	}
+	10%{
+		opacity: 0.3;
+	}
+	60%{
+		opacity: 0.6;
+	}
+	80%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.animated-show{
+	animation-name:show;
+}
+
+@keyframes slideInLeft{
+	from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animated-slideInLeft{
+	animation-name: slideInLeft ;
+}
+@keyframes slideOutLeft{
+	from {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.animated-slideOutLeft{
+	animation-name: slideOutLeft ;
+}
+@keyframes slideInRight{
+	from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animated-slideInRight{
+	animation-name: slideInRight ;
+}
+@keyframes slideOutRight{
+	from {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+.animated-slideOutRight{
+	animation-name: slideOutRight ;
+}
+
+/****动画*****/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.animated.delay-2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.animated.delay-3s {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.animated.delay-4s {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.animated.delay-5s {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.animated.fast {
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+
+.animated.faster {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+.animated.slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.slower {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+@media (prefers-reduced-motion) {
+  .animated {
+    -webkit-animation: unset !important;
+    animation: unset !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}

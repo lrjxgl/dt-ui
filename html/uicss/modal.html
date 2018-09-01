@@ -8,15 +8,16 @@
 		<div class="flex pd-10 bg-fff">
 			<div class="btn js-toast mgr-5">toast</div>
 			<div class="btn js-alert mgr-5">alert</div>
-			<div class="btn js-confirm">confirm</div>
+			<div class="btn js-confirm mgr-5">confirm</div>
+			 
 		</div>
 		<div class="pd-10">
-			<div class="btn">showModal</div>
+			<div class="btn js-modal">showModal</div>
 		</div>
-		<div class="alert-group " >
-			<div class="alert-modal"></div>
+		<div class="alert-group" >
+			<div class="alert-mask"></div>
 			<div class="alert">
-				<div class="alert-hd">
+				<div class="alert-header">
 					确认 		 
 				</div>
 				<div class="alert-msg">
@@ -29,9 +30,9 @@
 			</div>
 		</div>
 		<div class="confirm-group" >
-			<div class="alert-modal"></div>
+			<div class="alert-mask"></div>
 			<div class="alert">
-				<div class="alert-hd">
+				<div class="alert-header">
 					 确认 		 
 				</div>
 				<div class="alert-msg">
@@ -39,24 +40,62 @@
 				</div>
 				<div class="alert-ft">
 					<div class="alert-ft-btn alert-ft-success">是</div>
-					<div class="alert-ft-btn alert-ft-success">否</div>
+					<div class="alert-ft-btn alert-ft-fail">否</div>
 				</div>
 			</div>
 		</div>
 		<div class="toast toast-success">自动消失框</div>
-
+		<div class="modal-group">
+			<div class="modal-mask"></div>
+			<div class="modal">
+				<div class="modal-header">
+					<div class="modal-title">Modal Title</div>
+					<div class="modal-close icon-close"></div>
+				</div>
+				<div class="modal-body">
+					<div class="input-flex">
+						<div class="input-flex-label w60">手机</div>
+						<input type="text" class="input-flex-text" />
+					</div>
+					<div class="input-flex">
+						<div class="input-flex-label w60">密码</div>
+						<input type="text" class="input-flex-text" />
+					</div>
+					<div class="flex flex-jc-center">
+						<div class="btn mgr-10">登录</div>
+						<div class="btn">注册</div>
+					</div>
+				</div>		 
+			</div>
+		</div>
+		 
 	</div>
 </page>
 
 <script>
+	 
 	$(document).on("click",".js-toast",function(){
 		$(".toast").show();
+		setTimeout(function(){
+			$(".toast").hide();
+		},1000)
 	})
 	$(document).on("click",".js-alert",function(){
 		$(".alert-group").show();
 	})
 	$(document).on("click",".js-confirm",function(){
 		$(".confirm-group").show();
+	})
+	$(document).on("click",".alert-ft-btn",function(){
+		$(".confirm-group").hide();
+		$(".alert-group").hide();
+	})
+	
+	$(document).on("click",".js-modal",function(){
+		$(".modal-group").show();
+	})
+	$(document).on("click",".modal-close,.modal-mask",function(){
+		$(".modal-group").hide();
 	})
 	 
 </script>

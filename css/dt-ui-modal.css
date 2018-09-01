@@ -1,4 +1,4 @@
-.alert-modal{
+.alert-mask{
 	background-color: #333;
 	opacity: 0.2;
 	position: fixed;
@@ -6,9 +6,11 @@
 	right: 0;
 	top:0;
 	bottom: 0;
+	z-index: 998;
 }
 .confirm-group,.alert-group{
 	display: none;
+	z-index: 999;
 }
 .alert {
 	position: fixed;
@@ -28,7 +30,7 @@
 .alert-active{
 	display: flex;
 }
-.alert-hd {
+.alert-header {
 	font-size: 16px; 
 	width: 100%;
 	text-align: center;
@@ -123,6 +125,54 @@
 
 
 
-/**toast****/
-
-.confirm {}
+/**modal****/
+.modal-group{
+	display: none;
+}
+.modal-mask{
+	background-color: #333;
+	opacity: 0.2;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top:0;
+	bottom: 0;
+	z-index: 998;
+}
+.modal{
+	position: fixed;
+	left:5px;
+	right: 5px;
+	top: 50%;
+	margin-top: -190px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	z-index: 999;
+}
+.modal-header{
+	border-bottom: 1px solid #eee;
+	padding: 0px 0px 0px 15px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	line-height: 50px;
+}
+.modal-title{
+	flex: 1;
+}
+.modal-close{
+	font-family: iconfont;
+	width: 50px;
+	height:50px;
+	line-height: 50px;
+	color: #646464;
+	text-align: center;
+	cursor: pointer;
+}
+.modal-body{
+	padding: 0px 15px  20px 15px;
+	max-height: 320px;
+	overflow-y: auto;
+}
