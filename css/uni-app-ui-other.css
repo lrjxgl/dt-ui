@@ -1,0 +1,17 @@
+.swiper{
+	width: 100%;
+	overflow-x: auto;
+}
+swiper{
+	height: 200px;
+	overflow-x: auto;
+	display: flex;
+	flex-direction: row;
+	width: 300%;
+}
+swiper-item{
+	width: 100%;
+	height: 200px;
+	display:flex;''
+}
+

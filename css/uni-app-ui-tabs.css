@@ -1,0 +1,60 @@
+/****tabs-border***/
+.tabs-border{
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid #eee;
+	line-height: 36px;
+	padding: 0px 5px;
+	background-color: #fff;
+}
+.tabs-border-item{
+	flex: 1;
+	text-align: center;
+}
+.tabs-border-active{
+	border-bottom: 1px solid #f60;
+}
+.tabs-border-box{
+	display: none;
+	background-color: #fff;
+	padding: 10px;
+}
+.tabs-border-box-active{
+	display: flex;
+}
+/*****竖排 tabs-toggle******/
+.tabs-toggle{
+	background-color: #fff;
+	 
+	padding:0px 5px;
+}
+.tabs-toggle-hd{
+	line-height: 36px;
+	flex: 1;
+	flex-direction: row;
+	position: relative;
+	border-bottom: 1px solid #f0f0f0;
+}
+.tabs-toggle-hd:after{
+	font-family: iconfont;
+	content: "\e661";
+	color: #646464;
+	font-size: 14px;
+	position: absolute;
+	right: 1px;
+}
+.tabs-toggle-hd-active{
+	margin-bottom: 5px;
+	border-bottom: 1px solid #fafafa;
+}
+.tabs-toggle-hd-active:after{
+	content: "\e6de";
+}
+.tabs-toggle-box{
+	display: none;
+	padding-bottom: 10px;
+}
+.tabs-toggle-active{
+	display: block;
+	border-bottom: 1px solid #eee;
+}

@@ -1,0 +1,231 @@
+ /*****button*******/
+
+ .btn {
+ 	padding: 0px 20px;
+ 	line-height: 34px;
+ 	height: 36px;
+ 	background-color: #007AFF;
+ 	color: #fff;
+ 	font-size: 14px;
+ 	display: inline-flex;
+ 	border: 1px solid #007AFF;
+ 	cursor: pointer;
+ 	border-radius: 10px;
+ 	text-align: center;
+ }
+
+ .btn-small {
+ 	padding: 0px 12px;
+ 	font-size: 14px;
+ 	background-color: #007AFF;
+ 	color: #fff;
+ 	display: inline-flex;
+ 	border: 1px solid #007AFF;
+ 	cursor: pointer;
+ 	line-height: 28px;
+ 	height: 30px;
+ 	border-radius: 5px;
+ }
+
+ .btn-mini {
+ 	padding: 0px 2px;
+ 	font-size: 12px;
+ 	background-color: #007AFF;
+ 	color: #fff;
+ 	display: inline-flex;
+ 	border: 1px solid #007AFF;
+ 	cursor: pointer;
+ 	line-height: 18px;
+ 	height: 20px;
+ }
+ .btn-icon{
+	 flex-direction: row;
+ }
+.btn-icon:before{
+	font-family: iconfont;
+	display: inline-flex;
+	font-size: 14px;
+	margin-right: 5px;
+}
+ .btn-row-submit {
+ 	margin: 20px auto;
+ 	background-color: #008000;
+ 	text-align: center;
+ 	line-height: 40px;
+ 	color: #fff !important;
+ 	font-size: 16px;
+ 	border-radius: 6px;
+ 	cursor: pointer;
+ 	display: block;
+ 	box-sizing: border-box;
+ 	width: 96%;
+ }
+.btn-group{
+	display: flex;
+	flex-direction: row;
+}
+ .btn-primary {
+ 	color: #fff;
+ 	background-color: #007bff;
+ 	border-color: #007bff;
+ }
+
+ .btn-secondary {
+ 	color: #fff;
+ 	background-color: #6c757d;
+ 	border-color: #6c757d;
+ }
+
+ .btn-success {
+ 	color: #fff;
+ 	background-color: #28a745;
+ 	border-color: #28a745;
+ }
+
+ .btn-info {
+ 	color: #fff;
+ 	background-color: #17a2b8;
+ 	border-color: #17a2b8;
+ }
+
+ .btn-warning {
+ 	color: #212529;
+ 	background-color: #ffc107;
+ 	border-color: #ffc107;
+ }
+
+ .btn-danger {
+ 	color: #fff;
+ 	background-color: #dc3545;
+ 	border-color: #dc3545;
+ }
+
+ .btn-light {
+ 	color: #212529;
+ 	background-color: #f8f9fa;
+ 	border-color: #f8f9fa;
+ }
+
+ .btn-dark {
+ 	color: #fff;
+ 	background-color: #343a40;
+ 	border-color: #343a40;
+ }
+
+ .btn-outline-primary {
+ 	color: #007bff;
+ 	background-color: transparent;
+ 	background-image: none;
+ 	border-color: #007bff;
+ }
+
+ .btn-outline-secondary {
+ 	color: #6c757d;
+ 	background-color: transparent;
+ 	background-image: none;
+ 	border-color: #6c757d;
+ }
+
+ .btn-outline-success {
+ 	color: #28a745;
+ 	background-color: transparent;
+ 	background-image: none;
+ 	border-color: #28a745;
+ }
+
+ .btn-outline-info {
+ 	color: #17a2b8;
+ 	background-color: transparent;
+ 	background-image: none;
+ 	border-color: #17a2b8;
+ }
+
+ .btn-outline-warning {
+ 	color: #ffc107;
+ 	background-color: transparent;
+ 	background-image: none;
+ 	border-color: #ffc107;
+ }
+
+ .btn-outline-danger {
+ 	color: #dc3545;
+ 	background-color: transparent;
+ 	background-image: none;
+ 	border-color: #dc3545;
+ }
+
+ .btn-outline-light {
+ 	color: #f8f9fa;
+ 	background-color: transparent;
+ 	background-image: none;
+ 	border-color: #f8f9fa;
+ }
+
+ .btn-outline-dark {
+ 	color: #343a40;
+ 	background-color: transparent;
+ 	background-image: none;
+ 	border-color: #343a40;
+ }
+
+ .btn-link {
+ 	font-weight: 400;
+ 	color: #007bff;
+ 	background-color: transparent;
+ }
+ /****点赞 喜欢按钮****/
+
+ .btn-love {
+ 	display: flex;
+ 	flex-direction: row;
+ 	padding: 0 10px;
+ 	height: 36px;
+ 	line-height: 36px;
+ 	border: 1px solid #aaa;
+ 	color: #333;
+ 	border-radius: 10px;
+ 	font-size: 14px;
+ }
+
+ .btn-love:before {
+ 	font-family: iconfont;
+ 	content: "\e669";
+ 	font-size: 14px;
+ 	margin-right: 3px;
+ }
+
+ .btn-love-active {
+ 	color: #f30;
+ }
+
+ .btn-love-active:before {
+ 	color: #f30;
+ }
+
+ .btn-fav {
+ 	display: flex;
+ 	flex-direction: row;
+ 	font-size: 14px;
+ 	padding: 0 10px;
+ 	height: 36px;
+ 	line-height: 36px;
+ 	border: 1px solid #aaa;
+ 	color: #333;
+ 	border-radius: 10px;
+ }
+
+ .btn-fav:before {
+ 	font-family: iconfont;
+ 	content: "\e64c";
+ 	font-size: 14px;
+ 	margin-right: 3px;
+ }
+
+ .btn-fav-active {
+ 	color: #f30;
+ }
+
+ .btn-fav-active:before {
+ 	color: #f30;
+ }
+ /******end btn******/

@@ -1,0 +1,64 @@
+<page>
+	<div class="header">
+		<a href="index.html" class="header-back"></a>
+		<div class="header-title">Btn css元素</div>
+	</div>
+	<div class="header-row"></div>
+	<div class="main-body ">
+		<div class="row-box">
+			<div class="row-box-hd">Btn css</div>
+			<div class="flex mgb-10">
+				<div class="btn mgr-5">Btn</div>
+				<div class="btn-small mgr-5">Btn-small</div>
+				<div class="btn-mini mgr-5">Btn-mini</div>
+			</div>
+			<div class="mgb-10 flex-ai-start">
+				<div class="btn">Btn</div>
+				<div class="btn btn-success">success</div>
+				<div class="btn btn-outline-primary">btn-outline-primary</div>
+				<div class="btn btn-outline-success">btn-outline-success</div>
+				 
+				<div class="btn btn-icon icon-like">btn-icon icon-like</div>
+				<div class="btn btn-icon icon-like btn-outline-success">btn-outline-success</div>
+				<div class="flex flex-center mgb-10">
+					<div class="btn-love  mgr-5">
+						点赞
+					</div>
+					<div class="btn-love btn-love-active mgr-5">
+						已点赞
+					</div>
+				</div>
+				<div class="flex flex-center mgb-10">
+					<div class="btn-fav mgr-5">收藏</div>
+					<div class="btn-fav btn-fav-active">已收藏</div>
+				</div>
+				<div class="btn-group">
+					<div class="btn btn-primary">primary</div>
+					<div class="btn btn-secondary">secondary</div>
+					<div class="btn btn-danger">danger</div>
+				</div>	
+				<div class="btn btn-primary">primary</div>
+				<div class="btn btn-secondary">secondary</div>
+
+				<div class="btn btn-info">info</div>
+				<div class="btn btn-warning">warning</div>
+				<div class="btn btn-danger">danger</div>
+				<div class="btn btn-light">light</div>
+				<div class="btn btn-dark">dark</div>
+
+			</div>
+			<textarea style="height: 300px; width: 100%;" id="uicss-content"></textarea>
+		</div>
+	</div>
+</page>
+<style>
+	.btn {
+		margin-bottom: 5px;
+		margin-right: 5px;
+	}
+</style>
+<script>
+	$.get("css/uni-app-ui-btn.css", function (res) {
+		$("#uicss-content").html(res);
+	})
+</script>

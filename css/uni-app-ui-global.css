@@ -1,0 +1,23 @@
+.g-hd-1{
+	font-weight: bold;
+	font-size: 16px;
+	color: #323232;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	margin-bottom: 10px;	
+}
+.g-hd-2{
+	font-weight: bold;
+	font-size: 14px;
+	color: #323232;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 6px;
+	margin-bottom: 6px;	
+}
+.g-hd-3{
+	font-size: 14px;
+	color: #323232;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 5px;
+	margin-bottom: 5px;	
+}

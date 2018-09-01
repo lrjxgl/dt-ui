@@ -1,0 +1,126 @@
+.comment-hd {
+    display: block;
+    padding: 8px 0px;
+    background-color: #F20C00;
+    color: #fff;
+    width: 90px;
+    font-size: 14px;
+    text-align: center;
+}
+/*****comment-list****/
+.comment-list{
+	
+}
+.comment-item {
+    display: flex;
+	flex-direction: row;
+    border-bottom: 1px solid #ddd;
+
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.comment-item-head {
+    margin-right: 5px;
+	width: 30px;
+	height: 30px;
+}
+ 
+
+.comment-item-nick {
+    font-size: 16px;
+    color: #007AFF;
+    line-height: 1;
+    margin-bottom: 6px;
+}
+
+.comment-item-tools {
+	display: flex;
+	flex-direction: row;
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.comment-item-addr {
+    margin-right: 5px;
+	color: #969696;
+	font-size: 12px;
+}
+.comment-item-time{
+	color: #969696;
+	font-size: 12px;
+}
+.comment-item-content {
+    color: #646464;
+    font-size: 14px;
+    line-height: 1.5;
+    cursor: pointer;
+    padding: 0;
+}
+/*****comment-form*****/
+.comment-formbox{
+	position: fixed;
+	left:0;
+	right: 0;
+	bottom: 0;
+	background-color: #eee;
+	padding: 5px 0px;
+}
+.comment-input-btn{
+	position: relative;
+	height: 40px;
+    line-height: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+	margin-right: 10px;
+    border-radius: 30px;
+    padding-left: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: #444;	 
+}
+.comment-formbox-form{
+	display: none;
+}
+
+.comment-formbox-textarea{
+	height: 80px;
+    display: flex;
+    position: relative;
+    padding: 5px;
+    width: 90%;
+    margin: 0 auto;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	color: #323232;
+}
+
+.comment-input-btn:before{
+	font-family: iconfont;
+	content: "\e761";
+	display: inline-flex;
+	font-size: 16px;
+	position: relative;
+	left: -20px;
+}
+
+.comment-formbox-btns{
+	text-align: center;
+	padding-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.comment-formbox-bt{
+	width: 80px;
+	line-height: 36px;
+	text-align: center;
+	margin-right: 20px;
+	display: inline-block;
+	background-color: #555;
+	color: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+}

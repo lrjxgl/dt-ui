@@ -1,0 +1,105 @@
+<page>
+	<div class="header">
+		<div class="header-back"></div>
+		<div class="header-title">详情</div>
+	</div>
+	<div class="header-row"></div>
+	<div class="main-body pd-5 bg-fff">
+		<div class="d-userbox">
+			<image class="d-userbox-head" src="http://img.deitui.com/?w=100&h=100&bgclor=ed6d53"></image>
+			<div class="flex-1">
+				<div class="d-userbox-nick">老雷</div>
+				<div class="d-userbox-follows">
+					粉丝
+					<text class="cl-num mgr-5 flex-center">1 </text> 关注
+					<text class="cl-num flex-center">1 </text>
+				</div>
+			</div>
+			<div class="btn-small btn-outline-success">关注</div>
+		</div>
+		<div class="d-title">文章标题</div>
+		<div class="d-tools">
+			<div class="mgr-10 cl2">作者：老雷</div>
+			<div class="cl2">3个小时前</div>
+		</div>
+		<div class="d-content">
+			文章详细内容
+			<img src="https://deitui-weizhan1.oss-cn-hangzhou.aliyuncs.com/attach/2018/07/08/26d9e1f017cb8a32b8f6470f02c64241.jpg">
+		</div>
+
+		<div class="flex flex-center mgb-10">
+			<div class="btn-love  mgr-10">
+				喜欢
+			</div>
+			<div class="btn-love btn-love-active mgr-10">
+				喜欢
+			</div>
+			<div class="btn-fav mgr-10">收藏</div>
+
+		</div>
+	</div>
+	<div class="comment-hd">跟帖列表</div>
+	<!--评论-->
+	<div id="comment-list" class="comment-list">
+		<div class="comment-item">
+			<image class="comment-item-head" src="https://deitui-weizhan1.oss-cn-hangzhou.aliyuncs.com/static/images/user_head.jpg.100x100.jpg"></image>
+			<div class="flex-1">
+				<div class="comment-item-nick">
+					lrjxgl
+				</div>
+				<div class="comment-item-tools">
+					<div class="comment-item-addr">
+						本地
+					</div>
+					<div class="comment-item-time">
+						2018年07月07日
+					</div>
+				</div>
+				<div class="comment-item-content" pid="14" title="回复@lrjxgl" reply_text="回复@lrjxgl">
+					asdasd平凡是你 温柔是你 这一生都只为你平凡是你 温柔是你 这一生都只为你平凡是你 温柔是你 这一生都只为你平凡是你 温柔是你 这一生都只为你
+				</div>
+			</div>
+		</div>
+		<div class="comment-item">
+			<image class="comment-item-head" src="https://deitui-weizhan1.oss-cn-hangzhou.aliyuncs.com/static/images/user_head.jpg.100x100.jpg"></image>
+			<div class="flex-1">
+				<div class="comment-item-nick">
+					lrjxgl
+				</div>
+				<div class="comment-item-tools">
+					<div class="comment-item-addr">
+						本地
+					</div>
+					<div class="comment-item-time">
+						2018年07月07日
+					</div>
+				</div>
+				<div class="comment-item-content" pid="14" title="回复@lrjxgl" reply_text="回复@lrjxgl">
+					asdasd平凡是你 温柔是你 这一生都只为你平凡是你 温柔是你 这一生都只为你平凡是你 温柔是你 这一生都只为你平凡是你 温柔是你 这一生都只为你
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<div class="comment-formbox">
+		<div class="comment-input-btn js-write">写跟帖</div>
+		<form class="comment-formbox-form js-form">
+			<textarea class="comment-formbox-textarea"></textarea>
+			<div class="comment-formbox-btns">
+				<div class="comment-formbox-bt js-submit">评论</div>&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="comment-formbox-bt js-cancel">取消</div>
+			</div>
+		</form>
+	</div>
+</page>
+<script>
+	$(document).on("click", ".js-write", function () {
+		$(".js-form").show();
+		$(".js-write").hide();
+	})
+	$(document).on("click", ".js-cancel", function () {
+		$(".js-form").hide();
+		$(".js-write").show();
+	})
+</script>

@@ -1,0 +1,53 @@
+
+uni-app-ui
+我们是为了跨全端开发而定制的前端规范。
+一、uni-app-ui-base.css
+	该文件主要定义基本样式
+	1.布局
+		flex:  .flex .flex-1 .flex-col flex-ai-center flex-jc-center flex-center
+		float: .fr .fl .clearfix
+		position: .pos-fixed  .pos-abs .pos-relative
+	2.宽高
+		.wh-100 .w100 .h100
+	3.字体大小
+		.f12 -- .f22
+	4.字体颜色 cl:color
+		主要字体:  .cl1 .cl2 .cl3 （323232 646464 969696）
+		cl-primary cl-secondary cl-success cl-danger cl-warning
+	5.背景颜色 bg
+		bg-fff:fff .bg-ef:efefef
+		bg-primary  bg-secondary  bg-success
+	6.padding 缩写 pd
+		.pd-5{padding: 5px;}
+		.pdl-5{padding-left: 5px;}
+		.pdr-5{padding-right: 5px;}
+		.pdt-5{padding-top: 5px;}
+	7.margin 缩写 mg
+		.mg-5{margin: 5px;}
+		.mgb-5{margin-bottom: 5px;}
+		.mgt-5{margin-top: 5px;}
+		.mgl-5{margin-left: 5px;}
+		.mgr-5{margin-right: 5px;}
+	8.border 缩写 bd 边框默认1px	
+		.bd { border: 1px solid #dee2e6 !important; }
+		.bdt { border-top: 1px solid #dee2e6 !important;}
+		.bdr {border-right: 1px solid #dee2e6 !important; } 
+		.bdb { border-bottom: 1px solid #dee2e6 !important;}
+		.bdl { border-left: 1px solid #dee2e6 !important;}
+		//颜色
+		.bd-success {border-color: #28a745 !important;}
+		//radius
+		.bd-radius-5{border-radius: 5px;}
+	
+		
+二、uni-app-ui开发规范说明
+1.默认使用flex布局
+2.默认box-size:border-border; 使用line-height是需注意border宽度
+3.图标以iconfont 手机淘宝为主
+4.css类名具有可识别，在可识别基础上尽量简洁
+5.使用-区分级别 list-item
+6.列表带上list 列表子项 带上item
+7.参与js交互的请加前缀js-，不要用在与css有关的类名上 
+8.有表单元素交互的请加上form
+9.可交互的css都加上pointer
+10.可以共用的类 加上前缀.g- 如：.g-hd{}

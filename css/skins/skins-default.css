@@ -1,0 +1,37 @@
+/**头部风格***/
+.header{
+ background-color: #ed6d53;	
+}
+.header-back:after,.header-title{color: #fff;}
+
+.header-search{
+	background-color: rgba(0,0,0,.1);
+	border: 0 !important;
+	color: #fff;
+}
+.header-search-icon{
+	color: #fff;
+}
+.header-right{
+	color: #fff;
+}
+.header-right-btn{
+	color: #fff;
+	border-color: #fff;
+}
+/*****底部风格****/
+.mfooter{
+	background-color: #ed6d53;
+}
+.mfooter-item,.mfooter-item:before{
+	color: #e0e0e0;
+}
+.mfooter-add:after{
+	background-color: #e45538;
+	color: #fff;
+}
+
+/*********/
+.btn-row-submit{
+	background-color: #ed6d53;
+}

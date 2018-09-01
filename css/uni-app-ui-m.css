@@ -1,0 +1,28 @@
+
+.m-navPic{
+	display: flex;
+	flex-direction: row;
+	background-color: #fff;
+	padding: 10px 0px;
+	flex-wrap: wrap;
+}
+.m-navPic-item{
+	width: 25%;
+	padding: 0px 10px;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 10px;
+	
+}
+.m-navPic-img{
+	width: 60px;
+	height: 60px;
+	margin-bottom: 2px;
+	line-height: 1;
+
+}
+.m-navPic-title{
+	font-size: 14px;
+	color: #323232;
+}
