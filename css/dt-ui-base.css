@@ -59,9 +59,9 @@ image{
  .fl{float: left;}
  .clearfix{clear: both; display: flex; width: 100%;}
  /****定位*****/
- .pos-fixed{position: fixed;}
- .pos-abs{position: absolute;}
- .pos-relative{position: relative;}
+ .pos-fixed{position: fixed !important;}
+ .pos-abs{position: absolute !important;}
+ .pos-relative{position: relative !important;}
  /**高度宽度**/
  .wh-30{ width: 30px; height: 30px;}
  .wh-40{width: 40px; height: 40px;}
