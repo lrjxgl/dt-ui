@@ -1,0 +1,103 @@
+<page>
+
+
+	<form method="post" id="order-confirm-form" action="/index.php?m=order&amp;a=order">
+
+		<input type="hidden" name="back_url" value="http://skyshop.deitui.com/index.php?m=order_cart">
+		<div class="row-box">
+			<div class="hd-h1">
+				收货地址&nbsp;
+				<a href="/index.php?m=user_address&amp;a=add" class="more">新增地址</a>
+			</div>
+
+
+			<div class="addrSelect " id="address_list">
+
+			</div>
+		</div>
+
+		<div class="row-box">
+			<div class="hd-h1">确认订单信息</div>
+
+
+
+			<div class="cart-list">
+				<div class="item">
+					<div class="img">
+						<input type="hidden" name="cart_id[]" value="571">
+						<a href="{/index.php?m=show&amp;id=7038">
+							<img src="http://skycms.oss-cn-hangzhou.aliyuncs.com/attach/demo/50b13671636874de7ebfb925edb022f4.png.100x100.jpg" width="50">
+						</a>
+					</div>
+					<div class="flex-1">
+
+						<div class="title">
+							<a href="/index.php?m=show&amp;id=7038" target="_blank">旺旺小小酥20g</a>
+						</div>
+						<span class="ks-title"></span>
+						<div>
+							<span class="orderCartNum">18</span> x 4.0</div>
+
+					</div>
+				</div>
+				<div class="item">
+					<div class="img">
+						<input type="hidden" name="cart_id[]" value="572">
+						<a href="{/index.php?m=show&amp;id=7055">
+							<img src="http://skycms.oss-cn-hangzhou.aliyuncs.com/attach/demo/d513ea0181bcec66b110d9bc11a41af8.png.100x100.jpg" width="50">
+						</a>
+					</div>
+					<div class="flex-1">
+
+						<div class="title">
+							<a href="/index.php?m=show&amp;id=7055" target="_blank">宫爆素鸡筋</a>
+						</div>
+						<span class="ks-title"></span>
+						<div>
+							<span class="orderCartNum">1</span> x 1.0</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row-box">
+			<div class="cart-stat">
+				商品：￥
+				<span id="goods_money">73</span>元 邮费：￥
+				<span id="express_fee">0</span>元 总价：￥
+				<span id="total_money">73</span>
+			</div>
+			<div class="cart-stat">
+
+				账户余额：0.00元
+			</div>
+		</div>
+
+		<div class="row-box">
+			<div class="hd-h1">支付方式</div>
+
+			<div class="paylist" id="paylist">
+				<input type="hidden" name="pay_type" id="pay_type" value="unpay">
+				<div class="item active" v="unpay">货到付款</div>
+
+				<div class="item" v="alipay">支付宝</div>
+
+				<div class="item" v="wxpay">微信支付</div>
+
+				<div class="item" v="paypal">paypal</div>
+
+			</div>
+
+			<div class="row-box">
+				<textarea name="comment" placeholder="请输入订单备注"></textarea>
+
+				<div class="confirm-buy-btn" id="order-confirm-submit">确认购买</div>
+
+
+			</div>
+
+		</div>
+	</form>
+</page>
+<link href="html/order/confirm.css" rel="stylesheet" />

@@ -4,18 +4,22 @@
  /*****定义flex*****/
  
  page{
-	 background-color: #efeff4;
+	 
  }
  html,body{
 	 margin: 0;
 	 padding: 0;
+	 background-color: #efeff4;
 }
-
+.iconfont:before{
+	line-height: 1.5;
+}
 view,div{
 	display: flex;
 	flex-direction: column;
 	color: #323232;
 	box-sizing: border-box;
+	flex-shrink:0;
 }
 text{
 	display: flex;
