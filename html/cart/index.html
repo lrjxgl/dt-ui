@@ -1,66 +1,66 @@
-<page>
-	<div class="header">
-		<div class="header-back"></div>
-		<div class="header-title">购物车</div>
-	</div>
-	<div class="header-row"></div>
-	<div class="main-body">
-		<div class="cart-list">
-			<div class="cart-list-item">
-				<a class="cart-list-imgbox" href="/index.php?m=show&amp;id=7065">
-					<img class="cart-list-img" src="http://skycms.oss-cn-hangzhou.aliyuncs.com/attach/demo/2eacae1bb022963c716bc931e4e00fe6.jpg.100x100.jpg"> </a>
-				<div class="flex-1">
-					<a href="/index.php?m=show&amp;id=7065" class="cart-list-title">鱼乐无穷香辣味</a>
-					<div class="cart-list-row">
-						<div class="cart-list-ks-title mgr-10">红色B</div>
-						<div class="cart-list-price">￥1.00</div>
-					</div>
-					<div class="flex">
-						<div class="numbox">
-							<a href="javascript:;" class="js-cart-minus numbox-minus" oid="633">-</a>
+<template>
+	<view class="header">
+		<view class="header-back"></view>
+		<view class="header-title">购物车</view>
+	</view>
+	<view class="header-row"></view>
+	<view class="main-body">
+		<view class="cart-list">
+			<view class="cart-list-item">
+				<navigator class="cart-list-imgbox" url="/index.php?m=show&amp;id=7065">
+					<img class="cart-list-img" src="http://skycms.oss-cn-hangzhou.aliyuncs.com/attach/demo/2eacae1bb022963c716bc931e4e00fe6.jpg.100x100.jpg"> </navigator>
+				<view class="flex-1">
+					<navigator url="/index.php?m=show&amp;id=7065" class="cart-list-title">鱼乐无穷香辣味</navigator>
+					<view class="cart-list-row">
+						<view class="cart-list-ks-title mgr-10">红色B</view>
+						<view class="cart-list-price">￥1.00</view>
+					</view>
+					<view class="flex">
+						<view class="numbox">
+							<navigator url="javascript:;" class="js-cart-minus numbox-minus" oid="633">-</navigator>
 							<input class="js-cart-num numbox-num" value="1" readonly="">
-							<a href="javascript:;" class="js-cart-plus numbox-plus" oid="633">+</a>
-						</div>
-						<div class="flex-1"></div>
-						<a class="col-red btn-mini btn-outline-danger">删除</a>
-					</div>
-				</div>
-			</div>
+							<navigator url="javascript:;" class="js-cart-plus numbox-plus" oid="633">+</navigator>
+						</view>
+						<view class="flex-1"></view>
+						<navigator class="col-red btn-mini btn-outline-danger">删除</navigator>
+					</view>
+				</view>
+			</view>
 			
-			<div class="cart-list-item">
-				<a class="cart-list-imgbox" href="/index.php?m=show&amp;id=7065">
-					<img class="cart-list-img" src="http://skycms.oss-cn-hangzhou.aliyuncs.com/attach/demo/2eacae1bb022963c716bc931e4e00fe6.jpg.100x100.jpg"> </a>
-				<div class="flex-1">
-					<a href="/index.php?m=show&amp;id=7065" class="cart-list-title">鱼乐无穷香辣味</a>
-					<div class="cart-list-row">
-						<div class="cart-list-ks-title mgr-10">红色B</div>
-						<div class="cart-list-price">￥1.00</div>
-					</div>
-					<div class="flex">
-						<div class="numbox">
-							<a href="javascript:;" class="js-cart-minus numbox-minus" oid="633">-</a>
+			<view class="cart-list-item">
+				<navigator class="cart-list-imgbox" url="/index.php?m=show&amp;id=7065">
+					<img class="cart-list-img" src="http://skycms.oss-cn-hangzhou.aliyuncs.com/attach/demo/2eacae1bb022963c716bc931e4e00fe6.jpg.100x100.jpg"> </navigator>
+				<view class="flex-1">
+					<navigator url="/index.php?m=show&amp;id=7065" class="cart-list-title">鱼乐无穷香辣味</navigator>
+					<view class="cart-list-row">
+						<view class="cart-list-ks-title mgr-10">红色B</view>
+						<view class="cart-list-price">￥1.00</view>
+					</view>
+					<view class="flex">
+						<view class="numbox">
+							<navigator url="javascript:;" class="js-cart-minus numbox-minus" oid="633">-</navigator>
 							<input class="js-cart-num numbox-num" value="1" readonly="">
-							<a href="javascript:;" class="js-cart-plus numbox-plus" oid="633">+</a>
-						</div>
-						<div class="flex-1"></div>
-						<a class="col-red btn-mini btn-outline-danger">删除</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="cart-list-stat">
-			<div class="flex">共
-				<div id="orderCart_total_num" class="num">1</div> 件 
-			</div>
-			<div class="flex"> 总价：￥
-				<div id="orderCart_totalmoney" class="num">1</div> 元
-			</div>
-			<div class="flex-1"></div>
-			<a href="index.html?m=order&a=confirm" class="cart-list-btn">确认购买</a>
+							<navigator url="javascript:;" class="js-cart-plus numbox-plus" oid="633">+</navigator>
+						</view>
+						<view class="flex-1"></view>
+						<navigator class="col-red btn-mini btn-outline-danger">删除</navigator>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="cart-list-stat">
+			<view class="flex">共
+				<view id="orderCart_total_num" class="num">1</view> 件 
+			</view>
+			<view class="flex"> 总价：￥
+				<view id="orderCart_totalmoney" class="num">1</view> 元
+			</view>
+			<view class="flex-1"></view>
+			<navigator url="index.html?m=order&a=confirm" class="cart-list-btn">确认购买</navigator>
 			 
-		</div>
-	</div>
+		</view>
+	</view>
 	{include=mfooterShop}
 
-</page>
+</template>
 <link href="html/cart/index.css" rel="stylesheet" />

@@ -71,14 +71,19 @@ $.ajax({
 	async:false,
 	"success":function(res){
 		var html=parseTpl(res);
-		 
+		html=html.replace("template","view"); 
 		$("#page").html(html);
 	}
 })
 
 $(function(){
 	
-	$(document).on("click",".header-back",function(){
+	$(document).on("click",".header-back",function(event){
+		event.preventDefault();
 		window.history.back();
+	})
+	
+	$(document).on("click","navigator",function(){
+		window.location=$(this).attr("url");
 	})
 })

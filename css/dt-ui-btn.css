@@ -114,56 +114,56 @@
 
  .btn-outline-primary {
  	color: #007bff;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #007bff;
  }
 
  .btn-outline-secondary {
  	color: #6c757d;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #6c757d;
  }
 
  .btn-outline-success {
  	color: #28a745;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #28a745;
  }
 
  .btn-outline-info {
  	color: #17a2b8;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #17a2b8;
  }
 
  .btn-outline-warning {
  	color: #ffc107;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #ffc107;
  }
 
  .btn-outline-danger {
  	color: #dc3545;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #dc3545;
  }
 
  .btn-outline-light {
  	color: #f8f9fa;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #f8f9fa;
  }
 
  .btn-outline-dark {
  	color: #343a40;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #343a40;
  }
@@ -171,7 +171,7 @@
  .btn-link {
  	font-weight: 400;
  	color: #007bff;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  }
  /****点赞 喜欢按钮****/
 

@@ -18,8 +18,11 @@
 			 		+'<link href="css/dt-ui-other.css?'+new Date()+'" rel="stylesheet" />'
 			 		+'<link href="css/dt-ui-m.css?'+new Date()+'" rel="stylesheet" />'
 					+'<link href="css/dt-ui-tabs.css?'+new Date()+'" rel="stylesheet" />'
-			 		+'<link href="//at.alicdn.com/t/font_811242_nwvbaf9rb7q.css" rel="stylesheet">'
-			 		+'<link href="css/skins/skins-default.css?'+new Date()+'" rel="stylesheet" />'; 
+			 		+'<link href="//at.alicdn.com/t/font_811242_nwvbaf9rb7q.css" rel="stylesheet">';
+			 	
+				
+				css=css	+'<link href="css/skins/skins-default.css?'+new Date()+'" rel="stylesheet" />'; 
+				//css=css	+'<link href="css/skins/skins-d94e7a.css?'+new Date()+'" rel="stylesheet" />'; 
 				document.querySelector("head").innerHTML+=css;	
 			 	//$("head").append(css);
 			 }
@@ -31,8 +34,31 @@
 		<div id="page">
 			
 		</div>
+		<div class="dt-ui-home iconfont icon-home" onclick="window.location='index.html'"></div>
 		<script src="js/jquery-3.1.1.min.js"></script>
 		<script src="js/dt-ui.js?v=3"></script>
 		<script src="js/demo.js"></script>
+		<style>
+			 
+			.dt-ui-home{
+				position: fixed;
+				right: 1px;
+				bottom: 200px;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background-color: #ed6d53;
+				color: #fff;
+				align-items: center;
+				justify-content: center;
+				display: flex;
+				flex-direction: row;
+				opacity: .8;
+				cursor: pointer;
+			}
+			.dt-ui-home:before{
+				font-size: 26px;
+			}
+		</style>
 	</body>
 </html>

@@ -1,0 +1,136 @@
+/**forumlist***/
+.flist {}
+
+.flist-item {
+    padding: 5px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    display:flex;
+	flex-direction: column;
+    text-decoration: none;
+    color: #444;
+}
+
+.flist-user {
+    display: flex;
+	flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.flist-head {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.flist-nick {
+    font-size: 14px;
+    color: #333;
+}
+
+.flist-time {
+    font-size: 12px;
+    color: #666;
+}
+
+ 
+
+.flist-title {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.flist-vd {
+    position: relative;
+	display: inline-block;
+	clear: both;
+	margin-bottom: 5px;
+}
+
+.flist-vd-bg {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.flist-vd-play {
+    background: url("../img/play.png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.flist-imgs {}
+
+.flist-imgs-img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.flist-ft {
+    text-align: center;
+    display: flex;
+	flex-direction: row;
+    padding: 6px 6px;
+    font-size: 14px;
+}
+.flist-ft-love,
+.flist-ft-cm,
+.flist-ft-view{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.flist-ft-love:before,
+.flist-ft-cm:before,
+.flist-ft-view:before {
+    font-family: "iconfont" !important;
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 14px;
+	
+}
+
+.flist-ft-love:before {
+    content: "\e669";
+}
+
+.flist-ft-cm:before {
+    content: "\e667";
+}
+
+.flist-ft-view:before {
+    content: "\e80a";
+}
+
+.flist-ft-love,
+.flist-ft-cm {
+    flex: 1;
+    border-right: 1px solid #eee;
+}
+
+.flist-ft-view {
+    flex: 1;
+}
+
+.flist-tools{
+	display:flex;
+	height: 36px;
+	line-height: 36px;
+}
+.flist-tools a{
+	flex: 1;
+	color: #0062CC;
+	text-align: center;
+}
+
+ 
+ 

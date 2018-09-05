@@ -21,10 +21,11 @@ view,div{
 	box-sizing: border-box;
 	flex-shrink:0;
 }
+ 
 text{
 	display: flex;
 }
-a{
+navigator{
 	display: flex;
 	color: #323232;
 	text-decoration: none;
@@ -87,7 +88,7 @@ image{
  .f18{font-size: 18px!important;}
  .f16{font-size: 16px!important;}
  .f14{font-size:14px!important;}
- .f12{font-size: 11px!important;}
+ .f12{font-size: 12px!important;}
  /***col1 2 3 内容字体差异 主标题 副标题 描述****/
  .cl1{color: #323232!important;}
  .cl2{color: #646464!important;}

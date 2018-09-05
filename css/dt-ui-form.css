@@ -14,7 +14,11 @@
 	color: #333;
 	display: block;
 }
-
+.input-flex-txt{
+	flex: 1;
+	line-height: 36px;
+	color: #646464;
+}
 .input-flex-text,.input-flex-select {
 	flex: 1;
 	height: 36px;

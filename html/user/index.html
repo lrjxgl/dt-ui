@@ -1,77 +1,93 @@
-<page>
-	<div class="header">
-		<div class="header-back"></div>
-		<div class="header-title">个人中心</div>
-	</div>
-	<div class="header-row"></div>
-	<div class="main-body">
-		<div class="uhead" v-if="pageLoad">
+<template>
+	<view class="header">
+		<view class="header-back"></view>
+		<view class="header-title">个人中心</view>
+	</view>
+	<view class="header-row"></view>
+	<view class="main-body">
+		<view class="uhead" v-if="pageLoad">
 
 			<image class="uhead-img" src="http://img.deitui.com/?w=200&h=200&text=Logo&fontsize=36&textcolor=fff&bgcolor=ed6d53"></image>
 
-			<div class="uhead-box">
-				<div class="uhead-nick">老雷</div>
-				<div class="uhead-rnum flex">
+			<view class="uhead-box">
+				<view class="uhead-nick">老雷</view>
+				<view class="uhead-rnum flex">
 					余额 ￥
 					<text class="f14 cl-money mgl-5">10</text>
-				</div>
-				<div class="uhead-rnum flex">
+				</view>
+				<view class="uhead-rnum flex">
 					金币
 					<text class="cl-money mgl-5 mgr-5">10</text>
 					 
 					积分
 					<text class="cl-money mgl-5">10</text>
 
-				</div>
-			</div>
-		</div>
-		<div class="order-box">
-			<div class="order-box-hd">
+				</view>
+			</view>
+		</view>
+		<view class="order-box">
+			<view class="order-box-hd">
 				我的订单
-				<div class="flex-1"></div>
-				<div @click="gourl('/pages/order/my')" class="order-box-hd-more">全部订单
+				<view class="flex-1"></view>
+				<view @click="gourl('/pages/order/my')" class="order-box-hd-more">全部订单
 					<text class="iconfont icon-right"></text>
-				</div>
-			</div>
-			<div class="order-box-status flex">
-				<div @click="gourl('/pages/order/my?status=1')" class="order-box-item">
-					<text class="iconfont icon-redpacket"></text> 待付款</div>
-				<div  @click="gourl('/pages/order/my?status=2')"  class="order-box-item">
-					<text class="iconfont icon-redpacket"></text> 待收货</div>
-				<div  @click="gourl('/pages/order/my?status=3')"  class="order-box-item">
-					<text class="iconfont icon-comment"></text> 待评价</div>
-			</div>
-		</div>
+				</view>
+			</view>
+			<view class="order-box-status flex">
+				<view @click="gourl('/pages/order/my?status=1')" class="order-box-item">
+					<text class="iconfont icon-redpacket"></text> 待付款</view>
+				<view  @click="gourl('/pages/order/my?status=2')"  class="order-box-item">
+					<text class="iconfont icon-redpacket"></text> 待收货</view>
+				<view  @click="gourl('/pages/order/my?status=3')"  class="order-box-item">
+					<text class="iconfont icon-comment"></text> 待评价</view>
+			</view>
+		</view>
 
-		<div class="row-box mgb-5">
-			<a class="row-item row-item-text">
-				<i class="row-item-icon icon-text"></i>我的帖子
-			</a>
-			<a class="row-item">
-				<i class="row-item-icon icon-text"></i>我的帖子
-			</a>
-			<a class="row-item">
-				<i class="row-item-icon icon-comment"></i>我的评论
-			</a>
-			<a href="index.html?m=fav&a=my" class="row-item">
-				<i class="row-item-icon icon-favor"></i>我的收藏
-			</a>
-		</div>
+		<view class="row-box mgb-5">
+			
+			<navigator class="row-item">
+				<view class="row-item-icon icon-text"></view>我的消息
+			</navigator>
+			<navigator class="row-item">
+				<view class="row-item-icon icon-text"></view>优惠券
+			</navigator>
+			
+			<navigator class="row-item">
+				<view class="row-item-icon icon-text"></view>我的帖子
+			</navigator>
+			<navigator class="row-item">
+				<view class="row-item-icon icon-comment"></view>我的评论
+			</navigator>
+		</view>	
+		<view class="row-box mgb-5">	
+			<navigator url="index.html?m=fav&a=my" class="row-item">
+				<view class="row-item-icon icon-favor"></view>我的收藏
+			</navigator>
+			
+			<navigator class="row-item">
+				<view class="row-item-icon icon-text"></view>消费记录
+			</navigator>
+			<navigator class="row-item">
+				<view class="row-item-icon icon-text"></view>充值记录
+			</navigator>
+		</view>
 		
-		<div class="row-box  mgb-5">
-			<a class="row-item">
-				<i class="row-item-icon icon-home"></i> 老雷
-			</a>
-			<a class="row-item">
-				<i class="row-item-icon icon-password"></i>修改密码
-			</a>
-			 
-		</div>	
+		<view class="row-box  mgb-5">
+			<navigator class="row-item" url="index.html?m=user&a=info">
+				<view class="row-item-icon icon-people"></view> 老雷
+			</navigator>
+			<navigator class="row-item" url="index.html?m=user&a=password">
+				<view class="row-item-icon icon-password"></view>修改密码
+			</navigator>
+			<navigator class="row-item">
+				<view class="row-item-icon icon-text"></view>收货地址
+			</navigator> 
+		</view>	
 
-	</div>
-	<div class="btn-row-submit btn-danger">注销</div>
+	</view>
+	<view class="btn-row-submit btn-danger">注销</view>
 	{include=mfooter}
-</page>
+</template>
 <style>
 	.uhead {
 		display: flex;

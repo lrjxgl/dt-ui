@@ -1,0 +1,41 @@
+/**头部风格***/
+.header{
+ background-color: #d94e7a;	
+}
+.header-back:after,.header-title{color: #fff;}
+
+.header-search{
+	background-color: rgba(0,0,0,.1);
+	border: 0 !important;
+	color: #fff;
+}
+.header-search-icon{
+	color: #fff;
+}
+.header-right{
+	color: #fff;
+}
+.header-right-btn{
+	color: #fff;
+	border-color: #fff;
+}
+/*****底部风格****/
+.footer{
+	background-color: #d94e7a;
+}
+.footer-item,.footer-item:before{
+	color: #e0e0e0;
+}
+.footer-add:after{
+	background-color: #e45538;
+	color: #fff;
+}
+
+/*********/
+.btn,.btn-primary,.btn-row-submit,.input-flex-btn{
+	background-color: #d94e7a;
+	border-color:#d94e7a;
+}
+.cart-list-btn{
+	background-color:#d94e7a !important;
+}

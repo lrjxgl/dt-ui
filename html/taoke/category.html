@@ -1,1 +1,64 @@
-<page></page>
+<template>
+	<view class="header">
+		<view class="header-back"></view>
+		<view class="header-title">分类</view>
+	</view>
+	<view class="header-row"></view>
+	<view class="list">
+		<navigator class="list-item" url="index.html?m=taoke&a=list">
+			<image class="list-item-img" src="img/100x100.jpg"></image>
+			<div> 酒类</view> 
+		</navigator>
+		<navigator class="list-item" url="index.html?m=taoke&a=list">
+			<image class="list-item-img" src="img/100x100.jpg"></image>
+			<div> 酒类</view> 
+		</navigator>
+		 <navigator class="list-item" url="index.html?m=taoke&a=list">
+		 	<image class="list-item-img" src="img/100x100.jpg"></image>
+		 	<div> 酒类</view> 
+		 </navigator>
+		 <navigator class="list-item" url="index.html?m=taoke&a=list">
+		 	<image class="list-item-img" src="img/100x100.jpg"></image>
+		 	<div> 酒类</view> 
+		 </navigator>
+		 <navigator class="list-item" url="index.html?m=taoke&a=list">
+		 	<image class="list-item-img" src="img/100x100.jpg"></image>
+		 	<div> 酒类</view> 
+		 </navigator>
+		 <navigator class="list-item" url="index.html?m=taoke&a=list">
+		 	<image class="list-item-img" src="img/100x100.jpg"></image>
+		 	<div> 酒类</view> 
+		 </navigator>
+	</view>
+	{include=mfooterTaoke}
+</template>
+<style>
+	.list {
+		margin-top: 10px;
+		background-color: #fff;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.list-item {
+		width: 33.3333%;
+		align-items: center;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		font-size: 14px;
+		color: #444;
+		border: 1px solid #eee;
+	}
+
+	.list-item:hover {
+		border-color: #F01A61;
+	}
+
+	.list-item-img {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		margin-bottom: 8px;
+	}
+</style>

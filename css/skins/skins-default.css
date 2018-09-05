@@ -20,20 +20,21 @@
 	border-color: #fff;
 }
 /*****底部风格****/
-.mfooter{
+.footer{
 	background-color: #ed6d53;
 }
-.mfooter-item,.mfooter-item:before{
+.footer-item,.footer-item:before{
 	color: #e0e0e0;
 }
-.mfooter-add:after{
+.footer-add:after{
 	background-color: #e45538;
 	color: #fff;
 }
 
 /*********/
-.btn-row-submit{
+.btn,.btn-primary,.btn-row-submit,.input-flex-btn{
 	background-color: #ed6d53;
+	border-color:#ed6d53;
 }
 .cart-list-btn{
 	background-color:#ed6d53 !important;
