@@ -2,6 +2,7 @@
 .row-item,.row-item-text{
 	display: flex;
 	flex-direction: row;
+	
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #eee;
@@ -25,9 +26,7 @@
 	font-family: iconfont;
 	content: "\e6a3";
 	color: #999;
-	top:5px;
-	position: absolute;
-	right: 0;
+	 
 }
 .row-item-text{
 	cursor:initial;
@@ -57,6 +56,12 @@
 	font-size: 16px;
 	color: #323232;
 	margin-bottom: 5px;
+}
+.flexlist-ks{
+	margin-top: -3px;
+	color: #f60;
+	font-size: 12px;
+	margin-bottom: 3px;
 }
 .flexlist-desc{
 	font-size: 12px;

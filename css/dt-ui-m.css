@@ -3,7 +3,7 @@
 	display: flex;
 	flex-direction: row;
 	background-color: #fff;
-	padding: 10px 0px;
+	padding: 10px 0px 0px 0px;
 	flex-wrap: wrap;
 }
 .m-navPic-item{
@@ -12,15 +12,22 @@
 	text-align: center;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 10px;
-	
+	margin-bottom: 15px;	
 }
+
 .m-navPic-img{
 	width: 60px;
 	height: 60px;
-	margin-bottom: 2px;
+	margin-bottom: 5px;
 	line-height: 1;
-
+}
+.m-navPic-icon{
+	font-family: iconfont;	
+	margin-bottom: 5px;
+}
+.m-navPic-icon:before{
+	font-size: 20px;
+	color: #ed6d53;
 }
 .m-navPic-title{
 	font-size: 14px;

@@ -1,0 +1,168 @@
+<template>
+	<view v-if="pageLoad">
+		<view class="header">
+			<view class="header-back"></view>
+			<view class="header-title">个人中心</view>
+			<navigator url="index.html?m=user&a=set" class="header-right-btn iconfont icon-settings"></navigator> 
+		</view>
+		<view class="header-row"></view>
+		<view class="main-body">
+			<view class="uhead" v-if="pageLoad">
+
+				<image class="uhead-img" src="http://img.deitui.com/?w=200&h=200&text=Logo&fontsize=36&textcolor=fff&bgcolor=ed6d53"></image>
+
+				<view class="uhead-box">
+					<view class="uhead-nick">老雷</view>
+					<view class="uhead-rnum flex">
+						余额 ￥
+						<text class="f14 cl-money mgl-5">10</text>
+					</view>
+					<view class="uhead-rnum flex">
+						金币
+						<text class="cl-money mgl-5 mgr-5">10</text>
+
+						积分
+						<text class="cl-money mgl-5">10</text>
+
+					</view>
+				</view>
+			</view>
+			<view class="order-box">
+				<view class="order-box-hd">
+					我的订单
+					<view class="flex-1"></view>
+					<view @click="gourl('/pages/order/my')" class="order-box-hd-more">全部订单
+						<text class="iconfont icon-right flex-ai-center"></text>
+					</view>
+				</view>
+				<view class="order-box-status flex">
+					<view @click="gourl('/pages/order/my?status=1')" class="order-box-item">
+						<text class="iconfont icon-redpacket"></text> 待付款</view>
+					<view @click="gourl('/pages/order/my?status=2')" class="order-box-item">
+						<text class="iconfont icon-redpacket"></text> 待收货</view>
+					<view @click="gourl('/pages/order/my?status=3')" class="order-box-item">
+						<text class="iconfont icon-comment"></text> 待评价</view>
+				</view>
+			</view>
+			
+			<view class="m-navPic">
+				<view class="m-navPic-item">
+					<view class="m-navPic-icon icon-home"></view>
+					<view class="m-navPic-title">我的拼团</view>
+				</view>
+				<view class="m-navPic-item">
+					<view class="m-navPic-icon icon-home"></view>
+					<view class="m-navPic-title">我的拼团</view>
+				</view>
+				<view class="m-navPic-item">
+					<view class="m-navPic-icon icon-home"></view>
+					<view class="m-navPic-title">我的拼团</view>
+				</view>
+				<view class="m-navPic-item">
+					<view class="m-navPic-icon icon-home"></view>
+					<view class="m-navPic-title">我的拼团</view>
+				</view>
+				<view class="m-navPic-item">
+					<view class="m-navPic-icon icon-home"></view>
+					<view class="m-navPic-title">我的拼团</view>
+				</view>
+				<view class="m-navPic-item">
+					<view class="m-navPic-icon icon-home"></view>
+					<view class="m-navPic-title">我的拼团</view>
+				</view>
+				<view class="m-navPic-item">
+					<view class="m-navPic-icon icon-home"></view>
+					<view class="m-navPic-title">我的拼团</view>
+				</view>
+				<view class="m-navPic-item">
+					<view class="m-navPic-icon icon-home"></view>
+					<view class="m-navPic-title">我的拼团</view>
+				</view>
+				 
+			</view>
+
+			 
+			{include=mfooter}
+		</view>
+</template>
+<style>
+	.uhead {
+		display: flex;
+		flex-direction: row;
+		padding: 10px;
+		background-color: #fff;
+		margin-bottom: 5px;
+	}
+
+	.uhead-img {
+		width: 80px;
+		height: 80px;
+		margin-right: 10px;
+		display: block;
+		border-radius: 50%;
+	}
+
+	.uhead-box {
+		flex: 1;
+	}
+
+	.uhead-nick {
+		margin-bottom: 5px;
+		font-size: 16px;
+	}
+
+	.uhead-rnum {
+		color: #999;
+		margin-bottom: 10px;
+		line-height: 14px;
+		display: flex;
+		font-size: 14px;
+	}
+	/***订单**/
+
+	.order-box {
+		background-color: #fff;
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+
+	.order-box-hd {
+		display: flex;
+		flex-direction: row;
+		line-height: 36px;
+		border-bottom: 1px solid #ddd;
+		margin-bottom: 10px;
+		font-size: 16px;
+		color: #646464;
+	}
+
+	.order-box-hd-more {
+		color: #646464;
+		margin-right: 5px;
+		font-size: 16px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.order-box-icon:before {
+		color: #646464;
+	}
+
+	.order-box-status {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.order-box-item {
+		flex: 1;
+		text-align: center;
+		font-size: 14px;
+		color: #666;
+	}
+
+	.order-box-item .iconfont {
+		display: block;
+		color: #666;
+		font-size: 22px;
+	}
+</style>

@@ -84,6 +84,14 @@ $(function(){
 	})
 	
 	$(document).on("click","navigator",function(){
+		if($(this).attr("url")==undefined){
+			return false;
+		}
 		window.location=$(this).attr("url");
 	})
+	
+	$(document).on("click",'[gourl]',function(){
+		window.location=$(this).attr("gourl");
+	})
+	
 })

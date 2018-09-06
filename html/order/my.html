@@ -1,0 +1,127 @@
+<template>
+	<view v-if="pageLoad">
+		<view class="header">
+			<view class="header-back"></view>
+			<view class="header-title">我的订单</view>
+		</view>
+		<view class="header-row"></view>
+		<view class="main-body">
+			<view class="tabs-border mgb-10">
+				<view class="tabs-border-item tabs-border-active">全部</view>
+				<view class="tabs-border-item">待付款</view>
+				<view class="tabs-border-item">待收货</view>
+				<view class="tabs-border-item">待评价</view>
+			</view>	
+			<view class="list">
+				<view class="item row-box mgb-10">
+					<view class="flex bd-mp-5">
+						<view class="flex-1 cl2">订单号：123123123123</view>
+						<view class="cl-primary">待支付</view>
+					</view>
+					<view class="flexlist-item">
+						<image class="flexlist-img" src="img/100x100.jpg"></image>
+						<view class="flex-1">
+							<view class="flexlist-title">最美时装秀</view>
+							<view class="flexlist-ks">红色大衣</view>
+							<view class="flex ">
+								<view class="flex-1 cl-money">￥100</view>
+								<view class="cl3">x 10</view>
+							</view>
+							
+						</view>
+					</view>
+					<view class="flexlist-item">
+						<image class="flexlist-img" src="img/100x100.jpg"></image>
+						<view class="flex-1">
+							<view class="flexlist-title">最美时装秀</view>
+							<view class="flexlist-ks">红色大衣</view>
+							<view class="flex ">
+								<view class="flex-1 cl-money">￥100</view>
+								<view class="cl3">x 10</view>
+							</view>
+							
+						</view>
+					</view>
+					<view class="flexlist-item">
+						<image class="flexlist-img" src="img/100x100.jpg"></image>
+						<view class="flex-1">
+							<view class="flexlist-title">最美时装秀</view>
+							<view class="flexlist-ks">红色大衣</view>
+							<view class="flex ">
+								<view class="flex-1 cl-money">￥100</view>
+								<view class="cl3">x 10</view>
+							</view>
+							
+						</view>
+					</view>
+					<view class="flex mgb-10">
+						 共<view class="cl-num">1</view>件商品  
+						 合计：<view class="cl-money">￥0.01</view>元 
+						 <view class="flex-1"></view> 
+						 <view class="cl-primary">未支付</view>
+					</view>
+					<view class="flex flex-jc-end">
+						<view class="btn-small btn-outline-danger mgr-10">去支付</view>
+						<view class="btn-small  btn-outline-danger" gourl="index.html?m=order&a=show">查看详情</view>
+					</view>
+				</view>
+				
+				<view class="item row-box">
+					<view class="flex bd-mp-5">
+						<view class="flex-1 cl2">订单号：123123123123</view>
+						<view class="cl-primary">待支付</view>
+					</view>
+					<view class="flexlist-item">
+						<image class="flexlist-img" src="img/100x100.jpg"></image>
+						<view class="flex-1">
+							<view class="flexlist-title">最美时装秀</view>
+							<view class="flexlist-ks">红色大衣</view>
+							<view class="flex ">
+								<view class="flex-1 cl-money">￥100</view>
+								<view class="cl3">x 10</view>
+							</view>
+							
+						</view>
+					</view>
+					<view class="flexlist-item">
+						<image class="flexlist-img" src="img/100x100.jpg"></image>
+						<view class="flex-1">
+							<view class="flexlist-title">最美时装秀</view>
+							<view class="flexlist-ks">红色大衣</view>
+							<view class="flex ">
+								<view class="flex-1 cl-money">￥100</view>
+								<view class="cl3">x 10</view>
+							</view>
+							
+						</view>
+					</view>
+					<view class="flexlist-item">
+						<image class="flexlist-img" src="img/100x100.jpg"></image>
+						<view class="flex-1">
+							<view class="flexlist-title">最美时装秀</view>
+							<view class="flexlist-ks">红色大衣</view>
+							<view class="flex ">
+								<view class="flex-1 cl-money">￥100</view>
+								<view class="cl3">x 10</view>
+							</view>
+							
+						</view>
+					</view>
+					<view class="ft flex mgb-10">
+						共<view class="cl-num">1</view>件商品  
+						合计：<view class="cl-money">￥0.01</view>元 
+						<view class="flex-1"></view> 
+						<view class="cl-primary">未支付</view>
+					</view>
+					<view class="flex flex-jc-end">
+						<view class="btn-small btn-outline-danger mgr-10">去支付</view>
+						<view class="btn-small  btn-outline-danger" gourl="index.html?m=order&a=show">查看详情</view>
+					</view>
+				</view>
+				
+			</view>
+		</view>
+		
+	</view>
+	
+</template>

@@ -148,26 +148,31 @@ image{
  .pdt-10{padding-top: 10px;}
  .pdb-10{padding-bottom: 10px;}
  /***margin****/
- .mg-5{margin: 5px;}
- .mgb-5{margin-bottom: 5px;}
- .mgt-5{margin-top: 5px;}
- .mgl-5{margin-left: 5px;}
- .mgr-5{margin-right: 5px;}
- .mg-10{margin: 10px;}
- .mgb-10{margin-bottom: 10px;}
- .mgt-10{margin-top: 10px;}
- .mgl-10{margin-left: 10px;}
- .mgr-10{margin-right: 10px;}
+ .mg-5{margin: 5px!important;}
+ .mgb-5{margin-bottom: 5px!important;}
+ .mgt-5{margin-top: 5px!important;}
+ .mgl-5{margin-left: 5px!important;}
+ .mgr-5{margin-right: 5px!important;}
+ .mg-10{margin: 10px!important;}
+ .mgb-10{margin-bottom: 10px!important;}
+ .mgt-10{margin-top: 10px!important;}
+ .mgl-10{margin-left: 10px!important;}
+ .mgr-10{margin-right: 10px!important;}
  /***border***/
  .bd-mp-5{
-	 border-bottom: 1px solid #eee;
-	 padding-bottom: 5px;
-	 margin-bottom: 5px;
+	 border-bottom: 1px solid #eee !important;
+	 padding-bottom: 5px !important;
+	 margin-bottom: 5px !important;
  }
  .bd-mp-10{
- 	border-bottom: 1px solid #eee;
- 	padding-bottom: 10px;
- 	margin-bottom: 10px;
+ 	border-bottom: 1px solid #eee !important;
+ 	padding-bottom: 10px !important;
+ 	margin-bottom: 10px !important;
+ }
+ .bd-mp-0{
+	 border-bottom: 0 !important;
+	 padding-bottom: 0 !important;
+	 margin-bottom: 0 !important;
  }
  .bd { border: 1px solid #dee2e6 !important; }
  .bdt { border-top: 1px solid #dee2e6 !important;}
