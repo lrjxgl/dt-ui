@@ -1,6 +1,6 @@
 /**头部风格***/
 .header{
- background-color: #333333;	
+ background-color: #ff82ab;	
 }
 .header-back:after,.header-title{color: #fff;}
 
@@ -21,7 +21,7 @@
 }
 /*****底部风格****/
 .footer{
-	background-color: #333333;
+	background-color: #ff82ab;
 }
 .footer-item,.footer-item:before{
 	color: #e0e0e0;
@@ -33,9 +33,9 @@
 
 /*********/
 .btn-primary,.btn-row-submit,.input-flex-btn{
-	background-color: #333333;
-	border-color:#333333;
+	background-color: #ff82ab;
+	border-color:#ff82ab;
 }
 .cart-list-btn{
-	background-color:#333333 !important;
+	background-color:#ff82ab !important;
 }

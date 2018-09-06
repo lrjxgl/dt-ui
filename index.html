@@ -35,13 +35,52 @@
 			
 		</div>
 		<div class="dt-ui-home iconfont icon-home" onclick="window.location='index.html'"></div>
+		<div class="skinsList">
+			<div class="skinsList-item" data-skins="">风格</div>
+			<div class="skinsList-item" data-skins="" style="background-color: #f7f7f7;"></div>
+			<div class="skinsList-item" data-skins="skins-d94e7a.css" style="background-color: #d94e7a;"></div>
+			<div class="skinsList-item"  data-skins="skins-ed6d53.css" style="background-color: #ed6d53;"></div>
+			<div class="skinsList-item"  data-skins="skins-ff82ab.css" style="background-color: #ff82ab;"></div>
+			<div class="skinsList-item"  data-skins="skins-default.css" style="background-color: #333333;"></div>
+		</div>
 		<script src="js/jquery-3.1.1.min.js"></script>
 		<script src="js/dt-ui.js?v=3"></script>
 		<script src="js/demo.js"></script>
+		<script>
+			$(document).on("click",".skinsList-item",function(){
+				var skins=$(this).attr("data-skins");
+				localStorage.setItem("skins",skins);
+				if(skins!=""){
+					$("head").append('<link class="skinsCss" href="css/skins/'+skins+'" rel="stylesheet"/>');
+				}else{
+					$(".skinsCss").remove();
+				}
+				console.log(skins);
+			})
+			var skins=localStorage.getItem("skins");
+			if(skins!=""){
+				$("head").append('<link class="skinsCss" href="css/skins/'+skins+'" rel="stylesheet"/>');
+			}else{
+				$(".skinsCss").remove();
+			}
+		</script>
 		<style>
 			[gourl]{
 				cursor: pointer;
 			} 
+			.skinsList{
+				position: fixed;
+				top: 100px;
+				right: 0px;
+				text-align: center;
+				width: 40px;
+				background-color: #ddd;
+			}
+			.skinsList-item{
+				height: 20px;
+				line-height: 20px;
+				cursor: pointer;
+			}
 			.dt-ui-home{
 				position: fixed;
 				right: 1px;
