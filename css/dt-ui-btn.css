@@ -178,15 +178,15 @@
  .btn-love {
  	display: flex;
  	flex-direction: row;
+	align-items: center;
  	padding: 0 10px;
  	height: 36px;
- 	line-height: 36px;
  	border: 1px solid #aaa;
  	color: #333;
  	border-radius: 10px;
  	font-size: 14px;
  }
-
+	
  .btn-love:before {
  	font-family: iconfont;
  	content: "\e669";
@@ -205,10 +205,11 @@
  .btn-fav {
  	display: flex;
  	flex-direction: row;
+	align-items: center;
  	font-size: 14px;
  	padding: 0 10px;
  	height: 36px;
- 	line-height: 36px;
+ 	
  	border: 1px solid #aaa;
  	color: #333;
  	border-radius: 10px;
@@ -228,4 +229,41 @@
  .btn-fav-active:before {
  	color: #f30;
  }
+ 
+ .btn-fav-small,.btn-love-small{
+ 	height: 26px;
+ 	
+ }
+  .btn-comment {
+  	display: flex;
+  	flex-direction: row;
+ 	align-items: center;
+  	font-size: 14px;
+  	padding: 0 10px;
+  	height: 36px;
+  	
+  	border: 1px solid #aaa;
+  	color: #333;
+  	border-radius: 10px;
+  }
+ 
+  .btn-comment:before {
+  	font-family: iconfont;
+  	content: "\e7ee";
+  	font-size: 14px;
+  	margin-right: 3px;
+  }
+ 
+  .btn-comment-active {
+  	color: #f30;
+  }
+ 
+  .btn-comment-active:before {
+  	color: #f30;
+  }
+  
+  .btn-fav-small,.btn-love-small,.btn-comment-small{
+  	height: 26px;
+  	
+  }
  /******end btn******/
