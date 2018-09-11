@@ -2,9 +2,9 @@
 .flist {}
 
 .flist-item {
-    padding: 5px;
+    padding: 11px;
     background-color: #fff;
-    margin-bottom: 5px;
+    margin-bottom: 11px;
     display:flex;
 	flex-direction: column;
     text-decoration: none;
@@ -14,23 +14,23 @@
 .flist-user {
     display: flex;
 	flex-direction: row;
-    margin-bottom: 5px;
+    margin-bottom: 11px;
 }
 
 .flist-head {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    width: 88px;
+    height: 88px;
+    margin-right: 22px;
     border-radius: 50%;
 }
 
 .flist-nick {
-    font-size: 14px;
+    font-size: 30.8px;
     color: #333;
 }
 
 .flist-time {
-    font-size: 12px;
+    font-size: 26.4px;
     color: #666;
 }
 
@@ -38,24 +38,24 @@
 
 .flist-title {
     color: #323232;
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 30.8px;
+    margin-bottom: 22px;
 }
 .flist-desc{
 	color: #646464;
-	font-size: 14px;
-	margin-bottom: 10px;
+	font-size: 30.8px;
+	margin-bottom: 22px;
 }
 .flist-vd {
     position: relative;
 	clear: both;
-	margin-bottom: 5px;
+	margin-bottom: 11px;
 	align-items: center;
 }
 
 .flist-vd-bg {
     max-width: 100%;
-    max-height: 200px;
+    max-height: 440px;
 }
 
 .flist-vd-play {
@@ -64,10 +64,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 60px;
-    height: 60px;
-    margin-left: -30px;
-    margin-top: -30px;
+    width: 132px;
+    height: 132px;
+    margin-left: -66px;
+    margin-top: -66px;
 }
 
 .flist-imgs {
@@ -76,18 +76,18 @@
 }
 
 .flist-imgs-img {
-    width: 60px;
-	height: 60px;
-	margin-bottom: 10px;
-    margin-right: 10px;
+    width: 132px;
+	height: 132px;
+	margin-bottom: 22px;
+    margin-right: 22px;
 }
 
 .flist-ft {
     text-align: center;
     display: flex;
 	flex-direction: row;
-    padding: 6px 6px;
-    font-size: 14px;
+    padding: 13.2px 13.2px;
+    font-size: 30.8px;
 }
 .flist-ft-love,
 .flist-ft-cm,
@@ -103,8 +103,8 @@
 .flist-ft-view:before {
     font-family: "iconfont" !important;
     display: inline-block;
-    margin-right: 4px;
-    font-size: 14px;
+    margin-right: 8.8px;
+    font-size: 30.8px;
 	
 }
 
@@ -123,7 +123,7 @@
 .flist-ft-love,
 .flist-ft-cm {
     flex: 1;
-    border-right: 1px solid #eee;
+    border-right: 2.2px solid #eee;
 }
 
 .flist-ft-view {
@@ -132,8 +132,8 @@
 
 .flist-tools{
 	display:flex;
-	height: 36px;
-	line-height: 36px;
+	height: 79.2px;
+	line-height: 79.2px;
 }
 .flist-tools a{
 	flex: 1;

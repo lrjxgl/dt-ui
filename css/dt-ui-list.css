@@ -8,7 +8,6 @@
 	border-bottom: 1px solid #eee;
 	padding-left: 5px;
 	padding-right: 5px;
-	padding-top: 5px;
 	position: relative;
 	align-items: center;
 	color: #646464;
@@ -106,6 +105,7 @@
 	flex-direction: row;
 	align-items: flex-end;
 	margin-bottom: 5px;
+	padding-top: 5px;
 }
 .mtlist-item-money-flex{
 	flex: 1;
@@ -117,6 +117,7 @@
 }
 .mtlist-item-money_money{
 	font-size: 20px;
+	line-height: 1;
 }
 .mtlist-item-money_num{
 	color: #646464;
@@ -135,6 +136,7 @@
 .sglist-item{
 	padding: 5px;
 	background-color: #fff;
+	margin-bottom: 5px;
 }
 .sglist-imgbox{
 	
@@ -149,6 +151,18 @@
 	margin-bottom: 5px;
 	font-size: 16px;
 }
+.sglist-imglist{
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+.sglist-imglist-img{
+	width: 60px;
+	height: 60px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
 .sglist-desc{
 	color: #646464;
 	font-size: 14px;
@@ -160,6 +174,10 @@
 	flex-direction: row;
 	align-items: center;
 	color: #646464;
+}
+.sglist-nick{
+	color: #323232;
+	font-size: 16px;
 }
 .sglist-uhead{
 	border-radius: 50%;

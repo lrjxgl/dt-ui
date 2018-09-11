@@ -1,0 +1,38 @@
+<template>
+	<view v-if="pageLoad">
+		<view class="header">
+			<view class="header-back"></view>
+			<view class="header-title">更换手机</view>
+		</view>
+		<view class="header-row"></view>
+		<view class="main-body">
+			<form>
+			<view class="input-flex">
+				<view class="input-flex-label">旧手机</view>
+				<input class="input-flex-text" name="telephone" placeholder="请输入手机号码" />
+			</view>
+			<view class="input-flex">					
+				<view class="input-flex-label">验证码</view>					 
+				<input type="text" class="input-flex-text">				 
+				<view class="input-flex-btn">获取验证码</view>
+			</view> 
+			<view class="input-flex">
+				<view class="input-flex-label">新手机</view>
+				<input class="input-flex-text" name="telephone" placeholder="请输入手机号码" />
+			</view>
+			<view class="input-flex">					
+				<view class="input-flex-label">验证码</view>					 
+				<input type="text" class="input-flex-text">				 
+				<view class="input-flex-btn">获取验证码</view>
+			</view>
+			 
+			<view class="row-box">
+				<button form-type="submit" class="btn-row-submit">确定绑定</button>
+				 
+			</view>
+			</form>
+		</view>
+		
+	</view>
+	
+</template>

@@ -1,4 +1,5 @@
 <template>
+	<view v-if="pageLoad">
 	<view class="header">
 		<view class="header-back"></view>
 		<view class="header-title">个人中心</view>
@@ -7,7 +8,7 @@
 	<view class="main-body">
 		<view class="uhead" v-if="pageLoad">
 
-			<image class="uhead-img" src="http://img.deitui.com/?w=200&h=200&text=Logo&fontsize=36&textcolor=fff&bgcolor=ed6d53"></image>
+			<image gourl="index.html?m=user&a=user_head" class="uhead-img" src="img/100x100.jpg"></image>
 
 			<view class="uhead-box">
 				<view class="uhead-nick">老雷</view>
@@ -45,20 +46,20 @@
 
 		<view class="row-box mgb-5">
 			
-			<navigator class="row-item">
-				<view class="row-item-icon icon-text"></view>
+			<navigator url="index.html?m=notice&a=my" class="row-item"> 
+				<view   class="row-item-icon icon-text"></view>
 				<view class="flex-1">我的消息</view>
 			</navigator>
-			<navigator class="row-item">
+			<navigator url="index.html?m=coupon&a=my" class="row-item">
 				<view class="row-item-icon icon-text"></view>
-				<view class="flex-1">优惠券</view>
+				<view class="flex-1">我的优惠券</view>
 			</navigator>
 			
-			<navigator class="row-item">
+			<navigator url="index.html?m=forum&a=my" class="row-item">
 				<view class="row-item-icon icon-text"></view>
 				<view class="flex-1">我的帖子</view>
 			</navigator>
-			<navigator class="row-item">
+			<navigator url="index.html?m=comment&a=my" class="row-item">
 				<view class="row-item-icon icon-comment"></view>
 				<view class="flex-1">我的评论</view>
 			</navigator>
@@ -69,11 +70,11 @@
 				<view class="flex-1">我的收藏</view>
 			</navigator>
 			
-			<navigator class="row-item">
+			<navigator url="index.html?m=pay_log&a=my" class="row-item">
 				<view class="row-item-icon icon-text"></view>
 				<view class="flex-1">消费记录</view>
 			</navigator>
-			<navigator class="row-item">
+			<navigator url="index.html?m=recharge&a=my" class="row-item">
 				<view class="row-item-icon icon-text"></view>
 				<view class="flex-1">充值记录</view>
 			</navigator>
@@ -88,7 +89,7 @@
 				<view class="row-item-icon icon-password"></view>
 				<view class="flex-1">修改密码</view>
 			</navigator>
-			<navigator class="row-item">
+			<navigator url="index.html?m=user_address&a=my" class="row-item">
 				<view class="row-item-icon icon-text"></view>
 				<view class="flex-1">收货地址</view>
 			</navigator> 
@@ -96,7 +97,7 @@
 
 	</view>
 	<view class="btn-row-submit btn-danger">注销</view>
-	 
+	</view> 
 </template>
 <style>
 	.uhead {

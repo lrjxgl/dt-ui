@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<view v-if="pageLoad">
 		<view class="header">
 			<view class="header-back"></view>
 			<view class="header-title">修改资料</view>
@@ -11,7 +11,7 @@
 					<view class="input-flex-label">昵称</view>
 					<input type="text" name="nickname" value="老雷" class="input-flex-text" />
 				</view>
-				<view class="btn-row-submit">保存</view>
+				<button form-type="submit" class="btn-row-submit">保存</button>
 			</form>
 		</view>
 		

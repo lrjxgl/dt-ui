@@ -1,7 +1,81 @@
 <template>
-	<view class="header">
-		<view class="header-back"></view>
-		<view class="header-title">产品详情</view>
+	<view v-if="pageLoad">
+		<view class="header">
+			<view class="header-back"></view>
+			<view class="header-title">产品详情</view>
+		</view>
+		<view class="header-row"></view>
+		<view class="main-body">
+			<image src="img/480x320.png" class="d-img"></image>
+			<view class="row-box mgb-5">
+				<view class="d-title">土星北极发现六边形高空旋涡</view>
+			 
+				<view class="flex flex-ai-center bd-mp-10">
+					价格 <view class="flex-1 cl-money f22">￥100</view>
+					<view class="numbox">
+						<view class="numbox-minus">-</view>
+						<input class="numbox-num" readonly="" value="1" />
+						<view class="numbox-plus">+</view>
+					</view>
+					<view class="btn-buy mgl-5">买</view>
+				</view>
+				
+				<view class="kslist bd-mp-10">
+					<view class="kslist-label">颜色</view>
+					<view class="kslist-item kslist-active">红色</view>
+					<view class="kslist-item">黑色</view>
+				</view>
+				<view class="kslist ">
+					<view class="kslist-label">尺寸</view>
+					<view class="flex-1 flex">
+						<view class="kslist-item  kslist-active">16</view>
+						<view class="kslist-item">18</view>
+					</view>
+				</view>
+				
+			</view>
+			<view class="pd-10 bg-fff">
+				
+				
+				 
+				<rich-text class="d-content">
+					
+					&nbsp;&nbsp;科技日报北京9月6日电 （记者房琳琳）美国国家航空航天局（NASA）官网6日报道称，一项基于“卡西尼”号探测数据的长期研究显示，土星北极附近出现了令人惊讶的特征——一个六边形的温暖高空旋涡，其精准匹配云层更深处的著名的六边形云纹。<br />
+
+　　新发现发表在3日出版的《自然通讯》上。研究人员认为该发现“很有趣”，因为它表明这个低海拔的六边形可能会影响云层深处，这可能是一个高达数百英里的高耸结构。<br />
+
+　　上世纪80年代，NASA“旅行者”号探测器发现了土星著名的北极六边形云纹，其已被研究了几十年，这是一种与土星自转有关的持久波，这种现象在地球的北极也能观察到。<br />
+
+　　当“卡西尼”号于2004年抵达土星系统时，土星南半球正在享受夏季，北半球正处于冬天。飞船在土星的南极发现了宽阔而温暖的高空旋涡，但没有在北极发现这类现象。虽然“卡西尼”号携带的复合红外光谱仪观察了多种波长的特征，但当时该仪器无法进一步进入北极平流层，那里温度太低而无法进行可靠的红外观测。
+
+　　现在，新研究第一次报告了土星北半球接近夏季时形成的高空气旋。温暖的旋涡位于云层之上数百英里的平流层，给科研人员带来意想不到的惊喜。“其边缘看起来也呈现六边形，精确匹配土星大气深处的著名六边形云纹。”研究主要作者、莱斯特大学的雷·弗莱彻说。<br />
+
+　　“卡西尼”号项目科学家琳达·斯皮尔克说：“六边形的范围仍在持续增长，我期待看到数据中的其他新发现。”
+					
+				</rich-text>
+			</view>
+		</view>
+		
 	</view>
-	<view class="header-row"></view>
-</template>	
+	
+</template>
+<style>
+	.kslist{
+		display: flex;
+		flex-direction: row;		
+		align-items: center;
+		padding-left: 10px;
+	}
+	.kslist-label{
+		margin-right: 6px;
+		color: #646464;
+	}
+	.kslist-item{
+		border: 1px solid #eee;
+		padding: 4px 8px;
+		margin-right: 10px;
+	}
+	.kslist-active{
+		color: #007AFF;
+	}
+</style>

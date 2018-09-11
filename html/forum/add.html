@@ -1,58 +1,52 @@
 <template>
-	<view class="header">
-		<navigator class="header-back"></navigator>
-		<view class="header-title">发布主题</view>
-		<view class="header-right-btn">发布</view>
-	</view>
-	<view class="header-row"></view>
-	<view class="main-body">
-		<view class="input-flex">
-			<view class="input-flex-label w60">主题</view>
-			<input type="text" class="input-flex-text" />
+	<view>
+		<view class="header">
+			<navigator class="header-back"></navigator>
+			<view class="header-title">发布主题</view>
+			<view class="header-right-btn">发布</view>
 		</view>
-		<view class="input-flex">
-			<view class="input-flex-label">选择板块</view>
-			 
-				<select name="gid" id="gid" class="input-flex-select">
-				<option value="0">请选择</option>
-														<option value="2">摄影</option>
-														<option value="1">唠叨</option>
-														<option value="3">音乐</option>
-								</select>
-				&nbsp;
-			<select name="catid" id="catid" class="input-flex-select">
-			<option value="0">请选择</option>
-						</select>
-			
+		<view class="header-row"></view>
+		<view class="main-body">
+			<form>
+				<view class="input-flex">
+					<view class="input-flex-label w60">主题</view>
+					<input type="text" name="title" class="input-flex-text" />
+				</view>
+				<view class="input-flex">
+					<view class="input-flex-label">选择板块</view>
+
+					<view class="input-flex-select flex flex-ai-center"><view class="cl3">请选择</view></view>
+
+				</view>
+
+				<view class="textarea-flex">
+					<view class="input-flex-label flex-1">内容</view>
+					<textarea name="content" class="h100 textarea-flex-text"></textarea>
+				</view>
+				<view class="upimg-box bg-fff">
+					<view class="upimg-item">
+						<image class="upimg-img" src="http://img.deitui.com/?w=100&h=100&text=无图&bgclor=f60"></image>
+						<view class="upimg-del"></view>
+					</view>
+					<view class="upimg-item">
+						<image class="upimg-img" src="http://img.deitui.com/?w=100&h=100&text=无图&bgclor=f60"></image>
+						<view class="upimg-del"></view>
+					</view>
+					<view class="upimg-item">
+						<image class="upimg-img" src="http://img.deitui.com/?w=100&h=100&text=无图&bgclor=f60"></image>
+						<view class="upimg-del"></view>
+					</view>
+					<view class="upimg-item">
+						<image class="upimg-img" src="http://img.deitui.com/?w=100&h=100&text=无图&bgclor=f60"></image>
+						<view class="upimg-del"></view>
+					</view>
+
+					<view class="upimg-btn">
+						<i class="upimg-btn-icon"></i>
+					</view>
+				</view>
+				<button form-type="submit" class="btn-row-submit">提交</button>
+			</form>
 		</view>
-		<view class="upimg-box bg-fff">
-			<view class="upimg-item">
-				<image class="upimg-img" src="http://img.deitui.com/?w=100&h=100&text=无图&bgclor=f60" ></image>
-				<view class="upimg-del"></view>
-			</view>
-			<view class="upimg-item">
-				<image class="upimg-img" src="http://img.deitui.com/?w=100&h=100&text=无图&bgclor=f60" ></image>
-				<view class="upimg-del"></view>
-			</view>
-			 <view class="upimg-item">
-			 	<image class="upimg-img" src="http://img.deitui.com/?w=100&h=100&text=无图&bgclor=f60" ></image>
-			 	<view class="upimg-del"></view>
-			 </view>
-			<view class="upimg-item">
-				<image class="upimg-img" src="http://img.deitui.com/?w=100&h=100&text=无图&bgclor=f60" ></image>
-				<view class="upimg-del"></view>
-			</view>	
-				 
-			<view class="upimg-btn">
-				<i class="upimg-btn-icon"></i>
-			</view> 
-		</view> 
-		<view class="textarea-flex">
-			<view class="input-flex-label flex-1">内容</view>
-			<textarea class="h200 textarea-flex-text"></textarea>
-		</view>
-		<view class="btn-row-submit">提交</view>
 	</view>
 </template>
-
- 

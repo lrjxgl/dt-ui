@@ -20,6 +20,7 @@ view,div{
 	color: #323232;
 	box-sizing: border-box;
 	flex-shrink:0;
+	font-size: 14px;
 }
  
 text{
@@ -35,14 +36,17 @@ navigator{
 image{
 	display: flex;
 }
-.none{display: none;}
+.pointer{
+	cursor: pointer;
+}
+.none{display: none !important;}
 .flex{
- 	display: flex;
- 	flex-direction: row;
+ 	display: flex!important;
+ 	flex-direction: row!important;
  }
  .flex-col{
-	display: flex;
-	flex-direction: column;
+	display: flex!important;
+	flex-direction: column!important;
  }
  .flex-1{
  	flex: 1;
@@ -68,12 +72,14 @@ image{
  .pos-abs{position: absolute !important;}
  .pos-relative{position: relative !important;}
  /**高度宽度**/
+
  .wh-30{ width: 30px; height: 30px;}
  .wh-40{width: 40px; height: 40px;}
  .wh-60{ width: 60px !important; height: 60px !important;}
  .wh-100{width:100px; height: 100px;}
  .wh-150{width: 150px; height: 150px;}
  .wh-200{width: 200px; height: 200px;}
+ .wmax{ max-width: 100%; height:auto;}
  .w60{width: 60px !important;}
  .w100{width: 100px !important;}
  .w150{width: 150px !important;}
@@ -134,19 +140,20 @@ image{
     background-color: #fff!important;
 }
  .bg-transparent {background-color: transparent !important;}
- .bg-royal{background-color:#8a6de9;}
- .bg-disabled{background-color:#FBFBFB;}
+ .bg-royal{background-color:#8a6de9 !important;}
+ .bg-disabled{background-color:#FBFBFB !important;}
  /***padding****/
- .pd-5{padding: 5px;}
- .pdl-5{padding-left: 5px;}
- .pdr-5{padding-right: 5px;}
- .pdt-5{padding-top: 5px;}
- .pdb-5{padding-bottom: 5px;}
- .pd-10{padding: 10px;}
- .pdl-10{padding-left: 10px;}
- .pdr-10{padding-right: 10px;}
- .pdt-10{padding-top: 10px;}
- .pdb-10{padding-bottom: 10px;}
+ .pd-5{padding: 5px !important;}
+ .pdl-5{padding-left: 5px !important;}
+ .pdr-5{padding-right: 5px !important;}
+ .pdt-5{padding-top: 5px !important;}
+ .pdb-5{padding-bottom: 5px !important;}
+ .pd-10{padding: 10px !important;}
+ .pdl-10{padding-left: 10px !important;}
+ .pdr-10{padding-right: 10px !important;}
+ .pdt-10{padding-top: 10px !important;}
+ .pdb-10{padding-bottom: 10px !important;}
+ .pdb-30{padding-bottom: 30px !important;}
  /***margin****/
  .mg-5{margin: 5px!important;}
  .mgb-5{margin-bottom: 5px!important;}
@@ -158,6 +165,8 @@ image{
  .mgt-10{margin-top: 10px!important;}
  .mgl-10{margin-left: 10px!important;}
  .mgr-10{margin-right: 10px!important;}
+ .mgr-20{ margin-right: 20px !important;}
+ .mgb-20{margin-bottom: 20px!important;}
  /***border***/
  .bd-mp-5{
 	 border-bottom: 1px solid #eee !important;

@@ -1,5 +1,7 @@
  /*****button*******/
-
+button{
+	border: 0;
+}
  .btn {
  	padding: 0px 20px;
  	line-height: 34px;
@@ -35,8 +37,8 @@
  	display: inline-flex;
  	border: 1px solid #007AFF;
  	cursor: pointer;
- 	line-height: 18px;
- 	height: 20px;
+ 	line-height: 20px;
+ 	height: 22px;
  }
  .btn-icon{
 	 flex-direction: row;
@@ -172,7 +174,9 @@
  	font-weight: 400;
  	color: #007bff;
  	background-color: transparent !important;
+	border: 0;
  }
+ 
  /****点赞 喜欢按钮****/
 
  .btn-love {
@@ -237,11 +241,10 @@
   .btn-comment {
   	display: flex;
   	flex-direction: row;
- 	align-items: center;
+		align-items: center;
   	font-size: 14px;
   	padding: 0 10px;
-  	height: 36px;
-  	
+  	height: 36px;	
   	border: 1px solid #aaa;
   	color: #333;
   	border-radius: 10px;
@@ -261,9 +264,34 @@
   .btn-comment-active:before {
   	color: #f30;
   }
-  
+  .btn-fav,.btn-love,.btn-comment{
+		cursor: pointer;
+	}
   .btn-fav-small,.btn-love-small,.btn-comment-small{
   	height: 26px;
   	
   }
+	/**购买按钮****/
+	.btn-buy{
+		width: 36px;
+		height: 36px;
+		line-height: 36px;
+		color: #fff;
+		text-align: center;
+		border-radius: 50%;
+		background-color: #007bff;
+		cursor: pointer;
+		align-items: center;
+		justify-content: center;
+	}
+	.btn-buy-small{
+		width: 25px;
+		height: 25px;
+		line-height: 25px;
+		background-color:transparent;
+		border:1px solid #007bff;
+	}
+	.btn-buy-small:before{
+		font-size: 14px;
+	}
  /******end btn******/

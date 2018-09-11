@@ -30,7 +30,9 @@
 	background-color: #e45538;
 	color: #fff;
 }
-
+.footer-active, .footer-active:before {
+    background-color: #444;
+}
 /*********/
 .btn-primary,.btn-row-submit,.input-flex-btn{
 	background-color: #333333;
@@ -38,4 +40,8 @@
 }
 .cart-list-btn{
 	background-color:#333333 !important;
+}
+
+.btn-buy{
+	background-color: #333;
 }

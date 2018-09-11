@@ -4,21 +4,84 @@
 		<view class="header-title">校园超市</view>
 	</view>
 	<view class="header-row"></view>
-	<view class="side">
- 
+	<view class="side bg-fff">
+		<div class="row-item-text pdt-10">吃的</div>
+		<div class="row-item-text">喝的</div>
+		<div class="row-item-text">穿的</div>
+		<div class="row-item-text">用的</div>
 	</view>
-	<view class="main">
-		
+	<view class="main bg-ff">
+		<view class="flex pd-5 mg-5 bdb">
+			<view>默认</view>
+			<view class="flex-1"></view>
+			<view>价格</view>
+			<view class="g-order g-order-down"> 
+			</view>
+			<view class="g-order-active">销售</view>
+		</view>
+		<view class="flexlist">
+			<view class="flexlist-item">
+				<image gourl="index.html?m=product&a=show" src="img/100x100.jpg" class="flexlist-img"></image>
+				<view class="flex-1">
+					<view class="flexlist-title">泡面红烧牛肉面大餐</view>
+					<view class="flex mgb-5">
+						<view class="flex-1 cl3">库存 111</view>
+						<view class="cl3">已售100</view>
+					</view>
+					<view class="flex cl3">
+						￥<view class="cl-money">100</view>
+						<view class="flex-1"></view>
+						<view class="btn-buy btn-buy-small iconfont icon-cart"></view>
+					</view>
+				</view>
+			</view>
+			<view class="flexlist-item">
+				<image gourl="index.html?m=product&a=show" src="img/100x100.jpg" class="flexlist-img"></image>
+				<view class="flex-1">
+					<view class="flexlist-title">泡面红烧牛肉面大餐</view>
+					<view class="flex mgb-5">
+						<view class="flex-1 cl3">库存 111</view>
+						<view class="cl3">已售100</view>
+					</view>
+					<view class="flex cl3">
+						￥<view class="cl-money">100</view>
+						<view class="flex-1"></view>
+						<view class="btn-buy btn-buy-small iconfont icon-cart"></view>
+					</view>
+				</view>
+			</view>
+			<view class="flexlist-item">
+				<image gourl="index.html?m=product&a=show" src="img/100x100.jpg" class="flexlist-img"></image>
+				<view class="flex-1">
+					<view class="flexlist-title">泡面红烧牛肉面大餐</view>
+					<view class="flex mgb-5">
+						<view class="flex-1 cl3">库存 111</view>
+						<view class="cl3">已售100</view>
+					</view>
+					<view class="flex cl3">
+						￥<view class="cl-money">100</view>
+						<view class="flex-1"></view>
+						<view class="btn-buy btn-buy-small iconfont icon-cart"></view>
+					</view>
+				</view>
+			</view>
+		</view>
+		{include=mfooterXyo2o}
 	</view>
 </template>
 <style>
+	
+	 
 	.side{
 		position: fixed;
 		left: 0;
-		top: 70px;
+		top: 50px;
+		bottom:50px;
 		width: 80px;
 	}
 	.main{
-		margin-left: 75px;
+		margin-left: 85px;
+		background-color: #fff;
+		margin-top: 6px;
 	}
 </style>

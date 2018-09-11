@@ -4,23 +4,28 @@
  /*****定义flex*****/
  
  page{
-	 background-color: #efeff4;
+	 
  }
  html,body{
 	 margin: 0;
 	 padding: 0;
+	 background-color: #efeff4;
 }
-
+.iconfont:before{
+	line-height: 1.5;
+}
 view,div{
 	display: flex;
 	flex-direction: column;
 	color: #323232;
 	box-sizing: border-box;
+	flex-shrink:0;
 }
+ 
 text{
 	display: flex;
 }
-a{
+navigator{
 	display: flex;
 	color: #323232;
 	text-decoration: none;
@@ -29,6 +34,9 @@ a{
 }
 image{
 	display: flex;
+}
+.pointer{
+	cursor: pointer;
 }
 .none{display: none;}
 .flex{
@@ -63,12 +71,14 @@ image{
  .pos-abs{position: absolute !important;}
  .pos-relative{position: relative !important;}
  /**高度宽度**/
+
  .wh-30{ width: 30px; height: 30px;}
  .wh-40{width: 40px; height: 40px;}
  .wh-60{ width: 60px !important; height: 60px !important;}
  .wh-100{width:100px; height: 100px;}
  .wh-150{width: 150px; height: 150px;}
  .wh-200{width: 200px; height: 200px;}
+ .wmax{ max-width: 100%;}
  .w60{width: 60px !important;}
  .w100{width: 100px !important;}
  .w150{width: 150px !important;}
@@ -83,7 +93,7 @@ image{
  .f18{font-size: 18px!important;}
  .f16{font-size: 16px!important;}
  .f14{font-size:14px!important;}
- .f12{font-size: 11px!important;}
+ .f12{font-size: 12px!important;}
  /***col1 2 3 内容字体差异 主标题 副标题 描述****/
  .cl1{color: #323232!important;}
  .cl2{color: #646464!important;}
@@ -129,40 +139,47 @@ image{
     background-color: #fff!important;
 }
  .bg-transparent {background-color: transparent !important;}
- .bg-royal{background-color:#8a6de9;}
- .bg-disabled{background-color:#FBFBFB;}
+ .bg-royal{background-color:#8a6de9 !important;}
+ .bg-disabled{background-color:#FBFBFB !important;}
  /***padding****/
- .pd-5{padding: 5px;}
- .pdl-5{padding-left: 5px;}
- .pdr-5{padding-right: 5px;}
- .pdt-5{padding-top: 5px;}
- .pdb-5{padding-bottom: 5px;}
- .pd-10{padding: 10px;}
- .pdl-10{padding-left: 10px;}
- .pdr-10{padding-right: 10px;}
- .pdt-10{padding-top: 10px;}
- .pdb-10{padding-bottom: 10px;}
+ .pd-5{padding: 5px !important;}
+ .pdl-5{padding-left: 5px !important;}
+ .pdr-5{padding-right: 5px !important;}
+ .pdt-5{padding-top: 5px !important;}
+ .pdb-5{padding-bottom: 5px !important;}
+ .pd-10{padding: 10px !important;}
+ .pdl-10{padding-left: 10px !important;}
+ .pdr-10{padding-right: 10px !important;}
+ .pdt-10{padding-top: 10px !important;}
+ .pdb-10{padding-bottom: 10px !important;}
+ .pdb-30{padding-bottom: 30px !important;}
  /***margin****/
- .mg-5{margin: 5px;}
- .mgb-5{margin-bottom: 5px;}
- .mgt-5{margin-top: 5px;}
- .mgl-5{margin-left: 5px;}
- .mgr-5{margin-right: 5px;}
- .mg-10{margin: 10px;}
- .mgb-10{margin-bottom: 10px;}
- .mgt-10{margin-top: 10px;}
- .mgl-10{margin-left: 10px;}
- .mgr-10{margin-right: 10px;}
+ .mg-5{margin: 5px!important;}
+ .mgb-5{margin-bottom: 5px!important;}
+ .mgt-5{margin-top: 5px!important;}
+ .mgl-5{margin-left: 5px!important;}
+ .mgr-5{margin-right: 5px!important;}
+ .mg-10{margin: 10px!important;}
+ .mgb-10{margin-bottom: 10px!important;}
+ .mgt-10{margin-top: 10px!important;}
+ .mgl-10{margin-left: 10px!important;}
+ .mgr-10{margin-right: 10px!important;}
+ .mgb-20{margin-bottom: 20px!important;}
  /***border***/
  .bd-mp-5{
-	 border-bottom: 1px solid #eee;
-	 padding-bottom: 5px;
-	 margin-bottom: 5px;
+	 border-bottom: 1px solid #eee !important;
+	 padding-bottom: 5px !important;
+	 margin-bottom: 5px !important;
  }
  .bd-mp-10{
- 	border-bottom: 1px solid #eee;
- 	padding-bottom: 10px;
- 	margin-bottom: 10px;
+ 	border-bottom: 1px solid #eee !important;
+ 	padding-bottom: 10px !important;
+ 	margin-bottom: 10px !important;
+ }
+ .bd-mp-0{
+	 border-bottom: 0 !important;
+	 padding-bottom: 0 !important;
+	 margin-bottom: 0 !important;
  }
  .bd { border: 1px solid #dee2e6 !important; }
  .bdt { border-top: 1px solid #dee2e6 !important;}
@@ -453,8 +470,8 @@ image{
  	display: inline-flex;
  	border: 1px solid #007AFF;
  	cursor: pointer;
- 	line-height: 18px;
- 	height: 20px;
+ 	line-height: 20px;
+ 	height: 22px;
  }
  .btn-icon{
 	 flex-direction: row;
@@ -467,7 +484,7 @@ image{
 }
  .btn-row-submit {
  	margin: 20px auto;
- 	background-color: #008000;
+ 	background-color: #007bff;
  	text-align: center;
  	line-height: 40px;
  	color: #fff !important;
@@ -532,56 +549,56 @@ image{
 
  .btn-outline-primary {
  	color: #007bff;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #007bff;
  }
 
  .btn-outline-secondary {
  	color: #6c757d;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #6c757d;
  }
 
  .btn-outline-success {
  	color: #28a745;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #28a745;
  }
 
  .btn-outline-info {
  	color: #17a2b8;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #17a2b8;
  }
 
  .btn-outline-warning {
  	color: #ffc107;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #ffc107;
  }
 
  .btn-outline-danger {
  	color: #dc3545;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #dc3545;
  }
 
  .btn-outline-light {
  	color: #f8f9fa;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #f8f9fa;
  }
 
  .btn-outline-dark {
  	color: #343a40;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #343a40;
  }
@@ -589,22 +606,24 @@ image{
  .btn-link {
  	font-weight: 400;
  	color: #007bff;
- 	background-color: transparent;
+ 	background-color: transparent !important;
+	border: 0;
  }
+ 
  /****点赞 喜欢按钮****/
 
  .btn-love {
  	display: flex;
  	flex-direction: row;
+	align-items: center;
  	padding: 0 10px;
  	height: 36px;
- 	line-height: 36px;
  	border: 1px solid #aaa;
  	color: #333;
  	border-radius: 10px;
  	font-size: 14px;
  }
-
+	
  .btn-love:before {
  	font-family: iconfont;
  	content: "\e669";
@@ -623,10 +642,11 @@ image{
  .btn-fav {
  	display: flex;
  	flex-direction: row;
+	align-items: center;
  	font-size: 14px;
  	padding: 0 10px;
  	height: 36px;
- 	line-height: 36px;
+ 	
  	border: 1px solid #aaa;
  	color: #333;
  	border-radius: 10px;
@@ -646,6 +666,55 @@ image{
  .btn-fav-active:before {
  	color: #f30;
  }
+ 
+ .btn-fav-small,.btn-love-small{
+ 	height: 26px;
+ 	
+ }
+  .btn-comment {
+  	display: flex;
+  	flex-direction: row;
+		align-items: center;
+  	font-size: 14px;
+  	padding: 0 10px;
+  	height: 36px;	
+  	border: 1px solid #aaa;
+  	color: #333;
+  	border-radius: 10px;
+  }
+ 
+  .btn-comment:before {
+  	font-family: iconfont;
+  	content: "\e7ee";
+  	font-size: 14px;
+  	margin-right: 3px;
+  }
+ 
+  .btn-comment-active {
+  	color: #f30;
+  }
+ 
+  .btn-comment-active:before {
+  	color: #f30;
+  }
+  .btn-fav,.btn-love,.btn-comment{
+		cursor: pointer;
+	}
+  .btn-fav-small,.btn-love-small,.btn-comment-small{
+  	height: 26px;
+  	
+  }
+	/**购买按钮****/
+	.btn-buy{
+		width: 36px;
+		height: 36px;
+		line-height: 36px;
+		color: #fff;
+		text-align: center;
+		border-radius: 50%;
+		background-color: #007bff;
+		cursor: pointer;
+	}
  /******end btn******/
 .comment-hd {
     display: block;
@@ -788,7 +857,11 @@ image{
 	color: #333;
 	display: block;
 }
-
+.input-flex-txt{
+	flex: 1;
+	line-height: 36px;
+	color: #646464;
+}
 .input-flex-text,.input-flex-select {
 	flex: 1;
 	height: 36px;
@@ -810,7 +883,7 @@ image{
 	width: 100px;
 	height: 36px;
 	line-height: 36px;
-	background-color: #008000;
+	background-color: #007bff;
 	box-sizing: border-box;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -998,10 +1071,36 @@ image{
 	padding-bottom: 5px;
 	margin-bottom: 5px;	
 }
-/***单行列表***/
+/**g-search-box***/
+.g-search-box{
+	display: flex;
+	flex-direction: row;
+	margin-top: 5px;
+	height: 36px;
+	border-bottom: 1px solid #ddd;
+	background-color: #fff;
+}
+.g-search-input{
+	flex: 1;
+	border: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.g-search-btn{
+	width: 40px;
+	justify-content: center;
+	align-items: center;
+	
+}
+.g-search-btn:before{
+	font-family: iconfont;
+	color: #646464;
+	font-size: 18px;
+}/***单行列表***/
 .row-item,.row-item-text{
 	display: flex;
 	flex-direction: row;
+	
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #eee;
@@ -1025,9 +1124,7 @@ image{
 	font-family: iconfont;
 	content: "\e6a3";
 	color: #999;
-	top:5px;
-	position: absolute;
-	right: 0;
+	 
 }
 .row-item-text{
 	cursor:initial;
@@ -1045,6 +1142,7 @@ image{
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-top: 5px;
+	background-color: #fff;
 }
  
 .flexlist-img{
@@ -1056,6 +1154,12 @@ image{
 	font-size: 16px;
 	color: #323232;
 	margin-bottom: 5px;
+}
+.flexlist-ks{
+	margin-top: -3px;
+	color: #f60;
+	font-size: 12px;
+	margin-bottom: 3px;
 }
 .flexlist-desc{
 	font-size: 12px;
@@ -1100,6 +1204,7 @@ image{
 	flex-direction: row;
 	align-items: flex-end;
 	margin-bottom: 5px;
+	padding-top: 5px;
 }
 .mtlist-item-money-flex{
 	flex: 1;
@@ -1111,6 +1216,7 @@ image{
 }
 .mtlist-item-money_money{
 	font-size: 20px;
+	line-height: 1;
 }
 .mtlist-item-money_num{
 	color: #646464;
@@ -1124,12 +1230,87 @@ image{
 .mtlist-desc{
 	color: #646464;
 }
+/***sglist****/
+.sglist{}
+.sglist-item{
+	padding: 5px;
+	background-color: #fff;
+	margin-bottom: 5px;
+}
+.sglist-imgbox{
+	
+}
+.sglist-img{
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 5px;
+}
+.sglist-title{
+	color: #323232;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+.sglist-imglist{
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+.sglist-imglist-img{
+	width: 60px;
+	height: 60px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
 
+.sglist-desc{
+	color: #646464;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.sglist-user{
+	flex:1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: #646464;
+}
+.sglist-nick{
+	color: #323232;
+	font-size: 16px;
+}
+.sglist-uhead{
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	margin-right: 5px;
+}
+/**flex-table**/
+.flex-table{
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid #eee;
+	padding-top: 8px;
+	padding-bottom: 8px;	
+}
+.flex-table-label {
+    margin-right: 10px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    min-width: 60px;
+    text-align: right;
+}
+.flex-table-box {
+    flex: 1;
+	padding-top: 2px;
+    font-size: 14px;
+    color: #666;
+}
 .m-navPic{
 	display: flex;
 	flex-direction: row;
 	background-color: #fff;
-	padding: 10px 0px;
+	padding: 10px 0px 0px 0px;
 	flex-wrap: wrap;
 }
 .m-navPic-item{
@@ -1138,15 +1319,22 @@ image{
 	text-align: center;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 10px;
-	
+	margin-bottom: 15px;	
 }
+
 .m-navPic-img{
 	width: 60px;
 	height: 60px;
-	margin-bottom: 2px;
+	margin-bottom: 5px;
 	line-height: 1;
-
+}
+.m-navPic-icon{
+	font-family: iconfont;	
+	margin-bottom: 5px;
+}
+.m-navPic-icon:before{
+	font-size: 20px;
+	color: #ed6d53;
 }
 .m-navPic-title{
 	font-size: 14px;
@@ -1359,10 +1547,11 @@ image{
 	 flex: 1;
  }
  .header-search-icon{
+	 
 	 font-family: iconfont;
 	 position: absolute;
 	 left:5px;
-	 top: 0;
+	 top: 3px;
 	 width: 20px;
 	 height: 30px;
 	 line-height: 30px;
@@ -1379,7 +1568,7 @@ image{
 	 padding-left: 26px;
 	 font-size: 14px;
 	 color: #646464;
-	 background-color: #efefef;
+	 background-color: #fafafa;
  }
  
  .header-back{
@@ -1437,7 +1626,6 @@ image{
 	font-size: 14px;
 	display: flex;
 	flex-direction: row;
-	height: 50px;
 	align-items: center;
 }
 
@@ -1449,9 +1637,10 @@ image{
 	flex: 1; 
 	text-decoration: none;
 	color: #929292;
-	padding: 5px 0px;
+	padding: 7px 0px;
 	line-height: 1.4;
-	
+	height: 50px;
+    box-sizing: border-box;
 }
 .footer-item:before{
 	font-family:"iconfont" !important;
@@ -1543,7 +1732,7 @@ image{
 }
 .d-content{
 	font-size: 14px;
-	color: #646464;
+	color: #323232;
 	line-height: 1.5;
 	margin-bottom: 10px;
 }
@@ -1636,6 +1825,6 @@ swiper{
 swiper-item{
 	width: 100%;
 	height: 200px;
-	display:flex;''
+	display:flex;
 }
 

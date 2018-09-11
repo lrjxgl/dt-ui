@@ -11,7 +11,7 @@ $files=array(
 	"dt-ui-modal.css",	
 	"dt-ui-page.css",
 	"dt-ui-tabs.css",
-	"dt-ui-other.css",
+	
 );
 $html="";
 foreach($files as $file){

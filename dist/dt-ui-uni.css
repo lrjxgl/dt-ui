@@ -4,23 +4,28 @@
  /*****定义flex*****/
  
  page{
-	 background-color: #efeff4;
+	 
  }
  html,body{
 	 margin: 0;
 	 padding: 0;
+	 background-color: #efeff4;
 }
-
+.iconfont:before{
+	line-height: 1.5;
+}
 view,div{
 	display: flex;
 	flex-direction: column;
 	color: #323232;
 	box-sizing: border-box;
+	flex-shrink:0;
 }
+ 
 text{
 	display: flex;
 }
-a{
+navigator{
 	display: flex;
 	color: #323232;
 	text-decoration: none;
@@ -29,6 +34,9 @@ a{
 }
 image{
 	display: flex;
+}
+.pointer{
+	cursor: pointer;
 }
 .none{display: none;}
 .flex{
@@ -63,12 +71,14 @@ image{
  .pos-abs{position: absolute !important;}
  .pos-relative{position: relative !important;}
  /**高度宽度**/
+
  .wh-30{ width: 66px; height: 66px;}
  .wh-40{width: 88px; height: 88px;}
  .wh-60{ width: 132px !important; height: 132px !important;}
  .wh-100{width:220px; height: 220px;}
  .wh-150{width: 330px; height: 330px;}
  .wh-200{width: 440px; height: 440px;}
+ .wmax{ max-width: 100%;}
  .w60{width: 132px !important;}
  .w100{width: 220px !important;}
  .w150{width: 330px !important;}
@@ -83,7 +93,7 @@ image{
  .f18{font-size: 39.6px!important;}
  .f16{font-size: 35.2px!important;}
  .f14{font-size:30.8px!important;}
- .f12{font-size: 24.2px!important;}
+ .f12{font-size: 26.4px!important;}
  /***col1 2 3 内容字体差异 主标题 副标题 描述****/
  .cl1{color: #323232!important;}
  .cl2{color: #646464!important;}
@@ -129,40 +139,47 @@ image{
     background-color: #fff!important;
 }
  .bg-transparent {background-color: transparent !important;}
- .bg-royal{background-color:#8a6de9;}
- .bg-disabled{background-color:#FBFBFB;}
+ .bg-royal{background-color:#8a6de9 !important;}
+ .bg-disabled{background-color:#FBFBFB !important;}
  /***padding****/
- .pd-5{padding: 11px;}
- .pdl-5{padding-left: 11px;}
- .pdr-5{padding-right: 11px;}
- .pdt-5{padding-top: 11px;}
- .pdb-5{padding-bottom: 11px;}
- .pd-10{padding: 22px;}
- .pdl-10{padding-left: 22px;}
- .pdr-10{padding-right: 22px;}
- .pdt-10{padding-top: 22px;}
- .pdb-10{padding-bottom: 22px;}
+ .pd-5{padding: 11px !important;}
+ .pdl-5{padding-left: 11px !important;}
+ .pdr-5{padding-right: 11px !important;}
+ .pdt-5{padding-top: 11px !important;}
+ .pdb-5{padding-bottom: 11px !important;}
+ .pd-10{padding: 22px !important;}
+ .pdl-10{padding-left: 22px !important;}
+ .pdr-10{padding-right: 22px !important;}
+ .pdt-10{padding-top: 22px !important;}
+ .pdb-10{padding-bottom: 22px !important;}
+ .pdb-30{padding-bottom: 66px !important;}
  /***margin****/
- .mg-5{margin: 11px;}
- .mgb-5{margin-bottom: 11px;}
- .mgt-5{margin-top: 11px;}
- .mgl-5{margin-left: 11px;}
- .mgr-5{margin-right: 11px;}
- .mg-10{margin: 22px;}
- .mgb-10{margin-bottom: 22px;}
- .mgt-10{margin-top: 22px;}
- .mgl-10{margin-left: 22px;}
- .mgr-10{margin-right: 22px;}
+ .mg-5{margin: 11px!important;}
+ .mgb-5{margin-bottom: 11px!important;}
+ .mgt-5{margin-top: 11px!important;}
+ .mgl-5{margin-left: 11px!important;}
+ .mgr-5{margin-right: 11px!important;}
+ .mg-10{margin: 22px!important;}
+ .mgb-10{margin-bottom: 22px!important;}
+ .mgt-10{margin-top: 22px!important;}
+ .mgl-10{margin-left: 22px!important;}
+ .mgr-10{margin-right: 22px!important;}
+ .mgb-20{margin-bottom: 44px!important;}
  /***border***/
  .bd-mp-5{
-	 border-bottom: 2.2px solid #eee;
-	 padding-bottom: 11px;
-	 margin-bottom: 11px;
+	 border-bottom: 2.2px solid #eee !important;
+	 padding-bottom: 11px !important;
+	 margin-bottom: 11px !important;
  }
  .bd-mp-10{
- 	border-bottom: 2.2px solid #eee;
- 	padding-bottom: 22px;
- 	margin-bottom: 22px;
+ 	border-bottom: 2.2px solid #eee !important;
+ 	padding-bottom: 22px !important;
+ 	margin-bottom: 22px !important;
+ }
+ .bd-mp-0{
+	 border-bottom: 0 !important;
+	 padding-bottom: 0 !important;
+	 margin-bottom: 0 !important;
  }
  .bd { border: 2.2px solid #dee2e6 !important; }
  .bdt { border-top: 2.2px solid #dee2e6 !important;}
@@ -453,8 +470,8 @@ image{
  	display: inline-flex;
  	border: 2.2px solid #007AFF;
  	cursor: pointer;
- 	line-height: 39.6px;
- 	height: 44px;
+ 	line-height: 44px;
+ 	height: 48.4px;
  }
  .btn-icon{
 	 flex-direction: row;
@@ -467,7 +484,7 @@ image{
 }
  .btn-row-submit {
  	margin: 44px auto;
- 	background-color: #008000;
+ 	background-color: #007bff;
  	text-align: center;
  	line-height: 88px;
  	color: #fff !important;
@@ -532,56 +549,56 @@ image{
 
  .btn-outline-primary {
  	color: #007bff;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #007bff;
  }
 
  .btn-outline-secondary {
  	color: #6c757d;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #6c757d;
  }
 
  .btn-outline-success {
  	color: #28a745;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #28a745;
  }
 
  .btn-outline-info {
  	color: #17a2b8;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #17a2b8;
  }
 
  .btn-outline-warning {
  	color: #ffc107;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #ffc107;
  }
 
  .btn-outline-danger {
  	color: #dc3545;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #dc3545;
  }
 
  .btn-outline-light {
  	color: #f8f9fa;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #f8f9fa;
  }
 
  .btn-outline-dark {
  	color: #343a40;
- 	background-color: transparent;
+ 	background-color: transparent !important;
  	background-image: none;
  	border-color: #343a40;
  }
@@ -589,22 +606,24 @@ image{
  .btn-link {
  	font-weight: 400;
  	color: #007bff;
- 	background-color: transparent;
+ 	background-color: transparent !important;
+	border: 0;
  }
+ 
  /****点赞 喜欢按钮****/
 
  .btn-love {
  	display: flex;
  	flex-direction: row;
+	align-items: center;
  	padding: 0 22px;
  	height: 79.2px;
- 	line-height: 79.2px;
  	border: 2.2px solid #aaa;
  	color: #333;
  	border-radius: 22px;
  	font-size: 30.8px;
  }
-
+	
  .btn-love:before {
  	font-family: iconfont;
  	content: "\e669";
@@ -623,10 +642,11 @@ image{
  .btn-fav {
  	display: flex;
  	flex-direction: row;
+	align-items: center;
  	font-size: 30.8px;
  	padding: 0 22px;
  	height: 79.2px;
- 	line-height: 79.2px;
+ 	
  	border: 2.2px solid #aaa;
  	color: #333;
  	border-radius: 22px;
@@ -646,6 +666,55 @@ image{
  .btn-fav-active:before {
  	color: #f30;
  }
+ 
+ .btn-fav-small,.btn-love-small{
+ 	height: 57.2px;
+ 	
+ }
+  .btn-comment {
+  	display: flex;
+  	flex-direction: row;
+		align-items: center;
+  	font-size: 30.8px;
+  	padding: 0 22px;
+  	height: 79.2px;	
+  	border: 2.2px solid #aaa;
+  	color: #333;
+  	border-radius: 22px;
+  }
+ 
+  .btn-comment:before {
+  	font-family: iconfont;
+  	content: "\e7ee";
+  	font-size: 30.8px;
+  	margin-right: 6.6px;
+  }
+ 
+  .btn-comment-active {
+  	color: #f30;
+  }
+ 
+  .btn-comment-active:before {
+  	color: #f30;
+  }
+  .btn-fav,.btn-love,.btn-comment{
+		cursor: pointer;
+	}
+  .btn-fav-small,.btn-love-small,.btn-comment-small{
+  	height: 57.2px;
+  	
+  }
+	/**购买按钮****/
+	.btn-buy{
+		width: 79.2px;
+		height: 79.2px;
+		line-height: 79.2px;
+		color: #fff;
+		text-align: center;
+		border-radius: 50%;
+		background-color: #007bff;
+		cursor: pointer;
+	}
  /******end btn******/
 .comment-hd {
     display: block;
@@ -788,7 +857,11 @@ image{
 	color: #333;
 	display: block;
 }
-
+.input-flex-txt{
+	flex: 1;
+	line-height: 79.2px;
+	color: #646464;
+}
 .input-flex-text,.input-flex-select {
 	flex: 1;
 	height: 79.2px;
@@ -810,7 +883,7 @@ image{
 	width: 220px;
 	height: 79.2px;
 	line-height: 79.2px;
-	background-color: #008000;
+	background-color: #007bff;
 	box-sizing: border-box;
 	border-top-right-radius: 22px;
 	border-bottom-right-radius: 22px;
@@ -998,10 +1071,36 @@ image{
 	padding-bottom: 11px;
 	margin-bottom: 11px;	
 }
-/***单行列表***/
+/**g-search-box***/
+.g-search-box{
+	display: flex;
+	flex-direction: row;
+	margin-top: 11px;
+	height: 79.2px;
+	border-bottom: 2.2px solid #ddd;
+	background-color: #fff;
+}
+.g-search-input{
+	flex: 1;
+	border: 0;
+	padding-left: 11px;
+	padding-right: 11px;
+}
+.g-search-btn{
+	width: 88px;
+	justify-content: center;
+	align-items: center;
+	
+}
+.g-search-btn:before{
+	font-family: iconfont;
+	color: #646464;
+	font-size: 39.6px;
+}/***单行列表***/
 .row-item,.row-item-text{
 	display: flex;
 	flex-direction: row;
+	
 	margin-bottom: 22px;
 	padding-bottom: 22px;
 	border-bottom: 2.2px solid #eee;
@@ -1025,9 +1124,7 @@ image{
 	font-family: iconfont;
 	content: "\e6a3";
 	color: #999;
-	top:11px;
-	position: absolute;
-	right: 0;
+	 
 }
 .row-item-text{
 	cursor:initial;
@@ -1045,6 +1142,7 @@ image{
 	padding-left: 11px;
 	padding-right: 11px;
 	padding-top: 11px;
+	background-color: #fff;
 }
  
 .flexlist-img{
@@ -1056,6 +1154,12 @@ image{
 	font-size: 35.2px;
 	color: #323232;
 	margin-bottom: 11px;
+}
+.flexlist-ks{
+	margin-top: -6.6px;
+	color: #f60;
+	font-size: 26.4px;
+	margin-bottom: 6.6px;
 }
 .flexlist-desc{
 	font-size: 26.4px;
@@ -1100,6 +1204,7 @@ image{
 	flex-direction: row;
 	align-items: flex-end;
 	margin-bottom: 11px;
+	padding-top: 11px;
 }
 .mtlist-item-money-flex{
 	flex: 1;
@@ -1111,6 +1216,7 @@ image{
 }
 .mtlist-item-money_money{
 	font-size: 44px;
+	line-height: 1;
 }
 .mtlist-item-money_num{
 	color: #646464;
@@ -1124,12 +1230,87 @@ image{
 .mtlist-desc{
 	color: #646464;
 }
+/***sglist****/
+.sglist{}
+.sglist-item{
+	padding: 11px;
+	background-color: #fff;
+	margin-bottom: 11px;
+}
+.sglist-imgbox{
+	
+}
+.sglist-img{
+	width: 100%;
+	border-radius: 22px;
+	margin-bottom: 11px;
+}
+.sglist-title{
+	color: #323232;
+	margin-bottom: 11px;
+	font-size: 35.2px;
+}
+.sglist-imglist{
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+.sglist-imglist-img{
+	width: 132px;
+	height: 132px;
+	margin-bottom: 22px;
+	margin-right: 22px;
+}
 
+.sglist-desc{
+	color: #646464;
+	font-size: 30.8px;
+	margin-bottom: 11px;
+}
+.sglist-user{
+	flex:1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: #646464;
+}
+.sglist-nick{
+	color: #323232;
+	font-size: 35.2px;
+}
+.sglist-uhead{
+	border-radius: 50%;
+	height: 88px;
+	width: 88px;
+	margin-right: 11px;
+}
+/**flex-table**/
+.flex-table{
+	display: flex;
+	flex-direction: row;
+	border-bottom: 2.2px solid #eee;
+	padding-top: 17.6px;
+	padding-bottom: 17.6px;	
+}
+.flex-table-label {
+    margin-right: 22px;
+    color: #333;
+    font-size: 35.2px;
+    font-weight: 500;
+    min-width: 132px;
+    text-align: right;
+}
+.flex-table-box {
+    flex: 1;
+	padding-top: 4.4px;
+    font-size: 30.8px;
+    color: #666;
+}
 .m-navPic{
 	display: flex;
 	flex-direction: row;
 	background-color: #fff;
-	padding: 22px 0px;
+	padding: 22px 0px 0px 0px;
 	flex-wrap: wrap;
 }
 .m-navPic-item{
@@ -1138,15 +1319,22 @@ image{
 	text-align: center;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 22px;
-	
+	margin-bottom: 33px;	
 }
+
 .m-navPic-img{
 	width: 132px;
 	height: 132px;
-	margin-bottom: 4.4px;
+	margin-bottom: 11px;
 	line-height: 1;
-
+}
+.m-navPic-icon{
+	font-family: iconfont;	
+	margin-bottom: 11px;
+}
+.m-navPic-icon:before{
+	font-size: 44px;
+	color: #ed6d53;
 }
 .m-navPic-title{
 	font-size: 30.8px;
@@ -1359,10 +1547,11 @@ image{
 	 flex: 1;
  }
  .header-search-icon{
+	 
 	 font-family: iconfont;
 	 position: absolute;
 	 left:11px;
-	 top: 0;
+	 top: 6.6px;
 	 width: 44px;
 	 height: 66px;
 	 line-height: 66px;
@@ -1379,7 +1568,7 @@ image{
 	 padding-left: 57.2px;
 	 font-size: 30.8px;
 	 color: #646464;
-	 background-color: #efefef;
+	 background-color: #fafafa;
  }
  
  .header-back{
@@ -1437,7 +1626,6 @@ image{
 	font-size: 30.8px;
 	display: flex;
 	flex-direction: row;
-	height: 110px;
 	align-items: center;
 }
 
@@ -1449,9 +1637,10 @@ image{
 	flex: 1; 
 	text-decoration: none;
 	color: #929292;
-	padding: 11px 0px;
+	padding: 15.4px 0px;
 	line-height: 1.4;
-	
+	height: 110px;
+    box-sizing: border-box;
 }
 .footer-item:before{
 	font-family:"iconfont" !important;
@@ -1543,7 +1732,7 @@ image{
 }
 .d-content{
 	font-size: 30.8px;
-	color: #646464;
+	color: #323232;
 	line-height: 1.5;
 	margin-bottom: 22px;
 }
@@ -1636,6 +1825,6 @@ swiper{
 swiper-item{
 	width: 100%;
 	height: 440px;
-	display:flex;''
+	display:flex;
 }
 

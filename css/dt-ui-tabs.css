@@ -11,6 +11,9 @@
 	flex: 1;
 	text-align: center;
 }
+.tabs-border-item-inner{
+	padding: 0px 20px;
+}
 .tabs-border-active{
 	border-bottom: 1px solid #f60;
 }

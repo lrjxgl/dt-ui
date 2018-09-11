@@ -47,3 +47,23 @@
 	color: #646464;
 	font-size: 18px;
 }
+/**g-order***/
+.g-order{
+	margin: 0 5px;
+}
+.g-order:before{
+	font-family: iconfont;
+	content: "\e79c";
+	line-height: 1;
+	color: #ddd;
+}
+.g-order:after{
+	font-family: iconfont;
+	content: "\e79b";
+	line-height: 1;
+	margin-top: -7px;
+	color: #ddd;
+}
+.g-order-up:before,.g-order-down:after,.g-order-active{
+	color: #f60;
+}

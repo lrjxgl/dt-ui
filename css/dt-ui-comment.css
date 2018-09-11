@@ -95,6 +95,7 @@
 	border: 1px solid #ddd;
 	border-radius: 5px;
 	color: #323232;
+	background-color:#fff;
 }
 
 .comment-input-btn:before{

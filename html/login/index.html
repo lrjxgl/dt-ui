@@ -1,28 +1,32 @@
 <template>
-	<view class="header">
-		<navigator class="header-back"></navigator>
-		<view class="header-title">登录</view>
-	</view>
-	<view class="header-row"></view>
-	<view class="flex-center pd-10 bg-fff bdb">
-		<image class="wh-100 bd-radius-50" src="http://img.deitui.com/?w=200&h=200&text=Logo&fontsize=36&textclor=fff&bgclor=ed6d53"></image>
-		
-	
-	</view>
-	 
-	<view class="input-flex">
-		<view class="input-flex-label">手机</view>
-		<input class="input-flex-text" name="telephone" placeholder="请输入手机号码" />
-	</view>
-	<view class="input-flex">
-		<view class="input-flex-label">密码</view>
-		<input class="input-flex-text" type="text" placeholder="请输入密码" passowrd />
-	</view>
-	<view class="row-box ">
-		<view class="btn-row-submit" onclick="window.location='index.html?m=user'">登录</view>
-		<view class="flex-center">
-			<navigator class="mgb-10 cl2" url="index.html?m=register">没有账号？立即注册</navigator>
-			<navigator class="cl2" url="index.html?m=register">忘记密码？立即找回</navigator>
+	<view v-if="pageLoad">
+		<view class="header">
+			<navigator class="header-back"></navigator>
+			<view class="header-title">登录</view>
+		</view>
+		<view class="header-row"></view>
+		<view class="main-body">
+			<view class="flex-center pd-10 bg-fff">
+				<image class="wh-60 bd-radius-50" src="http://img.deitui.com/?w=200&h=200&text=Logo&fontsize=36&textclor=fff&bgclor=ed6d53"></image>
+
+
+			</view>
+
+			<view class="input-flex">
+				<view class="input-flex-label">手机</view>
+				<input class="input-flex-text" name="telephone" placeholder="请输入手机号码" />
+			</view>
+			<view class="input-flex">
+				<view class="input-flex-label">密码</view>
+				<input class="input-flex-text" type="text" placeholder="请输入密码" passowrd />
+			</view>
+			<view class="row-box">
+				<button form-type="submit" class="btn-row-submit" onclick="window.location='index.html?m=user'">登录</button>
+				<view class="flex-center">
+					<navigator class="mgb-10 cl2" url="index.html?m=register">没有账号？立即注册</navigator>
+					<navigator class="cl2 mgb-10" url="index.html?m=login&a=findpwd">忘记密码？立即找回</navigator>
+				</view>
+			</view>
 		</view>
 	</view>
-</template>	
+</template>
