@@ -23,3 +23,4 @@ $(document).on("click",".tabs-border-item",function(){
 	$(this).addClass("tabs-border-active").siblings().removeClass("tabs-border-active");
 })
 
+

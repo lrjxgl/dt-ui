@@ -6,25 +6,31 @@
 		</view>
 		<view class="header-row"></view>
 		<view class="main-body">
+			<view class="tabs-border">
+				<view class="tabs-border-item tabs-border-active">文章</view>
+				<view class="tabs-border-item">论坛</view>
+			</view>
 			<view class="list">
 				<view class="row-box mgb-5">
 					<view class="cl3 bd-mp-5"> 你有一个新的订单 你有一个新的订单 你有一个新的订单 你有一个新的订单 你有一个新的订单</view>
-					<view class="flex">
-						<view class="flex-1 cl2">10分钟前</view>
+					<view class="flex ">
+						<view class="flex-1 flex-jc-center cl2 f12">10分钟前</view>
+						<view @click="goShow(item.objectid)" class="cl-success pointer mgr-10" >查看</view>
+
 						<view class="cl-danger pointer">删除</view>
 					</view>
 				</view>
 				<view class="row-box mgb-5">
 					<view class="cl3 bd-mp-5"> 你有一个新的订单 你有一个新的订单 你有一个新的订单 你有一个新的订单 你有一个新的订单</view>
-					<view class="flex">
-						<view class="flex-1 cl2">10分钟前</view>
+					<view class="flex ">
+						<view class="flex-1 flex-jc-center cl2 f12">10分钟前</view>
 						<view class="cl-danger pointer">删除</view>
 					</view>
 				</view>
 				<view class="row-box mgb-5">
 					<view class="cl3 bd-mp-5"> 你有一个新的订单 你有一个新的订单 你有一个新的订单 你有一个新的订单 你有一个新的订单</view>
-					<view class="flex">
-						<view class="flex-1 cl2">10分钟前</view>
+					<view class="flex ">
+						<view class="flex-1 flex-jc-center cl2 f12">10分钟前</view>
 						<view class="cl-danger pointer">删除</view>
 					</view>
 				</view>

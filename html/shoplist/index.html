@@ -1,0 +1,109 @@
+<template>
+	<view>
+		<view class="header">
+			<view class="header-back"></view>
+			<view class="header-title">商家列表</view>
+		</view>
+		<view class="header-row"></view>
+		<view class="main-body" v-if="pageLoad">
+			<view class="pos-relative">
+				<view class="tab-select">
+					<view class="tab-select-item">
+						<view class="tab-select-label">全部商家
+							<view class="tab-select-t3down "></view>
+						</view>
+						<view class="tab-select-b"></view>
+					</view>
+
+					<view class="tab-select-item">
+						<view class="tab-select-label">智能排序
+							<view class="tab-select-t3down "></view>
+						</view>
+						<view class="tab-select-b"></view>
+					</view>
+					<view class="tab-select-item">
+						<view class="tab-select-label">筛选
+							<view class="tab-select-t3down "></view>
+						</view>
+					</view>
+
+				</view>
+				<!--分类box1--->
+				<view id="category-box" class="tab-select-box">
+					<view class="tab-select-box1">
+						<view class="tab-select-box-pd">
+							<view to="c635" class="tab-select-box1item tab-select-box1item-active">美食</view>
+
+							<view to="c636" class="tab-select-box1item">零售</view>
+
+							<view to="c637" class="tab-select-box1item">娱乐</view>
+						</view>
+					</view>
+					<view class="tab-select-box2">
+						<view class="tab-select-pd">
+							<view v="635" class="tab-select-box2item   c635 tab-select-show">美食</view>
+							<view v="636" class="tab-select-box2item   c636 tab-select-show">零售</view>
+
+
+						</view>
+					</view>
+				</view>
+
+				<view id="order-box" class="order-box tab-select-box">
+					<a class="tab-select-box-item" v="default">智能排序</a>
+					<a class="tab-select-box-item" v="distance">距离最近</a>
+					<a class="tab-select-box-item" v="sold_num">销量最高</a>
+					<a class="tab-select-box-item" v="raty_grade">评价最好</a>
+				</view>
+				<view id="choice-box" class="choice-box tab-select-box">
+					<a class="tab-select-box-item" v="">全部</a>
+					<a class="tab-select-box-item" v="cspf">超时赔付</a>
+
+					<a class="tab-select-box-item" v="isnew">新店</a>
+				</view>
+			</view>
+			<view class="flexlist">
+				<view class="flexlist-item flex-ai-center">
+					<image class="flexlist-img" src="img/100x100.jpg"></image>
+					<view class="flex-1">
+						<view class="flexlist-title">饺子实验室</view>
+						<view class="flexlist-row">
+							<raty class="raty" num=5><view class="raty-after"></view></raty>
+							月销10份
+						</view>
+						<view class="flexlist-row">0.0元起送 / 0分钟  </view>
+					</view>
+					<view class="distance">10千米</view>
+				</view>
+				<view class="flexlist-item flex-ai-center">
+					<image class="flexlist-img" src="img/100x100.jpg"></image>
+					<view class="flex-1">
+						<view class="flexlist-title">饺子实验室</view>
+						<view class="flexlist-row">
+							<raty class="raty"  num=5>
+								<view class="raty-after"></view>
+							</raty>
+							月销10份
+						</view>
+						<view class="flexlist-row">0.0元起送 / 0分钟  </view>
+					</view>
+					<view class="distance">10千米</view>
+				</view>
+			</view>	
+		</view>
+
+	</view>
+
+</template>
+<script>
+	function raty(){
+		var rss=$("raty");
+		var len=rss.length;
+		for(var i=0;i<len;i++){
+			var o=rss.eq(i);
+			var num=parseInt(o.attr("num"));
+			o.find(".raty-after").css("width","80%")
+		}
+	}
+	raty();
+</script>
