@@ -1,9 +1,9 @@
  /****header****/
- .header-row{
+ .header-row,.header-row-show{
 	 height: 44px;
 	 clear: both;
  }
- .header{
+ .header,.header-show{
 	 position: fixed;
 	 top:0;
 	 left:0;
@@ -23,35 +23,55 @@
 	 margin-left: 5px;
  }
  .header-search-box{
+	 display: flex;
 	 flex-direction: row;
 	 position: relative;
 	 flex: 1;
  }
  .header-search-icon{
-	 
+	 flex-direction: row;
+	 align-items: center; 
 	 font-family: iconfont;
 	 position: absolute;
 	 left:5px;
-	 top: 3px;
+	 top: 0px;
+	 bottom: 0;
 	 width: 20px;
-	 height: 30px;
-	 line-height: 30px;
 	 color: #646464;
 	 font-size: 14px;
  }
  .header-search{
+	 box-sizing: border-box;
 	 flex: 1;
-	 height: 30px;
-	 line-height: 30px;
+	 height: 34px;
+	 line-height: 34px;
 	 border: 1px solid #ddd !important;
-	 margin-right: 5px;
-	 border-radius: 5px;
+	 
+	 border-bottom-left-radius: 5px;
+	 border-top-left-radius: 5px;
+	 border-bottom-right-radius: 0;
+	 border-top-right-radius: 0;
 	 padding-left: 26px;
 	 font-size: 14px;
 	 color: #646464;
 	 background-color: #fafafa;
  }
- 
+ .header-search-btn{
+	height: 34px;
+	line-height: 34px; 
+	margin-right: 2px;
+	border:0;
+	border-radius: 0;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 0px 12px; 
+	background-color: #e0e0e0;
+    color: #666;
+	font-size: 14px;
+	flex-direction:row;
+	align-items:center;
+
+ }
  .header-back{
 	 margin-right: 5px;
 	 
@@ -88,6 +108,23 @@
 	border-radius: 5px;
 	cursor: pointer;
 }
+
+.header-fixtop{
+	position: fixed;
+	top:0px;
+	right: 0;
+	flex-direction: row; 
+	z-index: 9990;
+ }
+ .header-fixtop-icon:before{
+	 font-family: iconfont;
+	 color: #fff;
+	 font-size: 18px;
+	 margin-right: 10px;
+	 height: 44px;
+	 line-height: 44px;
+ }
+ 
 /****main-body*****/
 .main-body{
 	
@@ -213,7 +250,7 @@
 }
 .d-content{
 	font-size: 14px;
-	color: #323232;
+	color: #646464;
 	line-height: 1.5;
 	margin-bottom: 10px;
 }
@@ -233,4 +270,25 @@
 	 margin-bottom: 5px;
 	 padding-bottom: 5px;
 	 
+ }
+ /***支付方式****/
+ .paylist{
+ 	flex-direction: row;
+ 	flex-wrap: wrap;
+ }
+ .paylist-item{
+ 	border: 1px solid #eee;
+ 	border-radius: 20px;
+ 	margin-bottom: 10px;
+ 	text-align: center;
+ 	padding: 10px;
+ 	color: #646464;
+ 	cursor: pointer;
+ 	width: 31%;
+ 	margin-right: 2%;
+ 	
+ }
+ .paylist-item-active{
+ 	color: #f60;
+ 	border: 1px solid #f60;
  }

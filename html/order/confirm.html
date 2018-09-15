@@ -13,10 +13,13 @@
 				<view class="flex-1">收货地址</view> 
 				<navigator url="index.html?m=user_address&a=add" class="cl2">新增地址</navigator>
 			</view>
+ 
 
-
-			<view class="addrSelect " id="address_list">
-
+			<view class="addr-list">
+					<view class="flex-row">
+							<input class="radio" type="radio" />
+							福建省福鼎1号 雷哥
+					</view>
 			</view>
 		</view>
 
@@ -115,24 +118,5 @@
 		min-height: 60px;
 		font-size: 14px;
 	}
-	.paylist{
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-	.paylist-item{
-		border: 1px solid #eee;
-		border-radius: 20px;
-		margin-bottom: 10px;
-		text-align: center;
-		padding: 10px;
-		color: #646464;
-		cursor: pointer;
-		width: 31%;
-		margin-right: 2%;
-		
-	}
-	.paylist-item-active{
-		color: #f60;
-		border: 1px solid #f60;
-	}
+	
 </style>

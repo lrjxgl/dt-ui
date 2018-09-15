@@ -30,6 +30,9 @@
 .row-item-text{
 	cursor:initial;
 }
+.row-item-active{
+	font-weight: bolder;
+}
 /**flexlist 单列列表**/
 .flexlist{
 	

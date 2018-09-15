@@ -2,13 +2,77 @@
 	<view>
 		<view class="header">
 			<view class="header-back"></view>
-			<view class="header-title">商家主页</view>
+			<view class="flex-1"></view>			
 		</view>
 		<view class="header-row"></view>
-		<view class="main-body"  v-if="pageLoad">
+		<view class="header-fixtop">
+			<view class="header-fixtop-icon icon-search"></view>
+			<view class="header-fixtop-icon icon-like"></view>
+			<view class="header-fixtop-icon icon-more_light"></view>
+		</view>
+		
+		<div class="wshop">
+			<div class="wshop-logo">
+				<img class="wshop-logo-img" src="img/100x100.jpg">
+			</div>
+			<div class="flex-1">
+				<div class="wshop-shopname">测试店铺请勿购买</div>
+				<div class="wshop-welcome mgb-10">欢迎光临，很高兴为你服务</div>
+				<div class="flex">
+					<div class="cl-white mgr-20">月销 10笔</div>
+					<div class="cl-white">服务 10分</div>
+				</div>
+			</div>
 			
+		</div>
+		<div class="tabs-border">
+			<div class="tabs-border-item tabs-border-active">产品</div>
+			<div class="tabs-border-item">评价</div>
+			<div class="tabs-border-item">商家</div>
+		</div>
+		
+		<view class="main-body"  v-if="pageLoad">
+			<div class="flex">
+				<div class="w100 bg-fff pdt-10">
+					<div class="row-item-text pdl-10 row-item-active">全部</div>
+					<div class="row-item-text pdl-10">吃的</div>
+					<div class="row-item-text pdl-10">喝的</div>
+					<div class="row-item-text pdl-10">穿的</div>
+					
+				</div>
+				<div class="flex-1"></div>
+			</div>
 		</view>
 		
 	</view>
 	
 </template>
+<style>
+.wshop{
+	display: flex;
+	flex-direction: row;
+	padding-left: 10px;
+	height: 100px;
+	background-color: #ed6d53;
+}
+.wshop-logo{
+	position: relative;
+	width: 80px;
+	margin-right: 15px;
+}
+.wshop-logo-img{
+	width: 100%;
+	border-radius: 50%;
+}
+
+.wshop-shopname{
+	color: #fff;
+	margin-bottom: 5px;
+	position: relative;
+	font-size: 18px;
+}
+.wshop-welcome{
+	color: #fff;
+	font-size: 14px;
+}
+</style>
