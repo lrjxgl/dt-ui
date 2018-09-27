@@ -49,33 +49,38 @@ swiper-item {
 }
 
 .tab-select-label {
-	margin-right: 2px;
+	 
 	flex: 1;
 	flex-direction: row;
 	position: relative;
 	margin-right: 3px;
 	justify-content: center;
 	align-items: center;
+	font-size: 16px;
+	color: #646464;
 }
 
 .tab-select-t3up {
 	display: inline-block;
 	width: 0;
 	height: 0;
-	border-left: 3px solid transparent;
-	border-right: 3px solid transparent;
-	border-bottom: 6px solid #0088CC;
-	margin-left: 3px;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-bottom: 6px solid #323232;
+	margin-left: 5px;
+	margin-top: 3px;
 }
 
 .tab-select-t3down {
 	width: 0;
 	height: 0;
 	display: inline-block;
-	border-left: 3px solid transparent;
-	border-right: 3px solid transparent;
-	border-top: 6px solid #0088CC;
-	margin-left: 3px;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 6px solid #323232;
+	margin-left: 5px;
+	margin-top: 3px;
+	
 }
 
 .tab-select-b {
@@ -99,10 +104,13 @@ swiper-item {
 	top: 50px;
 	left: 0px;
 	right: 0px;
+	padding: 5px;
 	background-color: #fff;
 	z-index: 999;
 }
-
+.tab-select-catbox{
+	flex-direction: row;
+}
 .tab-select-box-item {
 	height: 40px;
 	line-height: 40px;
@@ -116,13 +124,15 @@ swiper-item {
 }
 
 .tab-select-box1 {
-	width: 50%;
+	width: 100px;
 	background-color: #f9f9f9;
+ 
 	float: left;
 }
 
 .tab-select-box2 {
-	width: 50%;
+	flex: 1;
+	padding: 0px 10px;
 	background-color: #fff;
 	float: left;
 }
@@ -137,7 +147,7 @@ swiper-item {
 	display: block;
 	text-decoration: none;
 	color: #999;
-	font-size: 0.9em;
+	font-size: 14px;
 	padding-left: 3px;
 	cursor: pointer;
 }
@@ -152,7 +162,7 @@ swiper-item {
 	line-height: 40px;
 	text-decoration: none;
 	color: #999;
-	font-size: 0.7em;
+	font-size: 14px;
 	border-bottom: 1px solid #ccc;
 	cursor: pointer;
 }

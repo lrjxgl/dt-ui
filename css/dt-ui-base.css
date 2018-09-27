@@ -51,7 +51,9 @@ image{
  .flex-1{
  	flex: 1;
  }
-
+.flex-wrap{
+	flex-wrap: wrap;
+}
  /***定义了 flex 容器中 flex 成员项在纵轴方向上如何排列以处理空白部分***/
  .flex-ai-stretch{ align-items: stretch;}
  .flex-ai-start{ align-items: flex-start;}
@@ -67,6 +69,15 @@ image{
  .fr{ float: right;}
  .fl{float: left;}
  .clearfix{clear: both; display: flex; width: 100%;}
+ .text-right{
+	 text-align: right  !important;
+ }
+ .text-center{
+	 text-align: center !important;
+ }
+ .text-left{
+	 text-align: left !important;
+ }
  /****定位*****/
  .pos-fixed{position: fixed !important;}
  .pos-abs{position: absolute !important;}
@@ -89,6 +100,8 @@ image{
  .h160{height: 160px !important;}
  .h200{height: 200px !important;}
  /***fontsize**/
+ .f36{ font-size: 36px !important;}
+ .f28{ font-size: 28px !important;}
  .f22{font-size: 22px!important;}
  .f20{font-size: 20px!important;}
  .f18{font-size: 18px!important;}
@@ -99,6 +112,8 @@ image{
  .cl1{color: #323232!important;}
  .cl2{color: #646464!important;}
  .cl3{color: #969696!important;}
+ .cl-f30{color: #f30 !important;}
+ .cl-red{color: #c12725 !important;}
  .cl-primary { color: #007bff!important;}
  .cl-secondary {color: #6c757d!important;}
  .cl-success{color: #28a745!important;}
@@ -114,6 +129,9 @@ image{
  /***background-color***/
  .bg-ef{ background-color: #efefef !important;}
  .bg-fff{background-color: #fff!important;}
+ .bg-f30{
+ 	background-color: #f30 !important;
+ }
  .bg-primary { background-color: #007bff!important;}
  .bg-secondary {
     background-color: #6c757d!important;
@@ -142,6 +160,8 @@ image{
  .bg-transparent {background-color: transparent !important;}
  .bg-royal{background-color:#8a6de9 !important;}
  .bg-disabled{background-color:#FBFBFB !important;}
+ /****固定颜色****/
+ 
  /***padding****/
  .pd-5{padding: 5px !important;}
  .pdl-5{padding-left: 5px !important;}
@@ -154,6 +174,7 @@ image{
  .pdt-10{padding-top: 10px !important;}
  .pdb-10{padding-bottom: 10px !important;}
  .pdb-30{padding-bottom: 30px !important;}
+ .pdt-0{ padding-top: 0px !important;}
  /***margin****/
  .mg-5{margin: 5px!important;}
  .mgb-5{margin-bottom: 5px!important;}
@@ -167,6 +188,9 @@ image{
  .mgr-10{margin-right: 10px!important;}
  .mgr-20{ margin-right: 20px !important;}
  .mgb-20{margin-bottom: 20px!important;}
+ .mgl-20{margin-left: 20px !important;}
+ .mgt-20{margin-top: 20px !important;}
+ .mgb-0{margin-bottom: 0px !important;}
  /***border***/
  .bd-mp-5{
 	 border-bottom: 1px solid #eee !important;

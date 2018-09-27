@@ -9,6 +9,10 @@
 	border: 0 !important;
 	color: #fff;
 }
+.header-search-btn{
+	background-color: #d02961;
+    color: #fff;
+}
 .header-search-icon{
 	color: #fff;
 }

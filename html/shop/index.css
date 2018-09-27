@@ -1,0 +1,28 @@
+.wshop{
+	display: flex;
+	flex-direction: row;
+	padding-left: 10px;
+	height: 100px;
+	background-color: #ed6d53;
+	padding-top: 10px;
+}
+.wshop-logo{
+	position: relative;
+	width: 80px;
+	margin-right: 15px;
+}
+.wshop-logo-img{
+	width: 100%;
+	border-radius: 50%;
+}
+
+.wshop-shopname{
+	color: #fff;
+	margin-bottom: 5px;
+	position: relative;
+	font-size: 18px;
+}
+.wshop-welcome{
+	color: #fff;
+	font-size: 14px;
+}

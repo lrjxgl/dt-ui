@@ -10,7 +10,6 @@ button{
  	color: #fff;
  	font-size: 14px;
  	display: inline-flex;
- 	border: 1px solid #007AFF;
  	cursor: pointer;
  	border-radius: 10px;
  	text-align: center;
@@ -22,7 +21,6 @@ button{
  	background-color: #007AFF;
  	color: #fff;
  	display: inline-flex;
- 	border: 1px solid #007AFF;
  	cursor: pointer;
  	line-height: 28px;
  	height: 30px;
@@ -35,7 +33,7 @@ button{
  	background-color: #007AFF;
  	color: #fff;
  	display: inline-flex;
- 	border: 1px solid #007AFF;
+ 	
  	cursor: pointer;
  	line-height: 20px;
  	height: 22px;
@@ -118,56 +116,66 @@ button{
  	color: #007bff;
  	background-color: transparent !important;
  	background-image: none;
- 	border-color: #007bff;
+ 
+	border: 1px solid #007bff;
  }
 
  .btn-outline-secondary {
  	color: #6c757d;
  	background-color: transparent !important;
  	background-image: none;
- 	border-color: #6c757d;
+	border: 1px solid #6c757d;
+ 
+	
  }
 
  .btn-outline-success {
  	color: #28a745;
  	background-color: transparent !important;
  	background-image: none;
- 	border-color: #28a745;
+	border: 1px solid #28a745;
+ 
+	
  }
 
  .btn-outline-info {
  	color: #17a2b8;
  	background-color: transparent !important;
  	background-image: none;
- 	border-color: #17a2b8;
+	border: 1px solid #17a2b8;
+ 
  }
 
  .btn-outline-warning {
  	color: #ffc107;
  	background-color: transparent !important;
  	background-image: none;
- 	border-color: #ffc107;
+	border: 1px solid #ffc107;
+ 
  }
 
  .btn-outline-danger {
  	color: #dc3545;
  	background-color: transparent !important;
  	background-image: none;
- 	border-color: #dc3545;
+	border: 1px solid #dc3545;
+ 
  }
 
  .btn-outline-light {
  	color: #f8f9fa;
  	background-color: transparent !important;
  	background-image: none;
- 	border-color: #f8f9fa;
+	border: 1px solid #f8f9fa;
+ 
  }
 
  .btn-outline-dark {
  	color: #343a40;
  	background-color: transparent !important;
  	background-image: none;
- 	border-color: #343a40;
+	border: 1px solid #343a40;
+ 
  }
 
  .btn-link {

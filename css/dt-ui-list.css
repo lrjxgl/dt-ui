@@ -199,15 +199,15 @@
 }
 .flex-table-label {
     margin-right: 10px;
-    color: #333;
+    color: #323232;
     font-size: 16px;
     font-weight: 500;
-    min-width: 60px;
+    min-width: 80px;
     text-align: right;
 }
 .flex-table-box {
     flex: 1;
 	padding-top: 2px;
     font-size: 14px;
-    color: #666;
+    color: #646464;
 }

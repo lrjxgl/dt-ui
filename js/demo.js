@@ -24,3 +24,8 @@ $(document).on("click",".tabs-border-item",function(){
 })
 
 
+$(document).on("click",".tab-select-item",function(){
+		 
+		$(".tab-select-box").eq($(this).index()).toggle();
+		$(".tab-select-box").eq($(this).index()).siblings(".tab-select-box").hide();
+	})

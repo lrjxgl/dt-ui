@@ -1,6 +1,6 @@
 /**头部风格***/
 .header{
- background-color: #333333;	
+ background-color: #8A2BE2;	
 }
 .header-back:after,.header-title{color: #fff;}
 
@@ -12,10 +12,6 @@
 .header-search-icon{
 	color: #fff;
 }
-.header-search-btn{
-	background-color: #eee;
-    color: #fff;
-}
 .header-right{
 	color: #fff;
 }
@@ -25,27 +21,27 @@
 }
 /*****底部风格****/
 .footer{
-	background-color: #333333;
+	background-color: #8A2BE2;
 }
 .footer-item,.footer-item:before{
 	color: #e0e0e0;
+}
+.footer-active{
+	background-color: #d83f6f;
 }
 .footer-add:after{
 	background-color: #e45538;
 	color: #fff;
 }
-.footer-active, .footer-active:before {
-    background-color: #444;
-}
+
 /*********/
 .btn-primary,.btn-row-submit,.input-flex-btn{
-	background-color: #333333;
-	border-color:#333333;
+	background-color: #8A2BE2;
+	border-color:#8A2BE2;
 }
 .cart-list-btn{
-	background-color:#333333 !important;
+	background-color:#8A2BE2 !important;
 }
-
 .btn-buy{
-	background-color: #333;
+	background-color: #8A2BE2;
 }

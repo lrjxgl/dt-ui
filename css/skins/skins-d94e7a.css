@@ -26,6 +26,9 @@
 .footer-item,.footer-item:before{
 	color: #e0e0e0;
 }
+.footer-active{
+	background-color: #d83f6f;
+}
 .footer-add:after{
 	background-color: #e45538;
 	color: #fff;

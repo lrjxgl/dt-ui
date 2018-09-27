@@ -1,0 +1,49 @@
+<template>
+	<view>
+		<view class="header">
+			<view class="header-back"></view>
+			<view class="header-title">画意</view>
+		</view>
+		<view class="header-row"></view>
+		<view class="main-body"  v-if="pageLoad">
+			<div class="imgList">
+				<div class="imgList-item">
+					<image model="widthFix" class="imgList-img" src="img/100x100.jpg"></image>
+				</div>
+				<div class="imgList-item">
+					<image class="imgList-img"  src="img/100x100.jpg"></image>
+				</div>
+				<div class="imgList-item">
+					<image class="imgList-img"  src="img/100x100.jpg"></image>
+				</div>
+				<div class="imgList-item">
+					<image class="imgList-img"  src="img/100x100.jpg"></image>
+				</div>
+				<div class="imgList-item">
+					<image class="imgList-img" src="img/100x100.jpg"></image>
+				</div>
+				<div class="imgList-item">
+					<image class="imgList-img"  src="img/100x100.jpg"></image>
+				</div>
+				<div class="imgList-item">
+					<image class="imgList-img"  src="img/100x100.jpg"></image>
+				</div>
+				<div class="imgList-item">
+					<image class="imgList-img"  src="img/100x100.jpg"></image>
+				</div>
+				<div class="imgList-item">
+					<image class="imgList-img"  src="img/100x100.jpg"></image>
+				</div>
+				
+			</div>
+		</view>
+		<view class="footer">
+			<view gourl="index.html?m=chat"  class="footer-item icon-home">首页</view>
+			
+			<view gourl="index.html?m=chat&a=shiqing" class="footer-item icon-hot_light">诗情</view>
+			<view gourl="index.html?m=chat&a=huayi" class="footer-item footer-active icon-message_light">画意</view>
+		</view>
+	</view>
+	
+</template>
+ <link href="html/chat/chat.css" rel="stylesheet" />
