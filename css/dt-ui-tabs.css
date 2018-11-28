@@ -6,6 +6,7 @@
 	line-height: 36px;
 	padding: 0px 5px;
 	background-color: #fff;
+	cursor: pointer;
 }
 .tabs-border-item{
 	flex: 1;

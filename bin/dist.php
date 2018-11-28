@@ -20,7 +20,7 @@ foreach($files as $file){
 file_put_contents("../dist/dt-ui-h5.css",$html);
 //2.2px
 $html=preg_replace_callback("/(\d+)px/",function($res){
-	return ($res[1]*2.2)."px";
+	return ($res[1]*2.2)."upx";
 },$html);
 file_put_contents("../dist/dt-ui-uni.css",$html);
 ?>

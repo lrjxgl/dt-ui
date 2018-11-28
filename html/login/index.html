@@ -1,32 +1,34 @@
 <template>
-	<view v-if="pageLoad">
-		<view class="header">
-			<navigator class="header-back"></navigator>
-			<view class="header-title">登录</view>
-		</view>
-		<view class="header-row"></view>
-		<view class="main-body">
-			<view class="flex-center pd-10 bg-fff">
-				<image class="wh-60 bd-radius-50" src="http://img.deitui.com/?w=200&h=200&text=Logo&fontsize=36&textclor=fff&bgclor=ed6d53"></image>
-
-
-			</view>
-
-			<view class="input-flex">
-				<view class="input-flex-label">手机</view>
-				<input class="input-flex-text" name="telephone" placeholder="请输入手机号码" />
-			</view>
-			<view class="input-flex">
-				<view class="input-flex-label">密码</view>
-				<input class="input-flex-text" type="text" placeholder="请输入密码" passowrd />
-			</view>
-			<view class="row-box">
-				<button form-type="submit" class="btn-row-submit" onclick="window.location='index.html?m=user'">登录</button>
-				<view class="flex-center">
-					<navigator class="mgb-10 cl2" url="index.html?m=register">没有账号？立即注册</navigator>
-					<navigator class="cl2 mgb-10" url="index.html?m=login&a=findpwd">忘记密码？立即找回</navigator>
-				</view>
-			</view>
-		</view>
+	<view class="loginBg">
+		<div class="h30"></div>
+		<div class="flex-center">
+			<div class="f20 cl-white">微站云</div>
+		</div>
+		<form class="loginBox"  id="login-form" @submit="formSubmit" >
+			<view class="flexIcon">
+      	<view class="flexIcon-icon iconfont icon-phone_light"></view>
+        <input type="text" class="flexIcon-text" name="telephone" value="请输入手机号码" />
+      </view>
+      <view class="flexIcon"> 
+      	<view class="flexIcon-icon iconfont icon-password"></view>
+        <input type="password" class="flexIcon-text" name="password" value="请输入密码" />
+      </view>
+	  <div></div>
+      <button type="primary" formType="submit"  class="btn-row-submit">登陆</button>
+			<div class="flex mgb-20">
+					<navigator class="cl-white pointer flex-1" url="/pages/register/index" >注册</navigator>
+					<navigator class="cl-white pointer" url="/pages/login/findpwd" >忘记密码</navigator>
+			</div>
+			<div class="otherBox mgb-20">
+				<div class="otherBox-line"></div>
+				<div class="otherBox-text">其它方式登录</div>
+			</div>
+			<div class="flex flex-center">
+				<div class="btn-round bg-success icon-weixin"></div>
+				<div class="btn-round bg-primary icon-qq"></div>
+				<div class="btn-round bg-royal icon-weibo"></div>
+			</div>
+    </form>
 	</view>
 </template>
+<link href="html/login/index.css" rel="stylesheet" />

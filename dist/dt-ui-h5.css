@@ -11,6 +11,13 @@
 	 padding: 0;
 	 background-color: #efeff4;
 }
+p,ol,ul,li{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
 .iconfont:before{
 	line-height: 1.5;
 }
@@ -51,7 +58,9 @@ image{
  .flex-1{
  	flex: 1;
  }
-
+.flex-wrap{
+	flex-wrap: wrap;
+}
  /***定义了 flex 容器中 flex 成员项在纵轴方向上如何排列以处理空白部分***/
  .flex-ai-stretch{ align-items: stretch;}
  .flex-ai-start{ align-items: flex-start;}
@@ -67,6 +76,15 @@ image{
  .fr{ float: right;}
  .fl{float: left;}
  .clearfix{clear: both; display: flex; width: 100%;}
+ .text-right{
+	 text-align: right  !important;
+ }
+ .text-center{
+	 text-align: center !important;
+ }
+ .text-left{
+	 text-align: left !important;
+ }
  /****定位*****/
  .pos-fixed{position: fixed !important;}
  .pos-abs{position: absolute !important;}
@@ -89,16 +107,21 @@ image{
  .h160{height: 160px !important;}
  .h200{height: 200px !important;}
  /***fontsize**/
+ .f36{ font-size: 36px !important;}
+ .f28{ font-size: 28px !important;}
  .f22{font-size: 22px!important;}
  .f20{font-size: 20px!important;}
  .f18{font-size: 18px!important;}
  .f16{font-size: 16px!important;}
  .f14{font-size:14px!important;}
  .f12{font-size: 12px!important;}
+ .fw-600{font-weight:600;}
  /***col1 2 3 内容字体差异 主标题 副标题 描述****/
  .cl1{color: #323232!important;}
  .cl2{color: #646464!important;}
  .cl3{color: #969696!important;}
+ .cl-f30{color: #f30 !important;}
+ .cl-red{color: #c12725 !important;}
  .cl-primary { color: #007bff!important;}
  .cl-secondary {color: #6c757d!important;}
  .cl-success{color: #28a745!important;}
@@ -114,6 +137,9 @@ image{
  /***background-color***/
  .bg-ef{ background-color: #efefef !important;}
  .bg-fff{background-color: #fff!important;}
+ .bg-f30{
+ 	background-color: #f30 !important;
+ }
  .bg-primary { background-color: #007bff!important;}
  .bg-secondary {
     background-color: #6c757d!important;
@@ -142,6 +168,8 @@ image{
  .bg-transparent {background-color: transparent !important;}
  .bg-royal{background-color:#8a6de9 !important;}
  .bg-disabled{background-color:#FBFBFB !important;}
+ /****固定颜色****/
+ 
  /***padding****/
  .pd-5{padding: 5px !important;}
  .pdl-5{padding-left: 5px !important;}
@@ -154,6 +182,7 @@ image{
  .pdt-10{padding-top: 10px !important;}
  .pdb-10{padding-bottom: 10px !important;}
  .pdb-30{padding-bottom: 30px !important;}
+ .pdt-0{ padding-top: 0px !important;}
  /***margin****/
  .mg-5{margin: 5px!important;}
  .mgb-5{margin-bottom: 5px!important;}
@@ -167,6 +196,9 @@ image{
  .mgr-10{margin-right: 10px!important;}
  .mgr-20{ margin-right: 20px !important;}
  .mgb-20{margin-bottom: 20px!important;}
+ .mgl-20{margin-left: 20px !important;}
+ .mgt-20{margin-top: 20px !important;}
+ .mgb-0{margin-bottom: 0px !important;}
  /***border***/
  .bd-mp-5{
 	 border-bottom: 1px solid #eee !important;
@@ -440,42 +472,36 @@ button{
 	border: 0;
 }
  .btn {
- 	padding: 0px 20px;
- 	line-height: 34px;
- 	height: 36px;
+ 	padding: 18px 20px;
  	background-color: #007AFF;
  	color: #fff;
  	font-size: 14px;
  	display: inline-flex;
- 	border: 1px solid #007AFF;
  	cursor: pointer;
  	border-radius: 10px;
  	text-align: center;
+	line-height: 1.5;
  }
 
  .btn-small {
- 	padding: 0px 12px;
+ 	padding: 8px 12px;
  	font-size: 14px;
  	background-color: #007AFF;
  	color: #fff;
  	display: inline-flex;
- 	border: 1px solid #007AFF;
  	cursor: pointer;
- 	line-height: 28px;
- 	height: 30px;
+ line-height: 1.5;
  	border-radius: 5px;
  }
 
  .btn-mini {
- 	padding: 0px 2px;
+ 	padding: 4px 2px;
  	font-size: 12px;
  	background-color: #007AFF;
  	color: #fff;
  	display: inline-flex;
- 	border: 1px solid #007AFF;
  	cursor: pointer;
- 	line-height: 20px;
- 	height: 22px;
+	line-height: 1.5;
  }
  .btn-icon{
 	 flex-direction: row;
@@ -490,7 +516,8 @@ button{
  	margin: 20px auto;
  	background-color: #007bff;
  	text-align: center;
- 	line-height: 40px;
+ 	padding: 12px 0px;
+	line-height: 1.5;
  	color: #fff !important;
  	font-size: 16px;
  	border-radius: 6px;
@@ -540,7 +567,7 @@ button{
  }
 
  .btn-light {
- 	color: #212529;
+ 	color: #999;
  	background-color: #f8f9fa;
  	border-color: #f8f9fa;
  }
@@ -555,56 +582,66 @@ button{
  	color: #007bff;
  	background-color: transparent !important;
  	background-image: none;
- 	border-color: #007bff;
+ 
+	border: 1px solid #007bff;
  }
 
  .btn-outline-secondary {
  	color: #6c757d;
  	background-color: transparent !important;
  	background-image: none;
- 	border-color: #6c757d;
+	border: 1px solid #6c757d;
+ 
+	
  }
 
  .btn-outline-success {
  	color: #28a745;
  	background-color: transparent !important;
  	background-image: none;
- 	border-color: #28a745;
+	border: 1px solid #28a745;
+ 
+	
  }
 
  .btn-outline-info {
  	color: #17a2b8;
  	background-color: transparent !important;
  	background-image: none;
- 	border-color: #17a2b8;
+	border: 1px solid #17a2b8;
+ 
  }
 
  .btn-outline-warning {
  	color: #ffc107;
  	background-color: transparent !important;
  	background-image: none;
- 	border-color: #ffc107;
+	border: 1px solid #ffc107;
+ 
  }
 
  .btn-outline-danger {
  	color: #dc3545;
  	background-color: transparent !important;
  	background-image: none;
- 	border-color: #dc3545;
+	border: 1px solid #dc3545;
+ 
  }
 
  .btn-outline-light {
  	color: #f8f9fa;
  	background-color: transparent !important;
  	background-image: none;
- 	border-color: #f8f9fa;
+	border: 1px solid #f8f9fa;
+ 
  }
 
  .btn-outline-dark {
  	color: #343a40;
  	background-color: transparent !important;
  	background-image: none;
- 	border-color: #343a40;
+	border: 1px solid #343a40;
+ 
  }
 
  .btn-link {
@@ -613,7 +650,20 @@ button{
  	background-color: transparent !important;
 	border: 0;
  }
+ .btn-round {
+ 	width: 60px;
+ 	height: 60px;
+ 	background-color: #f60;
+ 	align-items: center;
+ 	justify-content: center;
+ 	border-radius: 50%;
+ 	color: #fff;
+ 	font-family: iconfont;
+ }
  
+ .btn-round:before {
+ 	font-size: 24px;
+ }
  /****点赞 喜欢按钮****/
 
  .btn-love {
@@ -874,6 +924,19 @@ button{
 	color: #333;
 	display: block;
 }
+.input-flex-require{ 
+	display: flex;
+	flex-direction:row;
+	position:relative;
+	align-items:center;
+	font-family:iconfont;
+}
+.input-flex-require:after{
+	content:"\e60d";
+	color:red;
+	margint-left:2px;
+	font-size:12px;
+}
 .input-flex-txt{
 	flex: 1;
 	line-height: 36px;
@@ -888,14 +951,18 @@ button{
 	padding: 0 5px;
 	font-size: 14px;
 	margin: 0;
-	width: 100px;
+ 
 }
 .input-flex-select{
 	-webkit-appearance:menulist-button;
 	background-color: #fff;
 	color:#323232;
 }
-
+.input-flex-note{
+	margin-left:3px;
+	color:#666;
+	justify-content:center;	
+}
 .input-flex-btn {
 	width: 100px;
 	height: 36px;
@@ -1138,7 +1205,7 @@ button{
 	display: flex;
 	flex-direction: row;
 	
-	margin-bottom: 10px;
+	padding-top: 10px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #eee;
 	padding-left: 5px;
@@ -1154,6 +1221,7 @@ button{
 	font-family: iconfont;
 	font-style: normal;
 	color: #646464;
+	font-size: 18px;
 }
 .row-item:after{
 	display: inline-flex;
@@ -1161,6 +1229,10 @@ button{
 	content: "\e6a3";
 	color: #999;
 	 
+}
+.row-item-title{
+	flex: 1;
+	font-size: 16px;
 }
 .row-item-text{
 	cursor:initial;
@@ -1238,6 +1310,7 @@ button{
 }
 .mtlist-img{
 	max-width: 100%;
+	height: auto;
 }
 .mtlist-item-money{
 	display: flex;
@@ -1334,17 +1407,17 @@ button{
 }
 .flex-table-label {
     margin-right: 10px;
-    color: #333;
+    color: #323232;
     font-size: 16px;
     font-weight: 500;
-    min-width: 60px;
+    min-width: 80px;
     text-align: right;
 }
 .flex-table-box {
     flex: 1;
 	padding-top: 2px;
     font-size: 14px;
-    color: #666;
+    color: #646464;
 }
 .m-navPic{
 	display: flex;
@@ -1474,7 +1547,6 @@ button{
 /***toast***/
 
 .toast {
-	display: none;
 	position: fixed;
 	bottom: 100px;
 	left: 0px;
@@ -1573,6 +1645,7 @@ button{
 	 padding-bottom: 7px;
 	 align-items: center;
 	 z-index: 998;
+	 box-shadow: 0 1px 6px #ccc;
  }
  
  .header-logo{
@@ -1633,7 +1706,8 @@ button{
  }
  .header-back{
 	 margin-right: 5px;
-	 
+	 cursor: pointer;
+	 position: absolute;
  }
  .header-back:after{
 	 font-family: "iconfont" !important;
@@ -1646,12 +1720,30 @@ button{
 		display: inline-flex;
 		font-size: 20px;
  }
+ .header-back-fixed{
+ 	position: fixed;
+ 	left: 0px;
+ 	top: 5px;	 
+ 	width: 40px;
+ 	height: 40px;
+ 	border-radius: 50%;
+ 	line-height: 40px;
+ 	color: #646464;
+ 	font-size: 20px;
+ 	text-align: center;
+	cursor: pointer;
+ }
+ .header-back-fixed:after{
+ 	font-family: "iconfont" !important;
+ 	content: "\e679";
+ }
  .header-title{
 	 color: #333;
 	 font-size: 16px;
 	 text-align: center;
 	 flex: 1;
 	 line-height: 30px;
+	 padding:0px 30px;
  }
  .header-right{
  	margin-right: 5px;
@@ -1826,9 +1918,23 @@ button{
  .row-box-hd{
 	 flex-direction: row;
 	 border-bottom: 1px solid #eee;
-	 margin-bottom: 5px;
-	 padding-bottom: 5px;
-	 
+	 padding-top: 8px;
+	 padding-bottom: 8px;
+	 font-size: 16px;	 
+ }
+ .row-box-more{
+	 display: flex;
+	flex-direction: row;
+	 align-items: center;
+	 font-size: 14px;
+	 margin-right: 5px;
+ }
+ .row-box-more:after{
+	 display: inline-flex;
+    font-family: iconfont;
+    content: "\e6a3";
+    color: #999;
+	font-size: 16px;
  }
  /***支付方式****/
  .paylist{
@@ -1858,6 +1964,7 @@ button{
 	line-height: 36px;
 	padding: 0px 5px;
 	background-color: #fff;
+	cursor: pointer;
 }
 .tabs-border-item{
 	flex: 1;

@@ -3,9 +3,7 @@ button{
 	border: 0;
 }
  .btn {
- 	padding: 0px 20px;
- 	line-height: 34px;
- 	height: 36px;
+ 	padding: 18px 20px;
  	background-color: #007AFF;
  	color: #fff;
  	font-size: 14px;
@@ -13,30 +11,28 @@ button{
  	cursor: pointer;
  	border-radius: 10px;
  	text-align: center;
+	line-height: 1.5;
  }
 
  .btn-small {
- 	padding: 0px 12px;
+ 	padding: 8px 12px;
  	font-size: 14px;
  	background-color: #007AFF;
  	color: #fff;
  	display: inline-flex;
  	cursor: pointer;
- 	line-height: 28px;
- 	height: 30px;
+ line-height: 1.5;
  	border-radius: 5px;
  }
 
  .btn-mini {
- 	padding: 0px 2px;
+ 	padding: 4px 2px;
  	font-size: 12px;
  	background-color: #007AFF;
  	color: #fff;
  	display: inline-flex;
- 	
  	cursor: pointer;
- 	line-height: 20px;
- 	height: 22px;
+	line-height: 1.5;
  }
  .btn-icon{
 	 flex-direction: row;
@@ -51,7 +47,8 @@ button{
  	margin: 20px auto;
  	background-color: #007bff;
  	text-align: center;
- 	line-height: 40px;
+ 	padding: 12px 0px;
+	line-height: 1.5;
  	color: #fff !important;
  	font-size: 16px;
  	border-radius: 6px;
@@ -101,7 +98,7 @@ button{
  }
 
  .btn-light {
- 	color: #212529;
+ 	color: #999;
  	background-color: #f8f9fa;
  	border-color: #f8f9fa;
  }
@@ -184,7 +181,20 @@ button{
  	background-color: transparent !important;
 	border: 0;
  }
+ .btn-round {
+ 	width: 60px;
+ 	height: 60px;
+ 	background-color: #f60;
+ 	align-items: center;
+ 	justify-content: center;
+ 	border-radius: 50%;
+ 	color: #fff;
+ 	font-family: iconfont;
+ }
  
+ .btn-round:before {
+ 	font-size: 24px;
+ }
  /****点赞 喜欢按钮****/
 
  .btn-love {

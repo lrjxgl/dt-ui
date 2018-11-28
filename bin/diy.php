@@ -1,9 +1,9 @@
 <?php
-$shopCss['name']="shop.css";
+$shopCss['name']="login.css";
 $shopCss['files']=array(
-	"../html/forum/forum.css",
-	"../html/category/index.css",
-	"../html/cart/index.css"
+	"../html/login/index.css",
+	//"../html/category/index.css",
+	//"../html/cart/index.css"
 );
 $files= $shopCss;
 $html="";

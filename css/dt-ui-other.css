@@ -176,16 +176,15 @@ swiper-item {
 }
 
 .raty{
-	width: 100px;
-	height: 5px;
-	background-color: #eee;
-	margin-right: 5px;
-	position: relative;
+	background: url(../img/star.png);
+	height: 16px;
+    width: 80px;
+    background-size: 16px 16px;
+	margin-left: 5px;
 }
 .raty-after{
-	position: absolute;
-	left:0;
-	top: 0;
-	bottom: 0;
-	background-color: #f60;
+	background: url(../img/star_fill.png);
+	height: 16px;
+    width: 90%;
+    background-size: 16px 16px;
 }

@@ -1,0 +1,62 @@
+.flcart {
+		display: flex;
+		flex-direction: row;
+		position: fixed;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		font-size: 12px;
+		line-height: 1.2;
+		border-top: 1px solid #eee;
+		background-color: #fff;
+		text-align: center;
+	}
+ 
+	.flcart-icon:before {
+		padding-top: 5px;
+		clear: both;
+		display: block;
+		font-size: 14px;
+		line-height: 1.2;
+	}
+	
+	.flcart-f1 {
+		width: 60px;
+		display: inline-block;
+		height: 51px;
+		line-height: 22px;
+		font-size: 14px;
+	}
+	
+	.flcart-f2 {
+		flex: 1;
+		height: 51px;
+		line-height: 51px;
+		background-color: #f90;
+		color: #fff;
+		font-size: 14px;
+	}
+	
+	.flcart .f3 {
+		background-color: #f30;
+	}
+	
+	.fcart .fbtn {}
+	.kslist{
+		display: flex;
+		flex-direction: row;		
+		align-items: center;
+		padding-left: 10px;
+	}
+	.kslist-label{
+		margin-right: 6px;
+		color: #646464;
+	}
+	.kslist-item{
+		border: 1px solid #eee;
+		padding: 4px 8px;
+		margin-right: 10px;
+	}
+	.kslist-active{
+		color: #007AFF;
+	}

@@ -1,0 +1,44 @@
+<div class="btn" id="createSession">创建session</div>
+<script>
+	 
+	var ws = new WebSocket("ws://103.225.196.95:8282");
+ws.onopen = function() {
+   console.log("连接成功");
+   var data={"imei":"app-imeitest","do":"verify","from":"app"}
+    ws.send(JSON.stringify(data));
+     
+};
+ws.onmessage = function(e) {
+	var data=JSON.parse(e.data);
+	console.log(data)
+	switch(data.do){
+		case "verify":
+			if(data.rs){
+				console.log("链接成功");
+			}else{
+				console.log("连接失败");
+			}
+			break;
+		case "say":
+			
+			if(data.action=='createSession'){
+				data.from="app";
+				data.linksession="linksession";
+				data.linkchar="linkchar";
+				ws.send(JSON.stringify(data));
+			}else if(data.action=='checkStatus'){
+				data.from="app";
+				data.isfree=1;
+			}
+		//	console.log(data);
+			break;
+	}
+ 
+};
+ document.querySelector("#createSession").addEventListener("click",function(){
+  
+ },false)
+ 
+ 
+</script>
+ 

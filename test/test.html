@@ -1,11 +1,41 @@
-<div class="bg-primary">bg-primary</div>
-<div class="bg-secondary">bg-secondary</div>				
-<div class="bg-success">bg-success</div>
-<div class="bg-warning">bg-warning</div>
-<div class="bg-danger">bg-danger</div>
-<div class="bg-info">bg-info</div>
-<div class="bg-light">bg-light</div>
-<div class="bg-dark">bg-dark</div>
-<div class="bg-muted">bg-muted</div>
-<div class="bg-white">bg-white</div>
+ 
+<div class="btn" id="createSession">创建session</div>
+<script>
+	 
+var ws = new WebSocket("ws://103.225.196.95:8282");
+ws.onopen = function() {
+   console.log("连接成功");
+   var data={"imei":"imeitest2","do":"verify"}
+    ws.send(JSON.stringify(data));
+     
+};
+ws.onmessage = function(e) {
+	//console.log(e)
+	var data=JSON.parse(e.data);
+	if(data.do=='verify'){
+		if(data.rs){
+			console.log("链接成功");
+		}else{
+			console.log("连接失败");
+		}
+	}else{
+		 
+		console.log(data);
+	}
+	 
+   
+};
+ document.querySelector("#createSession").addEventListener("click",function(){
+	 console.log("createSession");
+	 var data={"message":"tom",do:"say","imei2":"imeitest2","imei":"863784024093614","action":"createSession"}
+	 ws.send(JSON.stringify(data));
+ },false)
+ /*
+setInterval(function(){
+	console.log("createSessiona");
+	var data={"message":"tom",do:"say","imei":"863784024093614","action":"a"}
+	ws.send(JSON.stringify(data));
+},3000)
+ */
+</script>
  

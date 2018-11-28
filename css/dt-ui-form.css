@@ -14,6 +14,19 @@
 	color: #333;
 	display: block;
 }
+.input-flex-require{ 
+	display: flex;
+	flex-direction:row;
+	position:relative;
+	align-items:center;
+	font-family:iconfont;
+}
+.input-flex-require:after{
+	content:"\e60d";
+	color:red;
+	margint-left:2px;
+	font-size:12px;
+}
 .input-flex-txt{
 	flex: 1;
 	line-height: 36px;
@@ -28,14 +41,18 @@
 	padding: 0 5px;
 	font-size: 14px;
 	margin: 0;
-	width: 100px;
+ 
 }
 .input-flex-select{
 	-webkit-appearance:menulist-button;
 	background-color: #fff;
 	color:#323232;
 }
-
+.input-flex-note{
+	margin-left:3px;
+	color:#666;
+	justify-content:center;	
+}
 .input-flex-btn {
 	width: 100px;
 	height: 36px;

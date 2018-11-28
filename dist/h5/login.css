@@ -1,0 +1,71 @@
+.otherBox {
+	position: relative;
+	height: 36px;
+}
+
+.otherBox-line {
+	width: 100%;
+	height: 1px;
+	background-color: #d0d0d0;
+	top: 18px;
+	position: absolute;
+}
+
+.otherBox-text {
+	background-color: #35c1e8;
+	text-align: center;
+	padding: 0px 10px;
+	line-height: 36px;
+	position: absolute;
+	width: 120px;
+	left: 50%;
+	margin-left: -60px;
+	color: #fff;
+
+}
+
+.flexIcon {
+	flex-direction: row;
+	background-color: #2e85d8;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	padding: 10px 10px;
+	align-items: center;
+}
+
+.flexIcon-icon {
+	margin-right: 6px;
+	font-size: 18px;
+	color: #fff;
+}
+
+.flexIcon-text {
+	color: #fff;
+	border: 0;
+	flex: 1;
+	background:inherit;
+	outline: 0;
+	font-size: 16px;
+}
+ 
+.loginBox {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	right: 10px;
+	margin-top: -150px;
+	padding: 15px 10px;
+
+	border-radius: 20px;
+}
+
+.loginBg {
+	background: linear-gradient(#619ad6, #29cee8f7);
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+

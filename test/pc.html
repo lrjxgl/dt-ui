@@ -1,0 +1,59 @@
+ 
+<div id="msg"></div>
+<div class="btn" id="createSession">创建session</div>
+<div class="btn" id="checkStatus">检测状态</div>
+<div class="btn" id="copyText">复制</div>
+<script>
+	 
+var ws = new WebSocket("ws://103.225.196.95:8282");
+ws.onopen = function() {
+   console.log("连接成功");
+   var data={"imei":"pc-imeitest","from":"pc","do":"verify"}
+    ws.send(JSON.stringify(data));
+     
+};
+ws.onmessage = function(e) {
+	
+	var data=JSON.parse(e.data);
+	console.log(data)
+	switch(data.do){
+		case "verify":
+			if(data.rs){
+				console.log("链接成功");
+			}else{
+				console.log("连接失败");
+			}
+			break;
+		case "say":
+			
+			if(data.action=='createSession'){
+				 //这是返回后的
+				
+			}else if(data.action=='checkStatus'){
+				
+			}
+			
+			break;
+	}
+ 
+};
+ document.querySelector("#createSession").addEventListener("click",function(){
+	 console.log("createSession");
+	 var data={"do":"say","aimei":"app-imeitest","imei":"272132132911278","action":"createSession","from":"pc"}
+	 ws.send(JSON.stringify(data));
+	 //ws.send(JSON.stringify({"do":"sayall","msg":"asdasdas"}))
+ },false)
+ document.querySelector("#checkStatus").addEventListener("click",function(){
+ 	console.log("checkStatus");
+ 	var data={"do":"say","imei":"867664024974078","ximei":"272132132911278","action":"checkStatus","from":"pc"}
+ 	ws.send(JSON.stringify(data));
+ },false)
+ 
+ document.querySelector("#copyText").addEventListener("click",function(){
+ 
+ var data={"do":"say","imei":"272132132911278","action":"copy","from":"pc","data":"pc测试复制内容xxxx"}
+ ws.send(JSON.stringify(data));
+ },false)
+ 
+</script>
+ 
