@@ -1,4 +1,3 @@
-
 .input-flex {
 	display: flex;
 	flex-direction: row;
@@ -14,25 +13,33 @@
 	color: #333;
 	display: block;
 }
-.input-flex-require{ 
+
+.input-flex-require {
 	display: flex;
-	flex-direction:row;
-	position:relative;
-	align-items:center;
-	font-family:iconfont;
+	flex-direction: row;
+	position: relative;
+	align-items: center;
+	font-family: iconfont;
+
 }
+
 .input-flex-require:after{
 	content:"\e60d";
 	color:red;
-	margint-left:2px;
+	position: absolute;
+	left: -10px;
 	font-size:12px;
+	transform: scale(0.5);
 }
-.input-flex-txt{
+
+.input-flex-txt {
 	flex: 1;
 	line-height: 36px;
 	color: #646464;
 }
-.input-flex-text,.input-flex-select {
+
+.input-flex-text,
+.input-flex-select {
 	flex: 1;
 	height: 36px;
 	box-sizing: border-box;
@@ -41,18 +48,21 @@
 	padding: 0 5px;
 	font-size: 14px;
 	margin: 0;
- 
+	width: 100px;
 }
-.input-flex-select{
-	-webkit-appearance:menulist-button;
+
+.input-flex-select {
+	-webkit-appearance: menulist-button;
 	background-color: #fff;
-	color:#323232;
+	color: #323232;
 }
-.input-flex-note{
-	margin-left:3px;
-	color:#666;
-	justify-content:center;	
+
+.input-flex-note {
+	margin-left: 3px;
+	color: #666;
+	justify-content: center;
 }
+
 .input-flex-btn {
 	width: 100px;
 	height: 36px;
@@ -67,147 +77,247 @@
 	text-align: center;
 	cursor: pointer;
 }
+
 /**textarea**/
-.textarea-flex{
+.textarea-flex {
 	padding: 10px;
 	flex-direction: column;
 	background-color: #fff;
 	margin-bottom: 5px;
 }
-.textarea-flex-label{
+
+.textarea-flex-label {
 	margin-bottom: 10px;
 	color: #323232;
 }
-.textarea-flex-text{
+
+.textarea-flex-text {
 	height: 200px;
-	border:1px solid #eee;
+	border: 1px solid #eee;
 	border-radius: 5px;
 	padding: 5px;
 }
+
 /****radio****/
-.radio-flex{
-		flex-direction: row;
-		align-items: center;
+.radio-flex {
+	flex-direction: row;
+	align-items: center;
 }
-.radio{
+
+.radio {
 	width: 20px;
 	height: 20px;
 	display: inline-flex;
 	position: relative;
 }
- 
+
 /***checkbox****/
-.checkbox-flex{
-		flex-direction: row;
-		align-items: center;
+.checkbox-flex {
+	flex-direction: row;
+	align-items: center;
 }
-.checkbox{
+
+.checkbox {
 	width: 20px;
 	height: 20px;
 	display: inline-flex;
 	position: relative;
 }
+
 /**numbot**/
-.numbox{
+.numbox {
 	display: flex;
 	flex-direction: row;
 	box-sizing: border-box;
 	width: 100px;
-	
+
 }
-.numbox-minus,.numbox-plus,.numbox-num{
+
+.numbox-minus,
+.numbox-plus,
+.numbox-num {
 	height: 30px;
 	line-height: 30px;
 	border: 1px solid #eee;
 	box-sizing: border-box;
 }
-.numbox-minus,.numbox-plus{
+
+.numbox-minus,
+.numbox-plus {
 	display: block;
-	width:30px; 
-	font-size:18px; 
-	cursor:pointer;  
-	text-align:center;
-	
+	width: 30px;
+	font-size: 18px;
+	cursor: pointer;
+	text-align: center;
+
 }
-.numbox-num{
+
+.numbox-num {
 	width: 100%;
 	flex: 1;
-	padding: 0; 
-	margin:0px; 
-	text-align: center;    
+	padding: 0;
+	margin: 0px;
+	text-align: center;
 	border: 1px solid #eee;
-	 padding-top: 1px;
-	border-radius:0;
-	border-left:0px; 
-	border-right:0px;
+	padding-top: 1px;
+	border-radius: 0;
+	border-left: 0px;
+	border-right: 0px;
 	box-shadow: none;
 	color: #666;
 }
-.numbox-minus-small,.numbox-plus-small,.numbox-num-small{
+
+.numbox-minus-small,
+.numbox-plus-small,
+.numbox-num-small {
 	height: 30px;
 	line-height: 30px;
 	border: 1px solid #eee;
 	box-sizing: border-box;
 }
+
 /**End numbot**/
+/****switch****/
+.switch-group {
+	display: inline-flex;
+	flex-direction: row;
+	width: 64px;
+	height: 30px;
+	transition-property: background-color, border;
+	border: 2px solid #ddd;
+	border-radius: 20px;
+	background-color: #fff;
+	box-sizing: border-box;
+	position: relative;
+
+}
+
+.switch-left,
+.switch-right {
+	width: 100%;
+	visibility: hidden;
+	line-height: 30px;
+	color: #646464;
+
+}
+
+.switch-left {
+	position: absolute;
+	right: 0px;
+	text-align: left;
+	top: -2px;
+	left: -2px;
+	bottom: 0px;
+	padding-left: 10px;
+
+
+}
+
+.switch-right {
+	position: absolute;
+	right: 0px;
+	text-align: right;
+	top: -2px;
+	left: -2px;
+	bottom: 0px;
+	padding-right: 10px;
+
+	padding-left: 30px;
+}
+
+.switch-left:after,
+.switch-right:before {
+	content: ".";
+	width: 30px;
+	height: 30px;
+	background-color: #007BFF;
+	border-radius: 20px;
+	color: #007BFF;
+	position: absolute;
+
+	top: 0px;
+
+}
+
+.switch-left:after {
+	right: -2px;
+}
+
+.switch-right:before {
+	left: -2px;
+
+}
+
+.switch-active {
+	visibility: visible;
+
+}
+
 /****图片上传****/
-.upimg-box{
-	 
+.upimg-box {
+
 	display: flex;
 	flex-direction: row;
 	padding: 10px;
 	flex-wrap: wrap;
-	
+
 }
-.upimg-btn{
+
+.upimg-btn {
 	width: 60px;
 	height: 60px;
 	line-height: 60px;
 	font-size: 32px;
 	text-align: center;
-	border:1px solid #eee;
+	border: 1px solid #eee;
 	margin-right: 10px;
 	color: #646464;
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
 }
- .upimg-btn-icon{
-	 font-style: normal;
- }
- .upimg-btn-icon:before{
-	 font-family: iconfont;
-	 color: #969696;
-	 font-size: 24px;
-	 font-weight: 100;
-	 content: "\e6da";
- }
-.upimg-list{
+
+.upimg-btn-icon {
+	font-style: normal;
+}
+
+.upimg-btn-icon:before {
+	font-family: iconfont;
+	color: #969696;
+	font-size: 24px;
+	font-weight: 100;
+	content: "\e6da";
+}
+
+.upimg-list {
 	flex: 1;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
-.upimg-item{
+
+.upimg-item {
 	position: relative;
 	width: 60px;
 	height: 60px;
 	margin-right: 10px;
 	margin-bottom: 10px;
 }
-.upimg-del{
+
+.upimg-del {
 	position: absolute;
 	top: 1px;
 	right: 1px;
 	justify-content: center;
 	align-items: center;
-	
+
 }
-.upimg-del:after{
+
+.upimg-del:after {
 	display: flex;
 	font-family: iconfont;
 	flex-direction: column;
-	content: "\e6b4";	 
+	content: "\e646";	
 	width: 20px;
 	height: 20px;
 	line-height: 20px;
@@ -216,9 +326,10 @@
 	font-size: 12px;
 	color: red;
 	background-color: #e0e0e0;
-    opacity: .6;
+	opacity: .6;
 }
-.upimg-img{
+
+.upimg-img {
 	width: 60px;
 	height: 60px;
 }

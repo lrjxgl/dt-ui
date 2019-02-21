@@ -57,8 +57,15 @@ $a=GET['a'];
 if($a==undefined){
 	$a="index"
 }
+
+ 
 $d=GET['d'];
-if($d!=undefined){
+if($d==undefined){
+	$d=localStorage.getItem("d");
+}else{
+	localStorage.setItem("d",$d);
+}
+if($d!=null){
 	var url=$d+"/"+$m+"/"+$a+".html";
 }else{
 	var url="html/"+$m+"/"+$a+".html";

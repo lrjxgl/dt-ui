@@ -15,6 +15,7 @@
 	 align-items: center;
 	 z-index: 998;
 	 box-shadow: 0 1px 6px #ccc;
+	 height: 44px;
  }
  
  .header-logo{
@@ -71,7 +72,7 @@
 	font-size: 14px;
 	flex-direction:row;
 	align-items:center;
-
+	cursor: pointer;
  }
  .header-back{
 	 margin-right: 5px;
@@ -112,6 +113,8 @@
 	 text-align: center;
 	 flex: 1;
 	 line-height: 30px;
+	 height: 30px;
+	 overflow: hidden;
 	 padding:0px 30px;
  }
  .header-right{
@@ -228,8 +231,26 @@
 	color: #007bff;
 }
 
-
- 
+.footerBox{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 100;
+	background-color: #fafafa;
+	border-top: 1px solid #eee;
+	font-size: 14px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+ .footerFix{
+ 	position: fixed;
+ 	bottom: 0px;
+ 	left: 0px;
+ 	right: 0px;
+ 	z-index: 100;
+ } 
 /*****详情******/
 .d-userbox{
 	display: flex;
@@ -256,6 +277,10 @@
 	color: #646464;
 	 
 }
+.d-img{
+	width: 100%;
+	height: auto;
+}
 .d-title{
 	font-size: 16px;
 	margin-bottom: 8px;
@@ -268,6 +293,9 @@
 	color: #555;
 	font-size: 14px;
 }
+.d-img{
+	width: 100%;
+}
 .d-content{
 	font-size: 14px;
 	color: #646464;
@@ -276,6 +304,12 @@
 }
 .d-content img{
 	max-width: 100%;
+}
+.market-price{
+	color: #929292;
+	text-decoration: line-through;
+	font-style: italic;
+	font-size: 14px;
 }
 /***row-box***/
  .row-box{

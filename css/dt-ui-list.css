@@ -144,7 +144,7 @@
 /***sglist****/
 .sglist{}
 .sglist-item{
-	padding: 5px;
+	padding: 10px;
 	background-color: #fff;
 	margin-bottom: 5px;
 }
@@ -164,7 +164,6 @@
 .sglist-imglist{
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content:center;
 }
 .sglist-imglist-img{
 	width: 60px;
@@ -195,6 +194,49 @@
 	width: 40px;
 	margin-right: 5px;
 }
+.sglist-ft {
+    text-align: center;
+    display: flex;
+	flex-direction: row;
+    padding: 6px 6px;
+    font-size: 14px;
+}
+.sglist-ft-love,
+.sglist-ft-cm,
+.sglist-ft-view{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.sglist-ft-love:before,
+.sglist-ft-cm:before,
+.sglist-ft-view:before {
+    font-family: "iconfont" !important;
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 14px;
+	
+}
+
+.sglist-ft-love:before {
+    content: "\e669";
+}
+
+.sglist-ft-cm:before {
+    content: "\e667";
+}
+
+.sglist-ft-view:before {
+    content: "\e819";
+}
+
+.sglist-ft-love,
+.sglist-ft-cm {
+    flex: 1;
+    border-right: 1px solid #eee;
+}
 /**flex-table**/
 .flex-table{
 	display: flex;
@@ -216,4 +258,10 @@
 	padding-top: 2px;
     font-size: 14px;
     color: #646464;
+}
+.loadMore{
+	cursor: pointer;
+	text-align: center;
+	line-height: 36px;
+	color: #646464;
 }

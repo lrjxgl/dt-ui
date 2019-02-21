@@ -160,6 +160,7 @@
 }
 .modal-title{
 	flex: 1;
+	font-size: 16px;
 }
 .modal-close{
 	font-family: iconfont;

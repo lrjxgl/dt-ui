@@ -6,7 +6,6 @@ ws.onopen = function() {
    console.log("连接成功");
    var data={"imei":"app-imeitest","do":"verify","from":"app"}
     ws.send(JSON.stringify(data));
-     
 };
 ws.onmessage = function(e) {
 	var data=JSON.parse(e.data);

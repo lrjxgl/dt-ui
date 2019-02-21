@@ -18,6 +18,9 @@ p,ol,ul,li{
 a{
 	text-decoration: none;
 }
+[gourl]{
+	cursor: pointer;
+}	
 .iconfont:before{
 	line-height: 1.5;
 }
@@ -31,7 +34,8 @@ view,div{
 }
  
 text{
-	display: flex;
+	display: inline-block;
+	line-height: 1.5;
 }
 navigator{
 	display: flex;
@@ -43,6 +47,7 @@ navigator{
 image{
 	display: flex;
 }
+ 
 .pointer{
 	cursor: pointer;
 }
