@@ -1,20 +1,20 @@
 <template>
-	<view v-if="pageLoad">
-		<view class="header">
-			<view class="header-back"></view>
-			<view class="header-title">修改资料</view>
-		</view>
-		<view class="header-row"></view>
-		<view class="main-body">
+	<div v-if="pageLoad">
+		<div class="header">
+			<div class="header-back"></div>
+			<div class="header-title">修改资料</div>
+		</div>
+		<div class="header-row"></div>
+		<div class="main-body">
 			<form>
-				<view class="input-flex">
-					<view class="input-flex-label">昵称</view>
+				<div class="input-flex">
+					<div class="input-flex-label">昵称</div>
 					<input type="text" name="nickname" value="老雷" class="input-flex-text" />
-				</view>
+				</div>
 				<button form-type="submit" class="btn-row-submit">保存</button>
 			</form>
-		</view>
+		</div>
 		
-	</view>
+	</div>
 	
 </template>

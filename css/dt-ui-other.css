@@ -16,21 +16,3 @@ swiper-item {
 	height: 200px;
 	display: flex;
 }
-
-
-
-
-
-.raty{
-	background: url(../img/star.png);
-	height: 16px;
-    width: 80px;
-    background-size: 16px 16px;
-	margin-left: 5px;
-}
-.raty-after{
-	background: url(../img/star_fill.png);
-	height: 16px;
-    width: 90%;
-    background-size: 16px 16px;
-}

@@ -1,0 +1,39 @@
+<template>
+	<div class="header">
+		<navigator url="index.html" class="header-back"></navigator>
+		<div class="header-title">评价</div>
+	</div>
+	<div class="header-row"></div>
+	<div class="main-body" >
+		 
+		<div id="app" class="row-box">
+			<sky-raty len="10" grade=5 label="质量评价" readonly="1" ></sky-raty>
+			<sky-raty len="10" grade=5 label="服务评价" ></sky-raty>
+			<sky-raty len="10" grade=5 label="快递评价" ></sky-raty>
+		</div>
+		
+	</div>
+</template>
+<div id="tpl" style="display: none;">
+	<div class="raty-group  mgb-10" >
+	<div class="raty-label" v-if="label!=''">{{label}}</div>
+	<input type="hidden" :name="fields" :value="num" class="raty-value" />
+	<div class="raty-row">
+		<div class="raty-item">
+			<div class="raty-no" @click="setRaty(index)" v-for="(item,index) in items" :key="index"></div> 
+			<div class="raty-num">+{{num}}</div>
+		</div>
+		<div class="raty-item">
+			<div  v-for="(item,index) in gradeItems" @click="setRaty(index)" :key="index" class="raty-yes"></div>
+		</div>
+	</div>
+	
+</div>
+</div>	
+<script src="js/raty.vue.js"></script>
+<script>
+	
+	var app=new Vue({
+		el:"#app",
+	})
+</script>

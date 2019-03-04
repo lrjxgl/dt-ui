@@ -1,126 +1,126 @@
 <template>
-	<view v-if="pageLoad">
-		<view class="header">
-			<view class="header-back"></view>
-			<view class="header-title">订单详情</view>
-		</view>
-		<view class="header-row"></view>
-		<view class="main-body">
-			<view class="flex bg-fff pd-10 mgb-5">
-				<view class="flex-1 cl2">单号：123123123123</view>
-				<view class="cl-primary">已接单</view>
-			</view>
-			<view class="flexlist">
-				<view class="flexlist-item mgb-0">
+	<div v-if="pageLoad">
+		<div class="header">
+			<div class="header-back"></div>
+			<div class="header-title">订单详情</div>
+		</div>
+		<div class="header-row"></div>
+		<div class="main-body">
+			<div class="flex bg-fff pd-10 mgb-5">
+				<div class="flex-1 cl2">单号：123123123123</div>
+				<div class="cl-primary">已接单</div>
+			</div>
+			<div class="flexlist">
+				<div class="flexlist-item mgb-0">
 
 					<input type="hidden" name="cart_id[]" value="571">
 					<navigator url="index.html?m=product&a=show" class="flexlist-imgbox">
 						<image src="img/100x100.jpg" class="flexlist-img"></image>
 					</navigator>
 
-					<view class="flex-1">
+					<div class="flex-1">
 						<navigator class="flexlist-title" url="index.html?m=product&a=show" target="_blank">旺旺小小酥20g</navigator>
 
 
-						<view class="flex">
-							<view class="cl2 mgr-10">款式</view>
-							<view class="cl-num mgr-10">￥18 </view>
-							<view class="flex-1"></view>
-							<view class="cl2">x 4.0</view>
+						<div class="flex">
+							<div class="cl2 mgr-10">款式</div>
+							<div class="cl-num mgr-10">￥18 </div>
+							<div class="flex-1"></div>
+							<div class="cl2">x 4.0</div>
 
-						</view>
+						</div>
 
-					</view>
-				</view>
-				<view class="flexlist-item mgb-0">
+					</div>
+				</div>
+				<div class="flexlist-item mgb-0">
 
 					<input type="hidden" name="cart_id[]" value="571">
 					<navigator url="index.html?m=product&a=show" class="flexlist-imgbox">
 						<image src="img/100x100.jpg" class="flexlist-img"></image>
 					</navigator>
 
-					<view class="flex-1">
+					<div class="flex-1">
 						<navigator class="flexlist-title" url="index.html?m=product&a=show" target="_blank">旺旺小小酥20g</navigator>
 
-						<view class="cl2">款式</view>
-						<view class="flex">
-							<view class="cl-num mgr-10">￥18 </view>
-							<view class="cl2">x 4.0</view>
+						<div class="cl2">款式</div>
+						<div class="flex">
+							<div class="cl-num mgr-10">￥18 </div>
+							<div class="cl2">x 4.0</div>
 
-						</view>
+						</div>
 
-					</view>
-				</view>
-			</view>
-			<view class="row-box mgb-5">
-				<view class="flex mgb-5">
+					</div>
+				</div>
+			</div>
+			<div class="row-box mgb-5">
+				<div class="flex mgb-5">
 					共
-					<view class="cl-num">2</view>件商品， 合计
-					<view class="cl-num">￥20</view>元， 含运费
-					<view class="cl-num">2</view>元
-				</view>
-				<view class="f14 mgb-5">备注</view>
-				<view class="bg-light pd-10 cl3 bd-radius-10">
+					<div class="cl-num">2</div>件商品， 合计
+					<div class="cl-num">￥20</div>元， 含运费
+					<div class="cl-num">2</div>元
+				</div>
+				<div class="f14 mgb-5">备注</div>
+				<div class="bg-light pd-10 cl3 bd-radius-10">
 					这是订单备注哦哦哦哦哦哦
-				</view>
-			</view>
+				</div>
+			</div>
 
-			<view class="row-box pdt-0 mgb-5">
+			<div class="row-box pdt-0 mgb-5">
 				 
-				<view class="flex-table">
-					<view class="flex-table-label">联系人：</view>
-					<view class="flex-table-box text-right">
+				<div class="flex-table">
+					<div class="flex-table-label">联系人：</div>
+					<div class="flex-table-box text-right">
 						雷哥
-					</view>
-				</view>
-				<view class="flex-table">
-					<view class="flex-table-label">手机：</view>
-					<view class="flex-table-box text-right">
+					</div>
+				</div>
+				<div class="flex-table">
+					<div class="flex-table-label">手机：</div>
+					<div class="flex-table-box text-right">
 						123123123
-					</view>
-				</view>
-				<view class="flex-table">
-					<view class="flex-table-label">收货地址：</view>
-					<view class="flex-table-box text-right">
+					</div>
+				</div>
+				<div class="flex-table">
+					<div class="flex-table-label">收货地址：</div>
+					<div class="flex-table-box text-right">
 						福建省厦门市思明区思明区1号
-					</view>
-				</view>
-			</view>
-			<view class="row-box pdt-0">
-				<view class="flex-table flex-ai-center">
-					<view class="flex-table-label">付款方式：</view>
-					<view class="flex-table-box flex  flex-ai-center">
-						<view class="cl-success">已支付</view>
-						<view class="flex-1 cl-danger  text-right mgr-10">未支付</view>
-						<view class="btn-small btn-outline-success">去支付</view>
+					</div>
+				</div>
+			</div>
+			<div class="row-box pdt-0">
+				<div class="flex-table flex-ai-center">
+					<div class="flex-table-label">付款方式：</div>
+					<div class="flex-table-box flex  flex-ai-center">
+						<div class="cl-success">已支付</div>
+						<div class="flex-1 cl-danger  text-right mgr-10">未支付</div>
+						<div class="btn-small btn-outline-success">去支付</div>
 						 
-					</view>
-				</view>
-				<view class="flex-table flex-ai-center">
-					<view class="flex-table-label">收货状态：</view>
-					<view class="flex-table-box flex flex-ai-center">
-						<view class="flex-1 cl3 text-right  mgr-10">未收货</view>
-						<view class="btn-small btn-outline-success">确认收货</view>
-					</view>
-				</view>
-				<view class="flex-table  flex-ai-center">
-					<view class="flex-table-label">订单评价：</view>
-					<view class="flex-table-box flex  flex-ai-center">
-						<view class="flex-1 cl3 text-right  mgr-10">未评价</view>
-						<view class="btn-small btn-outline-success">去评价</view>
+					</div>
+				</div>
+				<div class="flex-table flex-ai-center">
+					<div class="flex-table-label">收货状态：</div>
+					<div class="flex-table-box flex flex-ai-center">
+						<div class="flex-1 cl3 text-right  mgr-10">未收货</div>
+						<div class="btn-small btn-outline-success">确认收货</div>
+					</div>
+				</div>
+				<div class="flex-table  flex-ai-center">
+					<div class="flex-table-label">订单评价：</div>
+					<div class="flex-table-box flex  flex-ai-center">
+						<div class="flex-1 cl3 text-right  mgr-10">未评价</div>
+						<div gourl="index.html?m=order&a=raty" class="btn-small btn-outline-success">去评价</div>
 						
-					</view>
-				</view>
+					</div>
+				</div>
 				
 
-			</view>
+			</div>
 			
-			<view class="row-box flex flex-center">
-				<view class="btn btn-outline-primary ">联系卖家</view>
-				<view class="btn btn-outline-danger mgl-20">取消订单</view>
-			</view>
-		</view>
+			<div class="row-box flex flex-center">
+				<div class="btn btn-outline-primary ">联系卖家</div>
+				<div class="btn btn-outline-danger mgl-20">取消订单</div>
+			</div>
+		</div>
 
-	</view>
+	</div>
 
 </template>

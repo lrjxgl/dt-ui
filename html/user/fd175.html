@@ -1,126 +1,126 @@
 <template>
-	<view v-if="pageLoad">
-		<view class="header">
-			<view class="header-back"></view>
-			<view class="header-title">个人中心</view>
+	<div v-if="pageLoad">
+		<div class="header">
+			<div class="header-back"></div>
+			<div class="header-title">个人中心</div>
 			<navigator url="index.html?m=user&a=set" class="header-right-btn iconfont icon-settings"></navigator> 
-		</view>
-		<view class="header-row"></view>
-		<view class="main-body">
-			<view class="uhead" v-if="pageLoad">
+		</div>
+		<div class="header-row"></div>
+		<div class="main-body">
+			<div class="uhead" v-if="pageLoad">
 
 				<image class="uhead-img" src="http://img.deitui.com/?w=200&h=200&text=Logo&fontsize=36&textcolor=fff&bgcolor=ed6d53"></image>
 
-				<view class="uhead-box">
-					<view class="uhead-nick">老雷</view>
-					<view class="uhead-rnum flex">
+				<div class="uhead-box">
+					<div class="uhead-nick">老雷</div>
+					<div class="uhead-rnum flex">
 						余额 ￥
 						<text class="f14 cl-money mgl-5">10</text>
-					</view>
-					<view class="uhead-rnum flex">
+					</div>
+					<div class="uhead-rnum flex">
 						金币
 						<text class="cl-money mgl-5 mgr-5">10</text>
 
 						积分
 						<text class="cl-money mgl-5">10</text>
 
-					</view>
-				</view>
+					</div>
+				</div>
 				<navigator url="index.html?m=user&a=set" class="flex-center btn-small btn-link iconfont icon-settings"></navigator> 
-			</view>
-			<view class="order-box">
-				<view class="order-box-hd">
+			</div>
+			<div class="order-box">
+				<div class="order-box-hd">
 					我的订单
-					<view class="flex-1"></view>
-					<view @click="gourl('/pages/order/my')" class="order-box-hd-more">全部订单
+					<div class="flex-1"></div>
+					<div @click="gourl('/pages/order/my')" class="order-box-hd-more">全部订单
 						<text class="iconfont icon-right flex-ai-center"></text>
-					</view>
-				</view>
-				<view class="order-box-status flex">
-					<view @click="gourl('/pages/order/my?status=1')" class="order-box-item">
-						<text class="iconfont icon-redpacket"></text> 待付款</view>
-					<view @click="gourl('/pages/order/my?status=2')" class="order-box-item">
-						<text class="iconfont icon-redpacket"></text> 待收货</view>
-					<view @click="gourl('/pages/order/my?status=3')" class="order-box-item">
-						<text class="iconfont icon-comment"></text> 待评价</view>
-				</view>
-			</view>
+					</div>
+				</div>
+				<div class="order-box-status flex">
+					<div @click="gourl('/pages/order/my?status=1')" class="order-box-item">
+						<text class="iconfont icon-redpacket"></text> 待付款</div>
+					<div @click="gourl('/pages/order/my?status=2')" class="order-box-item">
+						<text class="iconfont icon-redpacket"></text> 待收货</div>
+					<div @click="gourl('/pages/order/my?status=3')" class="order-box-item">
+						<text class="iconfont icon-comment"></text> 待评价</div>
+				</div>
+			</div>
 			
-			<view class="m-navPic mgb-10">
+			<div class="m-navPic mgb-10">
 				<navigator url="/pages/notice/my" class="m-navPic-item">
-					<view class="m-navPic-icon icon-notice"></view>
-					<view class="m-navPic-title">我的消息</view>
+					<div class="m-navPic-icon icon-notice"></div>
+					<div class="m-navPic-title">我的消息</div>
 				</navigator>
-				<view class="m-navPic-item">
-					<view class="m-navPic-icon icon-home"></view>
-					<view class="m-navPic-title">优惠券</view>
-				</view>
-				<view class="m-navPic-item">
-					<view class="m-navPic-icon icon-home"></view>
-					<view class="m-navPic-title">我的帖子</view>
-				</view>
-				<view class="m-navPic-item">
-					<view class="m-navPic-icon icon-home"></view>
-					<view class="m-navPic-title">我的评论</view>
-				</view>
-				<view class="m-navPic-item">
-					<view class="m-navPic-icon icon-home"></view>
-					<view class="m-navPic-title">我的收藏</view>
-				</view>
-				<view class="m-navPic-item">
-					<view class="m-navPic-icon icon-home"></view>
-					<view class="m-navPic-title">消费记录</view>
-				</view>
-				<view class="m-navPic-item">
-					<view class="m-navPic-icon icon-home"></view>
-					<view class="m-navPic-title">充值记录</view>
-				</view>
-				<view class="m-navPic-item">
-					<view class="m-navPic-icon icon-home"></view>
-					<view class="m-navPic-title">收货地址</view>
-				</view>
+				<div class="m-navPic-item">
+					<div class="m-navPic-icon icon-home"></div>
+					<div class="m-navPic-title">优惠券</div>
+				</div>
+				<div class="m-navPic-item">
+					<div class="m-navPic-icon icon-home"></div>
+					<div class="m-navPic-title">我的帖子</div>
+				</div>
+				<div class="m-navPic-item">
+					<div class="m-navPic-icon icon-home"></div>
+					<div class="m-navPic-title">我的评论</div>
+				</div>
+				<div class="m-navPic-item">
+					<div class="m-navPic-icon icon-home"></div>
+					<div class="m-navPic-title">我的收藏</div>
+				</div>
+				<div class="m-navPic-item">
+					<div class="m-navPic-icon icon-home"></div>
+					<div class="m-navPic-title">消费记录</div>
+				</div>
+				<div class="m-navPic-item">
+					<div class="m-navPic-icon icon-home"></div>
+					<div class="m-navPic-title">充值记录</div>
+				</div>
+				<div class="m-navPic-item">
+					<div class="m-navPic-icon icon-home"></div>
+					<div class="m-navPic-title">收货地址</div>
+				</div>
 				
-			</view>
+			</div>
 			
-			<view class="m-navPic">
-					<view class="m-navPic-item">
-						<view class="m-navPic-icon icon-home"></view>
-						<view class="m-navPic-title">设置</view>
-					</view>
-					<view class="m-navPic-item">
-						<view class="m-navPic-icon icon-home"></view>
-						<view class="m-navPic-title">我的拼团</view>
-					</view>
-					<view class="m-navPic-item">
-						<view class="m-navPic-icon icon-home"></view>
-						<view class="m-navPic-title">我的拼团</view>
-					</view>
-					<view class="m-navPic-item">
-						<view class="m-navPic-icon icon-home"></view>
-						<view class="m-navPic-title">我的拼团</view>
-					</view>
-					<view class="m-navPic-item">
-						<view class="m-navPic-icon icon-home"></view>
-						<view class="m-navPic-title">我的拼团</view>
-					</view>
-					<view class="m-navPic-item">
-						<view class="m-navPic-icon icon-home"></view>
-						<view class="m-navPic-title">我的拼团</view>
-					</view>
-					<view class="m-navPic-item">
-						<view class="m-navPic-icon icon-home"></view>
-						<view class="m-navPic-title">我的拼团</view>
-					</view>
-					<view class="m-navPic-item">
-						<view class="m-navPic-icon icon-home"></view>
-						<view class="m-navPic-title">我的拼团</view>
-					</view>
+			<div class="m-navPic">
+					<div class="m-navPic-item">
+						<div class="m-navPic-icon icon-home"></div>
+						<div class="m-navPic-title">设置</div>
+					</div>
+					<div class="m-navPic-item">
+						<div class="m-navPic-icon icon-home"></div>
+						<div class="m-navPic-title">我的拼团</div>
+					</div>
+					<div class="m-navPic-item">
+						<div class="m-navPic-icon icon-home"></div>
+						<div class="m-navPic-title">我的拼团</div>
+					</div>
+					<div class="m-navPic-item">
+						<div class="m-navPic-icon icon-home"></div>
+						<div class="m-navPic-title">我的拼团</div>
+					</div>
+					<div class="m-navPic-item">
+						<div class="m-navPic-icon icon-home"></div>
+						<div class="m-navPic-title">我的拼团</div>
+					</div>
+					<div class="m-navPic-item">
+						<div class="m-navPic-icon icon-home"></div>
+						<div class="m-navPic-title">我的拼团</div>
+					</div>
+					<div class="m-navPic-item">
+						<div class="m-navPic-icon icon-home"></div>
+						<div class="m-navPic-title">我的拼团</div>
+					</div>
+					<div class="m-navPic-item">
+						<div class="m-navPic-icon icon-home"></div>
+						<div class="m-navPic-title">我的拼团</div>
+					</div>
 					
-				</view>
+				</div>
 
 			 
 			{include=mfooter}
-		</view>
+		</div>
 </template>
 <style>
 	.uhead {

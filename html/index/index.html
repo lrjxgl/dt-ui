@@ -1,53 +1,56 @@
 <template>
-	<view v-if="pageLoad">
-		<view class="header">
-			<view class="header-title">dt-ui</view>
-		</view>
-		<view class="header-row"></view>
-		<view class="main-body">
-			<view class="row-box">
-				<view class="g-hd-1">关于dt-ui</view>
-				<view class="cl2 bd-mp-10">
+	<div v-if="pageLoad">
+		<div class="header">
+			<div class="header-title">dt-ui</div>
+		</div>
+		<div class="header-row"></div>
+		<div class="main-body">
+			<div class="row-box">
+				<div class="g-hd-1">关于dt-ui</div>
+				<div class="cl2 bd-mp-10">
 					dt-ui 基于html5的手机css ui模板库, 适用于wap、小程序、react、vue、uniapp、weex。
-					<view class="flex pd-10">
+					<div class="flex pd-10">
 						<a class="btn-small btn-outline-success mgr-10" href="https://github.com/lrjxgl/dt-ui" target="_blank">Github</a>
 						<a class="btn-small btn-outline-info" href="http://www.deitui.com/module.php?m=ask&a=list&gid=29">交流论坛</a>
-					</view>
-				</view>
-				<view class="list">
-					<view class="tabs-toggle-group">
-						<view class="tabs-toggle">
-							<view class="tabs-toggle-hd g-hd-2">dt-ui</view>
-							<view class="tabs-toggle-box">
+					</div>
+				</div>
+				<div class="list">
+					<div class="tabs-toggle-group">
+						<div class="tabs-toggle">
+							<div class="tabs-toggle-hd g-hd-2">dt-ui</div>
+							<div class="tabs-toggle-box">
 								<navigator class="row-item" url="index.html?m=uicss&a=base">
-									<view class="flex-1">Base</view> 
+									<div class="flex-1">Base</div> 
 								</navigator>
 								<navigator class="row-item" url="index.html?m=uicss&a=btn">
-									<view class="flex-1">Btn</view>
+									<div class="flex-1">Btn</div>
 								</navigator>
 								<navigator class="row-item" url="index.html?m=uicss&a=form">
-									<view class="flex-1">Form</view>
+									<div class="flex-1">Form</div>
 								</navigator>
 								<navigator class="row-item" url="index.html?m=uicss&a=page">
-									<view class="flex-1">page</view>
+									<div class="flex-1">page</div>
 								</navigator>
 								<navigator class="row-item" url="index.html?m=uicss&a=tabs">
-									<view class="flex-1">tabs</view>
+									<div class="flex-1">tabs</div>
 								</navigator>
 								<navigator class="row-item" url="index.html?m=uicss&a=list">
-									<view class="flex-1">list</view>
+									<div class="flex-1">list</div>
 								</navigator>
 								<navigator class="row-item" url="index.html?m=uicss&a=modal">
-									<view class="flex-1">弹框</view>
+									<div class="flex-1">弹框</div>
 								</navigator>
 								<navigator class="row-item" url="index.html?m=uicss&a=animate">
-									<view class="flex-1">animate</view>
+									<div class="flex-1">animate</div>
 								</navigator>
-							</view>
-						</view>
-						<view class="tabs-toggle">
-							<view class="tabs-toggle-hd g-hd-2">风格</view>
-							<view class="tabs-toggle-box">
+								<navigator class="row-item" url="index.html?m=raty">
+									<div class="flex-1">raty</div>
+								</navigator>
+							</div>
+						</div>
+						<div class="tabs-toggle">
+							<div class="tabs-toggle-hd g-hd-2">风格</div>
+							<div class="tabs-toggle-box">
 								<div class="pd-5 cl2">dt-ui可以轻松定制各种风格</div>
 							<div class="skinsList">
 								
@@ -58,89 +61,89 @@
 								<div class="skinsList-item"  data-skins="skins-default.css" style="background-color: #333333;"></div>
 								<div class="skinsList-item"  data-skins="skins-8A2BE2.css" style="background-color: #8A2BE2;"></div>
 							</div>
-							</view>	
-						</view>
+							</div>	
+						</div>
 						
-						<view class="tabs-toggle">
-							<view class="tabs-toggle-hd g-hd-2">页面模板</view>
-							<view class="tabs-toggle-box">
-								<view class="row-item" gourl="index.html?m=login">
-									<view class="flex-1">登录页面</view>
-								</view>
-								<view class="row-item" gourl="index.html?m=register">
-									<view class="flex-1">注册页面</view>
-								</view>
-								<view class="row-item" gourl="index.html?m=user">
-									<view class="flex-1">个人中心</view>
-								</view>
-								<view class="row-item" gourl="index.html?m=user&a=fd175">
-									<view class="flex-1">个人中心2</view>
-								</view>
-								<view class="row-item" gourl="index.html?m=article">
-									<view class="flex-1">文章</view>
-								</view>
+						<div class="tabs-toggle">
+							<div class="tabs-toggle-hd g-hd-2">页面模板</div>
+							<div class="tabs-toggle-box">
+								<div class="row-item" gourl="index.html?m=login">
+									<div class="flex-1">登录页面</div>
+								</div>
+								<div class="row-item" gourl="index.html?m=register">
+									<div class="flex-1">注册页面</div>
+								</div>
+								<div class="row-item" gourl="index.html?m=user">
+									<div class="flex-1">个人中心</div>
+								</div>
+								<div class="row-item" gourl="index.html?m=user&a=fd175">
+									<div class="flex-1">个人中心2</div>
+								</div>
+								<div class="row-item" gourl="index.html?m=article">
+									<div class="flex-1">文章</div>
+								</div>
 								 
-								<view class="row-item" gourl="index.html?m=article&a=show">
-									<view class="flex-1">文章详情</view>
-								</view>
-								<view class="row-item" gourl="index.html?m=product">
-									<view class="flex-1">产品</view>
-								</view>
-								<view class="row-item" gourl="index.html?m=product&a=show">
-									<view class="flex-1">产品详情</view>
-								</view>
-							</view>
-						</view>
-						<view class="tabs-toggle">
-							<view class="tabs-toggle-hd g-hd-2">项目模板</view>
-							<view class="tabs-toggle-box">
+								<div class="row-item" gourl="index.html?m=article&a=show">
+									<div class="flex-1">文章详情</div>
+								</div>
+								<div class="row-item" gourl="index.html?m=product">
+									<div class="flex-1">产品</div>
+								</div>
+								<div class="row-item" gourl="index.html?m=product&a=show">
+									<div class="flex-1">产品详情</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs-toggle">
+							<div class="tabs-toggle-hd g-hd-2">项目模板</div>
+							<div class="tabs-toggle-box">
 								<navigator class="row-item" url="index.html?m=index&a=fd175">
-									<view class="flex-1">小城网模板</view>
+									<div class="flex-1">小城网模板</div>
 								</navigator>
 								<navigator class="row-item" url="index.html?m=index&a=forum">
-									<view class="flex-1">论坛模板</view>
+									<div class="flex-1">论坛模板</div>
 								</navigator>
 								<navigator class="row-item" url="index.html?m=index&a=shop">
-									<view class="flex-1">商城模板</view>
+									<div class="flex-1">商城模板</div>
 								</navigator>
 								<navigator class="row-item" url="index.html?m=index&a=taoke">
-									<view class="flex-1">淘客模板</view>
+									<div class="flex-1">淘客模板</div>
 								</navigator>
 								<navigator class="row-item" url="index.html?m=index&a=xyo2o">
-									<view class="flex-1">校园O2O</view>
+									<div class="flex-1">校园O2O</div>
 								</navigator>
 								<navigator class="row-item" url="index.html?m=index&a=b2b">
-									<view class="flex-1">B2B</view>
+									<div class="flex-1">B2B</div>
 								</navigator>
 								<navigator class="row-item" url="index.html?m=chat">
-									<view class="flex-1">聊天</view>
+									<div class="flex-1">聊天</div>
 								</navigator>
-							</view>
-						</view>
+							</div>
+						</div>
 						
-						<view class="tabs-toggle">
-							<view class="tabs-toggle-hd g-hd-2">Vue项目</view>
-							<view class="tabs-toggle-box">
+						<div class="tabs-toggle">
+							<div class="tabs-toggle-hd g-hd-2">Vue项目</div>
+							<div class="tabs-toggle-box">
 								Vue项目集合
-							</view>
-						</view>
-						<view class="tabs-toggle">
-							<view class="tabs-toggle-hd g-hd-2">Uni项目</view>
-							<view class="tabs-toggle-box">
+							</div>
+						</div>
+						<div class="tabs-toggle">
+							<div class="tabs-toggle-hd g-hd-2">Uni项目</div>
+							<div class="tabs-toggle-box">
 								Uni项目集合
-							</view>
-						</view>
-						<view class="tabs-toggle">
-							<view class="tabs-toggle-hd g-hd-2">Weex项目</view>
-							<view class="tabs-toggle-box">
+							</div>
+						</div>
+						<div class="tabs-toggle">
+							<div class="tabs-toggle-hd g-hd-2">Weex项目</div>
+							<div class="tabs-toggle-box">
 								Weex项目集合
-							</view>
-						</view>	
-					</view>
-				</view>
-			</view>
-		</view>
-	</view>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
 <style>
 	 

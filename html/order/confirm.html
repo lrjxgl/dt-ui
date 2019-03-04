@@ -1,112 +1,112 @@
 <template>
-	<view v-if="pageLoad">
-	<view class="header">
-		<view class="header-back"></view>
-		<view class="header-title">确认下单</view>
-	</view>
-	<view class="header-row"></view>
+	<div v-if="pageLoad">
+	<div class="header">
+		<div class="header-back"></div>
+		<div class="header-title">确认下单</div>
+	</div>
+	<div class="header-row"></div>
 	<form method="post">
 
 		<input type="hidden" name="back_url" value="http://skyshop.deitui.com/index.php?m=order_cart">
-		<view class="row-box">
-			<view class="row-box-hd">
-				<view class="flex-1">收货地址</view> 
+		<div class="row-box">
+			<div class="row-box-hd">
+				<div class="flex-1">收货地址</div> 
 				<navigator url="index.html?m=user_address&a=add" class="cl2">新增地址</navigator>
-			</view>
+			</div>
  
 
-			<view class="addr-list">
-					<view class="flex flex-ai-center">
+			<div class="addr-list">
+					<div class="flex flex-ai-center">
 							<input class="radio" type="radio" />
 							福建省福鼎1号 雷哥
-					</view>
-			</view>
-		</view>
+					</div>
+			</div>
+		</div>
 
-		<view class="row-box">
-			<view class="g-hd-1">产品列表</view>
-			<view class="flexlist">
-				<view class="flexlist-item">
+		<div class="row-box">
+			<div class="g-hd-1">产品列表</div>
+			<div class="flexlist">
+				<div class="flexlist-item">
 					 
 						<input type="hidden" name="cart_id[]" value="571">
 						<navigator url="index.html?m=product&a=show" class="flexlist-imgbox" >
 							<image src="img/100x100.jpg" class="flexlist-img"></image>
 						</navigator>
 					 
-					<view class="flex-1">					 
+					<div class="flex-1">					 
 						<navigator class="flexlist-title" url="index.html?m=product&a=show" target="_blank">旺旺小小酥20g</navigator>
 						 
-						<view class="cl2">款式</view>
-						<view class="flex">
-							<view class="cl-num mgr-10">￥18 </view> 
-							<view class="cl2">x 4.0</view>
+						<div class="cl2">款式</div>
+						<div class="flex">
+							<div class="cl-num mgr-10">￥18 </div> 
+							<div class="cl2">x 4.0</div>
 							
-						</view>
+						</div>
 									
-					</view>
-				</view>
-				<view class="flexlist-item">
+					</div>
+				</div>
+				<div class="flexlist-item">
 					
 						<input type="hidden" name="cart_id[]" value="571">
 						<navigator url="index.html?m=product&a=show" class="flexlist-imgbox" >
 							<image src="img/100x100.jpg" class="flexlist-img"></image>
 						</navigator>
 					
-					<view class="flex-1">					 
+					<div class="flex-1">					 
 						<navigator class="flexlist-title" url="index.html?m=product&a=show" target="_blank">旺旺小小酥20g</navigator>
 						
-						<view class="flex">
-							<view class="cl2 mgr-10">款式</view>
-							<view class="cl-num mgr-10">￥18 </view> 
-							<view class="flex-1"></view>
-							<view class="cl2">x 4.0</view>
+						<div class="flex">
+							<div class="cl2 mgr-10">款式</div>
+							<div class="cl-num mgr-10">￥18 </div> 
+							<div class="flex-1"></div>
+							<div class="cl2">x 4.0</div>
 							
-						</view>
+						</div>
 									
-					</view>
-				</view> 
-			</view>
-		</view>
+					</div>
+				</div> 
+			</div>
+		</div>
 
-		<view class="row-box">
-			<view class="flex">
+		<div class="row-box">
+			<div class="flex">
 				商品：￥
-				<view id="goods_money">73</view>元 邮费：￥
-				<view id="express_fee">0</view>元 总价：￥
-				<view id="total_money">73</view>
-			</view>
-			<view class="cart-stat">
+				<div id="goods_money">73</div>元 邮费：￥
+				<div id="express_fee">0</div>元 总价：￥
+				<div id="total_money">73</div>
+			</div>
+			<div class="cart-stat">
 
 				账户余额：0.00元
-			</view>
-		</view>
+			</div>
+		</div>
 
-		<view class="row-box">
-			<view class="row-box-hd mgb-10">支付方式</view>
+		<div class="row-box">
+			<div class="row-box-hd mgb-10">支付方式</div>
 
-			<view class="paylist">
+			<div class="paylist">
 				<input type="hidden" name="pay_type" id="pay_type" value="unpay">
-				<view class="paylist-item paylist-item-active" v="unpay">货到付款</view>
+				<div class="paylist-item paylist-item-active" v="unpay">货到付款</div>
 
-				<view class="paylist-item" v="alipay">支付宝</view>
+				<div class="paylist-item" v="alipay">支付宝</div>
 
-				<view class="paylist-item" v="wxpay">微信支付</view>
+				<div class="paylist-item" v="wxpay">微信支付</div>
 
-				<view class="paylist-item" v="paypal">paypal</view>
+				<div class="paylist-item" v="paypal">paypal</div>
 
-			</view>
-		</view>	
-			<view class="row-box">
+			</div>
+		</div>	
+			<div class="row-box">
 				<textarea name="comment" class="textarea" placeholder="请输入订单备注"></textarea>
 
-				<view class="btn-row-submit" gourl="index.html?m=order&a=success" >确认购买</view>
+				<div class="btn-row-submit" gourl="index.html?m=order&a=success" >确认购买</div>
 
 
-			</view>
+			</div>
 
-		</view>
+		</div>
 	</form>
-	</view>
+	</div>
 </template>
 <link href="html/order/confirm.css" rel="stylesheet" />
 <style>

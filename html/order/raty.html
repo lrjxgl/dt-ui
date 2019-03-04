@@ -1,0 +1,72 @@
+<template>
+	<div>
+		<div class="header">
+			<div class="header-back"></div>
+			<div class="header-title">订单评价</div>
+		</div>
+		<div class="header-row"></div>
+		<div class="main-body">
+			<div class="row-box mgb-5">
+				<div class="raty-group  mgb-10" data-w="16">
+					<div class="cl2">产品质量</div>
+					<input type="hidden" name="" class="raty-value" />
+					<div class="raty raty10 js-raty">
+						<div class="raty-after"></div>
+					</div>
+					<div class="raty-num"></div>
+				</div>
+				<div class="raty-group  mgb-10" data-w="16">
+					<div class="cl2">服务质量</div>
+					<input type="hidden" name="" class="raty-value" />
+					<div class="raty raty10 js-raty">
+						<div class="raty-after"></div>
+					</div>
+					<div class="raty-num"></div>
+				</div>
+				<div class="raty-group  mgb-10" data-w="16">
+					<div class="cl2">服务质量</div>
+					<input type="hidden" name="" class="raty-value" />
+					<div class="raty raty10 js-raty">
+						<div class="raty-after"></div>
+					</div>
+					<div class="raty-num"></div>
+				</div>
+				
+			</div>
+			<div class="textarea-flex">
+				<div class="textarea-flex-label">评价内容</div>
+				<textarea class="textarea-flex-text h60"></textarea>
+			</div>
+			<div class="row-box">
+				<div class="flexlist-item">
+					<img class="flexlist-img" src="img/100x100.jpg" />
+					<div class="flex-1">
+						<div class="flexlist-title">福鼎肉片</div>
+						<div class="raty-group" data-w="16">
+							 
+							<input type="hidden" name="" class="raty-value" />
+							<div class="raty raty10 js-raty">
+								<div class="raty-after"></div>
+							</div>
+							<div class="raty-num"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="btn-row-submit">提交评价</div>
+		</div>
+	</div>
+</template>
+<script>
+	$(document).on("click",".js-raty",function(e){
+		var x=parseInt(e.offsetX);
+		var pw=$(this).parents(".raty-group").attr("data-w");
+		var w=Math.round(x/pw)*10;
+		console.log(w);
+		var p=$(this).parents(".raty-group");
+		$(this).find(".raty-after").width(w+"%");
+		var v=Math.round(w)/10;
+		p.find(".raty-num").html(v);
+		p.find(".raty-value").val(v);
+	})
+</script>

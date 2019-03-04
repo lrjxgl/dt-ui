@@ -11,7 +11,7 @@ $files=array(
 	"dt-ui-modal.css",	
 	"dt-ui-page.css",
 	"dt-ui-tabs.css",
-	
+	"dt-ui-raty.css",
 );
 $html="";
 foreach($files as $file){
@@ -23,7 +23,7 @@ $html=preg_replace_callback("/(\d+)px/",function($res){
 	if($res[1]==1){
 		return "1px";
 	}else{
-		return ($res[1]*2.2)."upx";
+		return ($res[1]*2.4)."upx";
 	}
 	
 },$html);

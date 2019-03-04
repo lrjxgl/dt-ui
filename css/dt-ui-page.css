@@ -367,3 +367,22 @@
 	 text-align: center;
 	 color: #646464;
  }
+/**kslist**/
+.kslist{
+	display: flex;
+	flex-direction: row;		
+	align-items: center;
+	padding-left: 10px;
+}
+.kslist-label{
+	margin-right: 6px;
+	color: #646464;
+}
+.kslist-item{
+	border: 1px solid #eee;
+	padding: 4px 8px;
+	margin-right: 10px;
+}
+.kslist-active{
+	color: #007AFF;
+} 

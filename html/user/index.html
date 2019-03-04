@@ -1,103 +1,103 @@
 <template>
-	<view v-if="pageLoad">
-	<view class="header">
-		<view class="header-back"></view>
-		<view class="header-title">个人中心</view>
-	</view>
-	<view class="header-row"></view>
-	<view class="main-body">
-		<view class="uhead" v-if="pageLoad">
+	<div v-if="pageLoad">
+	<div class="header">
+		<div class="header-back"></div>
+		<div class="header-title">个人中心</div>
+	</div>
+	<div class="header-row"></div>
+	<div class="main-body">
+		<div class="uhead" v-if="pageLoad">
 
 			<image gourl="index.html?m=user&a=user_head" class="uhead-img" src="img/100x100.jpg"></image>
 
-			<view class="uhead-box">
-				<view class="uhead-nick">老雷</view>
-				<view class="uhead-rnum flex">
+			<div class="uhead-box">
+				<div class="uhead-nick">老雷</div>
+				<div class="uhead-rnum flex">
 					余额 ￥
 					<text class="f14 cl-money mgl-5">10</text>
-				</view>
-				<view class="uhead-rnum flex">
+				</div>
+				<div class="uhead-rnum flex">
 					金币
 					<text class="cl-money mgl-5 mgr-5">10</text>
 					 
 					积分
 					<text class="cl-money mgl-5">10</text>
 
-				</view>
-			</view>
-		</view>
-		<view class="order-box">
-			<view class="order-box-hd">
+				</div>
+			</div>
+		</div>
+		<div class="order-box">
+			<div class="order-box-hd">
 				我的订单
-				<view class="flex-1"></view>
-				<view gourl="index.html?m=order&a=my" class="order-box-hd-more">全部订单
+				<div class="flex-1"></div>
+				<div gourl="index.html?m=order&a=my" class="order-box-hd-more">全部订单
 					<text class="iconfont icon-right flex-center"></text>
-				</view>
-			</view>
-			<view class="order-box-status flex">
-				<view gourl="index.html?m=order&a=my" class="order-box-item">
-					<text class="iconfont icon-moneybag"></text> 待付款</view>
-				<view gourl="index.html?m=order&a=my"  class="order-box-item">
-					<text class="iconfont icon-deliver"></text> 待收货</view>
-				<view gourl="index.html?m=order&a=my"  class="order-box-item">
-					<text class="iconfont icon-comment"></text> 待评价</view>
-			</view>
-		</view>
+				</div>
+			</div>
+			<div class="order-box-status flex">
+				<div gourl="index.html?m=order&a=my" class="order-box-item">
+					<text class="iconfont icon-moneybag"></text> 待付款</div>
+				<div gourl="index.html?m=order&a=my"  class="order-box-item">
+					<text class="iconfont icon-deliver"></text> 待收货</div>
+				<div gourl="index.html?m=order&a=my"  class="order-box-item">
+					<text class="iconfont icon-comment"></text> 待评价</div>
+			</div>
+		</div>
 
-		<view class="row-box mgb-5">
+		<div class="row-box mgb-5">
 			
 			<navigator url="index.html?m=notice&a=my" class="row-item"> 
-				<view   class="row-item-icon icon-text"></view>
-				<view class="row-item-title">我的消息</view>
+				<div   class="row-item-icon icon-text"></div>
+				<div class="row-item-title">我的消息</div>
 			</navigator>
 			<navigator url="index.html?m=coupon&a=my" class="row-item">
-				<view class="row-item-icon icon-text"></view>
-				<view class="row-item-title">我的优惠券</view>
+				<div class="row-item-icon icon-text"></div>
+				<div class="row-item-title">我的优惠券</div>
 			</navigator>
 			
 			<navigator url="index.html?m=forum&a=my" class="row-item">
-				<view class="row-item-icon icon-text"></view>
-				<view class="row-item-title">我的帖子</view>
+				<div class="row-item-icon icon-text"></div>
+				<div class="row-item-title">我的帖子</div>
 			</navigator>
 			<navigator url="index.html?m=comment&a=my" class="row-item">
-				<view class="row-item-icon icon-comment"></view>
-				<view class="flex-1">我的评论</view>
+				<div class="row-item-icon icon-comment"></div>
+				<div class="flex-1">我的评论</div>
 			</navigator>
-		</view>	
-		<view class="row-box mgb-5">	
+		</div>	
+		<div class="row-box mgb-5">	
 			<navigator url="index.html?m=fav&a=my" class="row-item">
-				<view class="row-item-icon icon-favor"></view>
-				<view class="flex-1">我的收藏</view>
+				<div class="row-item-icon icon-favor"></div>
+				<div class="flex-1">我的收藏</div>
 			</navigator>
 			
 			<navigator url="index.html?m=pay_log&a=my" class="row-item">
-				<view class="row-item-icon icon-text"></view>
-				<view class="flex-1">消费记录</view>
+				<div class="row-item-icon icon-text"></div>
+				<div class="flex-1">消费记录</div>
 			</navigator>
 			<navigator url="index.html?m=recharge&a=my" class="row-item">
-				<view class="row-item-icon icon-text"></view>
-				<view class="flex-1">充值记录</view>
+				<div class="row-item-icon icon-text"></div>
+				<div class="flex-1">充值记录</div>
 			</navigator>
-		</view>
+		</div>
 		
-		<view class="row-box  mgb-5">
+		<div class="row-box  mgb-5">
 			<navigator class="row-item" url="index.html?m=user&a=info">
-				<view class="row-item-icon icon-people"></view> 
-				<view class="flex-1">老雷</view>
+				<div class="row-item-icon icon-people"></div> 
+				<div class="flex-1">老雷</div>
 			</navigator>
 			<navigator class="row-item" url="index.html?m=user&a=password">
-				<view class="row-item-icon icon-password"></view>
-				<view class="flex-1">修改密码</view>
+				<div class="row-item-icon icon-password"></div>
+				<div class="flex-1">修改密码</div>
 			</navigator>
 			<navigator url="index.html?m=user_address&a=my" class="row-item">
-				<view class="row-item-icon icon-text"></view>
-				<view class="flex-1">收货地址</view>
+				<div class="row-item-icon icon-text"></div>
+				<div class="flex-1">收货地址</div>
 			</navigator> 
-		</view>	
+		</div>	
 
-	</view>
-	<view class="btn-row-submit btn-danger">注销</view>
-	</view> 
+	</div>
+	<div class="btn-row-submit btn-danger">注销</div>
+	</div> 
 </template>
 <style>
 	.uhead {

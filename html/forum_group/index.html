@@ -1,34 +1,34 @@
 <template>
-	<view v-if="pageLoad">
-	<view class="header">
-		<view class="header-back"></view>
-		<view class="header-title">板块大全</view>
-		<view class="header-right-btn">发布</view>
-	</view>
-	<view class="header-row"></view>
-	<view class="flexlist">
-		<view class="flexlist-item bg-fff">
+	<div v-if="pageLoad">
+	<div class="header">
+		<div class="header-back"></div>
+		<div class="header-title">板块大全</div>
+		<div class="header-right-btn">发布</div>
+	</div>
+	<div class="header-row"></div>
+	<div class="flexlist">
+		<div class="flexlist-item bg-fff">
 			<navigator class="flexlist-imgbox" url="index.html?m=forum">
 				<img class="flexlist-img" src="https://deitui-weizhan1.oss-cn-hangzhou.aliyuncs.com/attach/group/2018/07/04/0023d75cc1b2925a0074c2b202f52dcd.jpg.100x100.jpg">
 			</navigator>
-			<view class="flex-1">
+			<div class="flex-1">
 				<navigator class="flexlist-title" url="/shop.php?m=forum&amp;a=list&amp;gid=1">唠叨</navigator>
-				<view class="flexlist-desc">美女</view>
-				<view class="flexlist-row">
+				<div class="flexlist-desc">美女</div>
+				<div class="flexlist-row">
 					主题数
 					<text class="cl-num mgl-5 mgr-10">1</text> 
 					 
 					评论数
 					<text class="cl-num  mgl-5">0</text>
-				</view>
+				</div>
 				
-			</view>
+			</div>
 
-		</view>
+		</div>
 		
-	</view>
+	</div>
 	
 	{include=mfooter}
-	</view>
+	</div>
 </template>
  
