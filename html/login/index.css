@@ -25,6 +25,7 @@
 }
 
 .flexIcon {
+	display: flex;
 	flex-direction: row;
 	background-color: #2e85d8;
 	margin-bottom: 20px;

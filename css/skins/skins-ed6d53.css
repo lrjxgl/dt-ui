@@ -19,6 +19,10 @@
 	color: #fff;
 	border-color: #fff;
 }
+.header-search-btn{
+	background-color: #ff815a;
+	color: #fff;
+}
 /*****底部风格****/
 .footer{
 	background-color: #ed6d53;

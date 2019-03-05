@@ -25,6 +25,12 @@ a{
 	line-height: 1.5;
 }
 view,div{
+	color: #323232;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+/*
+view,div{
 	display: flex;
 	flex-direction: column;
 	color: #323232;
@@ -32,6 +38,7 @@ view,div{
 	flex-shrink:0;
 	font-size: 14px;
 }
+*/
  
 text{
 	display: inline-block;

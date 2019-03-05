@@ -36,6 +36,7 @@
 .tabs-toggle-hd{
 	line-height: 36px;
 	flex: 1;
+	display: flex;
 	flex-direction: row;
 	position: relative;
 	border-bottom: 1px solid #f0f0f0;
@@ -93,6 +94,7 @@
 }
 
 .tab-select-label {
+	display: flex;
 	flex-direction: row;
 	position: relative;
 	margin-right: 3px;
@@ -151,6 +153,7 @@
 	z-index: 999;
 }
 .tab-select-catbox{
+	display: flex;
 	flex-direction: row;
 }
 .tab-select-box-item {

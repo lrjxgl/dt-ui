@@ -81,6 +81,7 @@
 /**textarea**/
 .textarea-flex {
 	padding: 10px;
+	display: flex;
 	flex-direction: column;
 	background-color: #fff;
 	margin-bottom: 5px;
@@ -100,6 +101,7 @@
 
 /****radio****/
 .radio-flex {
+	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
@@ -113,6 +115,7 @@
 
 /***checkbox****/
 .checkbox-flex {
+	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
