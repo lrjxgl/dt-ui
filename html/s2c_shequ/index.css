@@ -1,0 +1,73 @@
+.header, .header-show{
+	box-shadow: none;
+	background-color: #f75451;
+}
+.scTop-bg {
+	position: absolute;
+	left: 0;
+	right: 0;
+
+	background-color: #f75451;
+	height: 200px;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+.scTop {
+	position: relative;
+	z-index: 1;
+}
+
+.scTop-searchBox {
+	border-radius: 10px;
+	padding: 6px;
+	background-color: #fff;
+	margin: 10px 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+}
+
+.scTop-icon:before {
+	color: #646464;
+}
+
+.scTop-text {
+	height: 22px;
+	line-height: 22px;
+	flex: 1;
+	margin-left: 2px;
+	margin-right: 2px;
+	border: 0;
+	outline: 0;
+	color: #323232;
+}
+
+.tzBox {
+	background-color: #fff;
+	margin: 30px 10px 10px 10px;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+	position: relative;
+	padding-top: 30px;
+}
+
+.tzBox-head {
+	position: absolute;
+	top: -25px;
+	width: 50px;
+	height: 50px;
+	left: 50%;
+	margin-left: -25px;
+	border-radius: 50%;
+}
+
+.shd {
+	border-left: 4px solid #ff695c;
+	padding: 6px;
+	font-size: 16px;
+	font-weight: bolder;
+
+}
