@@ -1,6 +1,11 @@
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 14px;
+}
 /**头部风格***/
-.header{
+.header,.header-show{
  background-color: #333333;	
+ box-shadow: none;  
 }
 .header-back:after,.header-title{color: #fff;}
 
@@ -46,6 +51,6 @@
 	background-color:#333333 !important;
 }
 
-.btn-buy{
+.btn,.btn-buy{
 	background-color: #333;
 }

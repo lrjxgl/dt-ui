@@ -35,5 +35,5 @@ $(document).on("click", ".js-modal", function() {
 	$(".modal-group").show();
 })
 $(document).on("click", ".modal-close,.modal-mask", function() {
-	$(".modal-group").hide();
+	$(this).parents(".modal-group").hide();
 })

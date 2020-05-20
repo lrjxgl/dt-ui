@@ -97,6 +97,8 @@
 	border: 1px solid #eee;
 	border-radius: 5px;
 	padding: 5px;
+	box-sizing: border-box;
+	width:100%;
 }
 
 /****radio****/
@@ -112,7 +114,28 @@
 	display: inline-flex;
 	position: relative;
 }
-
+.radioList-item{
+	border-bottom: 1px solid #eee;
+	padding: 10px 10px; 
+	cursor: pointer;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	color: #646464;
+}
+.radioList-item:before,.radioList-item-active:before{
+	font-family: iconfont;
+	font-size: 18px;
+	margin-right: 3px;
+}
+.radioList-item:before{						
+	content: "\e763";
+	color: #aaa;
+}
+.radioList-item-active:before{
+	content: "\e75b";
+	color: #0034FF;
+}
 /***checkbox****/
 .checkbox-flex {
 	display: flex;

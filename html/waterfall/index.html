@@ -1,0 +1,94 @@
+<template>
+	<div class="header">
+		<navigator url="index.html" class="header-back"></navigator>
+		<div class="header-title">waterFall</div>
+	</div>
+	<div class="header-row"></div>
+<div id="app" class=" mgt-5">
+     <div class="waterfall ">
+		 <div v-for="(item,index) in list" :key="index" class="waterfall-item" >{{item}}</div>
+		 <div style="height: 220px;"></div>
+	 </div>
+	  <div id="addWarter" class="btn-row-submit" @click="addWarter(10)">浇水</div>
+</div>
+
+</template>
+<style>
+
+.waterfall {
+	display: block;
+    column-gap:10px;
+    column-count: 2;
+	justify-content: flex-start;
+	padding: 5px;
+}
+.waterfall-3{
+	column-count: 3;
+}
+.waterfall-item {
+	width: 100%;
+    padding: 10px;
+	margin-bottom: 10px;
+	break-inside: avoid;
+	border: 1px solid #000;
+}
+.waterfall-item:nth-child(3n){
+	background-color: #f50;
+	height: 100px;
+} 
+.waterfall-item:nth-child(5){
+	background-color: #f50;
+	height: 300px;
+} 
+.waterfall-item:nth-child(15){
+	background-color: #f50;
+	height: 200px;
+} 
+.waterfall-item:nth-child(3n+1){
+	background-color: #007BFF;
+	height: 120px;
+} 	
+</style>
+ 
+<script>
+	var start=0;
+	var num=0;
+	var app=new Vue({
+		el:"#app",
+		data:function(){
+			return {
+				list:[],
+				col:2,
+				waterfall:[]
+			}
+		},
+		created:function(){
+			this.gridList(10);
+			
+		},
+		methods:{
+			gridList:function(len){
+				var html="";
+				var arr=[];
+				
+				for(var j=0;j<this.col;j++){
+					for(var i=0;i<len;i++){
+						if(i%this.col==j){
+							num++;
+							arr.push(i+'列');
+							//html=html+'<div class="waterfall-item">'+i+'列</div>';
+						}
+						 
+					}
+				}
+				
+				start=len;
+				 
+				this.list=arr;
+			},
+			addWarter:function(len){
+				this.gridList(start+len);
+			}
+		}
+	})
+</script>

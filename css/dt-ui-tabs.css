@@ -21,8 +21,7 @@
 }
 .tabs-border-box{
 	display: none;
-	background-color: #fff;
-	padding: 10px;
+	flex-direction: column;
 }
 .tabs-border-box-active{
 	display: flex;
@@ -100,7 +99,7 @@
 	margin-right: 3px;
 	justify-content: center;
 	align-items: center;
-	font-size: 16px;
+	font-size: 14px;
 	color: #646464;
 }
 

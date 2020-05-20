@@ -1,0 +1,389 @@
+<template>
+	<style>
+		.videobox{
+			position:absolute;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+			display:block;
+			overflow:hidden;
+		}
+		.videoMask{
+			position:absolute;
+			top:150px;
+			left:50%;
+			 z-index:999;
+			 font-size:60px;
+		}
+		.video{
+			width:100%;
+		}
+		.videoTools{
+			position:absolute;
+			left:5px;
+			right:5px;
+			top:10px;
+			height:1px;
+			background-color:#333;
+			display:none; 
+		}
+		.videoDot{
+			position:absolute;
+			width:10px;
+			height:10px;
+			top:-5px;
+			background-color:#f30;
+			border-radius:50%;
+		}
+		.ftBox{
+			position:fixed;
+			bottom:0;
+			left:0;
+			right:0;
+			z-index:999;
+		}
+		.ftBox-goods{
+			font-size:36px;
+			color:#f00;
+			
+		}
+		.ftBox-text{
+			height:36px;
+			line-height:36px;
+			border:0;
+			border-radius:5px;
+			background-color:#333;
+			opacity:0.6;
+			width:100%;
+			color:#fff;
+			padding-left:5px;
+		}
+		.btn-send{
+			height:38px;
+			line-height:38px;
+			padding:0px 8px;
+			justify-content:center;
+			 
+			color:#fff;
+		}
+		.msgList{
+			height:100px;
+			padding:5px;
+			overflow:auto;
+		}
+		.msgList-item{
+			display:flex;
+			flex-direction:row;
+		}
+		.msgList-nick{
+			margin-right:10px;
+			color:#f60;
+			font-size:12px;
+		}
+		.msgList-desc{
+			color:#ff0;
+			font-size:12px;
+			flex:1;
+		}
+		.modal-goods{
+			position:fixed;
+			bottom:0px;
+			left:0px;
+		 
+			right:0px;
+			 z-index:999;
+			 background-color:#fff;
+		}
+		.modal-share{
+			position:fixed;
+			bottom:0px;
+			left:30px;
+					 
+			right:30px;
+			 z-index:999;
+			 background-color:#fff;
+		}
+		.mline{
+			margin-bottom:10px;
+			border-bottom:1px dotted #333;
+		}
+		.btn-quan{
+			font-size:12px;
+			color:#f30;
+			padding:3px;
+			border:1px dotted #f30;
+		}
+		.btn-ma{
+			width:160px;
+			margin:0 auto;
+			border:1px dotted #f30;
+			line-height:30px;
+			height:30px;
+			font-size:14px;
+			text-align:center;
+			margin-bottom:10px;
+			background-color:#fcf6f6;
+			border-radius:5px;
+			color:#f30;
+		}
+		.btn-copy{
+			background-color:#f30;
+			margin-bottom:10px;
+			padding: 10px 20px;
+		}
+		.modal-share-close{
+			background-color:#333; 
+			position: absolute;
+			right:-10px;
+			width:30px;
+			height:30px;
+			color:#fff;
+			border-radius: 50%;
+			opacity: 0.9;
+			top: -10px;
+			align-items:center;
+			justify-content:center;
+		} 
+	</style> 
+	<div class="main-body">
+		<div id="videoPlay" class="videoMask iconfont icon-video_light"></div>
+		<div class="videobox">
+			<div class="videoTools">
+				<div class="videoDot"></div>
+			</div>
+			<video  autoplay id="video" x5-video-player-type="h5" _x5-video-player-type="h5-page" x5-playsinline="" x-webkit-airplay="true" playsinline="" webkit-playsinline=""   class="video" >
+				
+				<xsource src="https://zblive.fd175.com/fd175/zblive1.m3u8?auth_key=1574392766-0-0-ff40fceb99a7d2b521b0610c6cfbb538"></xsource>
+				<source src="test/1.mp4"></source>
+			</video>
+		</div>
+		<div class="ftBox">
+			<div class="msgList">
+				<div class="msgList-item">
+					<div class="msgList-nick">我想静静</div>
+					<div class="msgList-desc">我不穿戴钢圈的</div>
+				</div>
+				<div class="msgList-item">
+					<div class="msgList-nick">喵喵</div>
+					<div class="msgList-desc">我不穿戴钢圈的</div>
+				</div>
+				<div class="msgList-item">
+					<div class="msgList-nick">小小</div>
+					<div class="msgList-desc">我不穿戴钢圈的</div>
+				</div>
+				<div class="msgList-item">
+					<div class="msgList-nick">热带雨林</div>
+					<div class="msgList-desc">我不穿戴钢圈的</div>
+				</div>
+				<div class="msgList-item">
+					<div class="msgList-nick">喵喵</div>
+					<div class="msgList-desc">我不穿戴钢圈的</div>
+				</div>
+				<div class="msgList-item">
+					<div class="msgList-nick">小小</div>
+					<div class="msgList-desc">我不穿戴钢圈的</div>
+				</div>
+				<div class="msgList-item">
+					<div class="msgList-nick">热带雨林</div>
+					<div class="msgList-desc">我不穿戴钢圈的</div>
+				</div>
+				<div class="msgList-item">
+					<div class="msgList-nick">喵喵</div>
+					<div class="msgList-desc">我不穿戴钢圈的</div>
+				</div>
+				<div class="msgList-item">
+					<div class="msgList-nick">小小</div>
+					<div class="msgList-desc">我不穿戴钢圈的</div>
+				</div>
+				<div class="msgList-item">
+					<div class="msgList-nick">热带雨林</div>
+					<div class="msgList-desc">我不穿戴钢圈的</div>
+				</div>
+			</div>
+			<div class="flex flex-ai-center">
+				<div  id="modal-group-goods-btn" class="iconfont ftBox-goods icon-goodsnewfill"></div>
+				<div class="flex-1 pd-5">
+					<input  placeholder="直播结束，不能发布评论了" class="ftBox-text" type="text" />
+				</div>
+				<div class="btn-send iconfont icon-fasong"></div>
+			</div>
+			
+			
+		</div>
+		<div id="modal-group-goods" class="modal-group">
+			<div class="modal-mask"></div>
+			<div class="modal-goods">
+				<div class="modal-header">
+					<div class="modal-title">推荐商品</div>
+					<div class="modal-close icon-close"></div>
+				</div>
+				<div class="modal-body pdb-5">
+					<div class="flexlist">
+						<div class="flexlist-item">
+							<img class="flexlist-img" src="https://g-search3.alicdn.com/img/bao/uploaded/i4/i3/692195348/O1CN01t5Zhzo1pNQjUQOuVt-692195348.jpg_230x230.jpg_.webp" />
+							<div class="flex-1">
+								<div class="flexlist-title">中长款长裙</div>
+								<div class="flex">
+									<div>卷后价</div>
+									<div class="cl-money mgr-5">￥129</div>
+									<div class="market-price">￥229</div>
+									<div class="flex-1"></div>
+									<div class="btn-small js-get-quan">领券立省</div>
+								</div>
+							</div>
+						</div>
+						<div class="flexlist-item">
+							<img class="flexlist-img" src="https://g-search3.alicdn.com/img/bao/uploaded/i4/i3/692195348/O1CN01t5Zhzo1pNQjUQOuVt-692195348.jpg_230x230.jpg_.webp" />
+							<div class="flex-1">
+								<div class="flexlist-title">中长款长裙</div>
+								<div class="flex">
+									<div>卷后价</div>
+									<div class="cl-money mgr-5">￥129</div>
+									<div class="market-price">￥229</div>
+									<div class="flex-1"></div>
+									<div class="btn-small">领券立省</div>
+								</div>
+							</div>
+						</div>
+						<div class="flexlist-item">
+							<img class="flexlist-img" src="https://g-search3.alicdn.com/img/bao/uploaded/i4/i3/692195348/O1CN01t5Zhzo1pNQjUQOuVt-692195348.jpg_230x230.jpg_.webp" />
+							<div class="flex-1">
+								<div class="flexlist-title">中长款长裙</div>
+								<div class="flex">
+									<div>卷后价</div>
+									<div class="cl-money mgr-5">￥129</div>
+									<div class="market-price">￥229</div>
+									<div class="flex-1"></div>
+									<div class="btn-small">领券立省</div>
+								</div>
+							</div>
+						</div>
+						<div class="flexlist-item">
+							<img class="flexlist-img" src="https://g-search3.alicdn.com/img/bao/uploaded/i4/i3/692195348/O1CN01t5Zhzo1pNQjUQOuVt-692195348.jpg_230x230.jpg_.webp" />
+							<div class="flex-1">
+								<div class="flexlist-title">中长款长裙</div>
+								<div class="flex">
+									<div>卷后价</div>
+									<div class="cl-money mgr-5">￥129</div>
+									<div class="market-price">￥229</div>
+									<div class="flex-1"></div>
+									<div class="btn-small">领券立省</div>
+								</div>
+							</div>
+						</div>
+						<div class="flexlist-item">
+							<img class="flexlist-img" src="https://g-search3.alicdn.com/img/bao/uploaded/i4/i3/692195348/O1CN01t5Zhzo1pNQjUQOuVt-692195348.jpg_230x230.jpg_.webp" />
+							<div class="flex-1">
+								<div class="flexlist-title">中长款长裙</div>
+								<div class="flex">
+									<div>卷后价</div>
+									<div class="cl-money mgr-5">￥129</div>
+									<div class="market-price">￥229</div>
+									<div class="flex-1"></div>
+									<div class="btn-small js-get-quan">领券立省</div>
+								</div>
+							</div>
+						</div>
+						<div class="flexlist-item">
+							<img class="flexlist-img" src="https://g-search3.alicdn.com/img/bao/uploaded/i4/i3/692195348/O1CN01t5Zhzo1pNQjUQOuVt-692195348.jpg_230x230.jpg_.webp" />
+							<div class="flex-1">
+								<div class="flexlist-title">中长款长裙</div>
+								<div class="flex">
+									<div>卷后价</div>
+									<div class="cl-money mgr-5">￥129</div>
+									<div class="market-price">￥229</div>
+									<div class="flex-1"></div>
+									<div class="btn-small">领券立省</div>
+								</div>
+							</div>
+						</div>
+						<div class="flexlist-item">
+							<img class="flexlist-img" src="https://g-search3.alicdn.com/img/bao/uploaded/i4/i3/692195348/O1CN01t5Zhzo1pNQjUQOuVt-692195348.jpg_230x230.jpg_.webp" />
+							<div class="flex-1">
+								<div class="flexlist-title">中长款长裙</div>
+								<div class="flex">
+									<div>卷后价</div>
+									<div class="cl-money mgr-5">￥129</div>
+									<div class="market-price">￥229</div>
+									<div class="flex-1"></div>
+									<div class="btn-small">领券立省</div>
+								</div>
+							</div>
+						</div>
+						<div class="flexlist-item">
+							<img class="flexlist-img" src="https://g-search3.alicdn.com/img/bao/uploaded/i4/i3/692195348/O1CN01t5Zhzo1pNQjUQOuVt-692195348.jpg_230x230.jpg_.webp" />
+							<div class="flex-1">
+								<div class="flexlist-title">中长款长裙</div>
+								<div class="flex">
+									<div>卷后价</div>
+									<div class="cl-money mgr-5">￥129</div>
+									<div class="market-price">￥229</div>
+									<div class="flex-1"></div>
+									<div class="btn-small">领券立省</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				 
+				
+			</div>
+		</div>
+		
+		<div id="modal-group-share" style="z-index:9999" class="modal-group">
+			<div class="modal-mask"></div>
+			<div class="modal-share">
+				 
+				<div class="modal-share-close modal-close icon-close" ></div>
+				 
+				
+				<div >
+					<img class="wmax" src="https://img.alicdn.com/imgextra/i1/733152726/O1CN01HXQnw61W0YFHuH5J7_!!0-item_pic.jpg_430x430q90.jpg" />
+				</div>
+				<div class="bg-white pd-5">
+					<div class="flex flex-ai-end mgb-10">
+						<div class="cl-num">券后</div>
+						<div class="cl-money f22">￥129</div>
+						<div class="flex-1"></div>
+						<div class="btn-quan">券100</div>
+					</div>
+					<div class="f14 mgb-10">中长款派克服</div>
+					<div class="mline"></div>
+					<div class="btn-ma">asdasdasdasd</div>
+					<div class="btn btn-copy">一键复制优惠券口令</div>
+					<div class="cl3 text-center f12">若复制失败，请长按淘口令手动复制</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+</template>
+<script>
+	var touchFirst=true;
+	var w=$(window).width();
+	var h=$(window).innerHeight();
+	var video=document.getElementById("video");
+	video.oncanplay=function(){
+		video.play();
+	}
+	video.onclick=function(){
+		if(video.paused){
+			video.play();
+		} 
+		
+	}
+	$(document).on("click","#videoPlay",function(){
+		video.play();
+		$(this).hide();
+		
+	})
+	$(document).on("click","#modal-group-goods-btn",function(){
+		$("#modal-group-goods").show();
+	})
+	 
+	$(document).on("click",".js-get-quan",function(){
+		$("#modal-group-share").show();
+	}) 
+</script>

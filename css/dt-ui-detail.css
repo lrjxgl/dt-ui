@@ -1,0 +1,158 @@
+/*****详情******/
+.d-userbox{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #eee;
+	align-items: center;
+}
+.d-userbox-head{
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+.d-userbox-nick{
+	font-size: 16px;
+	color: #323232;
+	margin-bottom: 5px;
+}
+.d-userbox-follows{
+	display: flex;
+	flex-direction: row;
+	color: #646464;
+	 
+}
+.d-img{
+	width: 100%;
+	height: auto;
+}
+.d-title{
+	font-size: 16px;
+	margin-bottom: 8px;
+	color: #323232;
+}
+.d-tools{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+	color: #555;
+	font-size: 14px;
+}
+.d-img{
+	width: 100%;
+}
+.d-content{
+	font-size: 14px;
+	color: #646464;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+.d-content img{
+	max-width: 100%;
+}
+.market-price{
+	color: #929292;
+	text-decoration: line-through;
+	font-style: italic;
+	font-size: 14px;
+}
+/***row-box***/
+ .row-box{
+	 display: flex;
+	 flex-direction: column;
+	 background-color: #fff;
+	 padding: 10px;
+ }
+ .row-box-hd{
+	 display: flex;
+	 flex-direction: row;
+	 border-bottom: 1px solid #eee;
+	 padding-top: 8px;
+	 padding-bottom: 8px;
+	 font-size: 16px;	 
+ }
+ .row-box-more{
+	 display: flex;
+	flex-direction: row;
+	 align-items: center;
+	 font-size: 14px;
+	 margin-right: 5px;
+	 color: #646464;
+ }
+ .row-box-more:after{
+	 display: inline-flex;
+    font-family: iconfont;
+    content: "\e6a3";
+    color: #999;
+	font-size: 16px;
+ }
+ /***支付方式****/
+ .paylist{
+	 display: flex;
+ 	flex-direction: row;
+ 	flex-wrap: wrap;
+ }
+ .paylist-item{
+ 	border: 1px solid #eee;
+ 	border-radius: 20px;
+ 	margin-bottom: 10px;
+ 	text-align: center;
+ 	padding: 10px;
+ 	color: #646464;
+ 	cursor: pointer;
+ 	width: 31%;
+ 	margin-right: 2%;
+ 	
+ }
+ .paylist-item-active{
+ 	color: #f60;
+ 	border: 1px solid #f60;
+ }
+ .emptyData{
+	 padding: 20px;
+	 font-size: 20px;
+	 text-align: center;
+	 color: #646464;
+ }
+/**kslist**/
+.kslist{
+	display: flex;
+	flex-direction: row;		
+	align-items: center;
+	padding-left: 10px;
+}
+.kslist-label{
+	margin-right: 6px;
+	color: #646464;
+}
+.kslist-item{
+	border: 1px solid #eee;
+	padding: 4px 8px;
+	margin-right: 10px;
+}
+.kslist-active{
+	color: #007AFF;
+} 
+/***fixAdd***/
+.fixedAdd {
+    position: fixed;
+    bottom: 100px;
+    right: 3px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgba(240,85,75,.82);
+    color: #fff;
+    font-family: iconfont;
+    font-size: 14px;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+.fixedAdd:before{
+	content: "\e7e8";
+	display: block;
+	font-size: 16px;
+}

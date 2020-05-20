@@ -6,6 +6,8 @@
 		 <script>
 			 function loadCss(){
 			 	var css=''
+					+'<link href="css/dt-ui-first.css?'+new Date()+'" rel="stylesheet" />'
+					+'<link href="css/dt-ui-detail.css?'+new Date()+'" rel="stylesheet" />'
 			 		+'<link href="css/dt-ui-base.css?'+new Date()+'" rel="stylesheet" />'
 			 		+'<link href="css/dt-ui-global.css?'+new Date()+'" rel="stylesheet" />'
 					+'<link href="css/dt-ui-modal.css?'+new Date()+'" rel="stylesheet" />'
@@ -19,7 +21,7 @@
 			 		+'<link href="css/dt-ui-m.css?'+new Date()+'" rel="stylesheet" />'
 					+'<link href="css/dt-ui-tabs.css?'+new Date()+'" rel="stylesheet" />'
 					+'<link href="css/dt-ui-raty.css?'+new Date()+'" rel="stylesheet" />'
-			 		+'<link href="http://at.alicdn.com/t/font_811242_zilfvebmj2h.css" rel="stylesheet">';
+			 		+'<link href="//at.alicdn.com/t/font_811242_m51pldzccmp.css" rel="stylesheet">';
 				 	
 				
 				//css=css	+'<link href="css/skins/skins-default.css?'+new Date()+'" rel="stylesheet" />'; 
@@ -41,7 +43,9 @@
 		<script src="js/vue.min.js"></script>
 		<script src="js/dt-ui.js?v=3"></script>
 		<script src="js/demo.js?v3"></script>
+ 
 		<script>
+			 
 			$(document).on("click",".skinsList-item",function(){
 				var skins=$(this).attr("data-skins");
 				localStorage.setItem("skins",skins);

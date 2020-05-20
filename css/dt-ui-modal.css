@@ -99,7 +99,9 @@
 	left: 0px;
 	right: 0px;
 	z-index: 9999;
-	line-height: 40px;
+	padding:8px;
+	font-size: 14px;
+	line-height: 1.5;
 	width: 200px;
 	text-align: center;
 	color: #fff;

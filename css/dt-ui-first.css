@@ -1,0 +1,45 @@
+page{
+	 
+ }
+ html,body{
+	 margin: 0;
+	 padding: 0;
+	 background-color: #efeff4;
+}
+p,ol,ul,li{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+[gourl]{
+	cursor: pointer;
+}	
+.iconfont:before{
+	line-height: 1.5;
+}
+ 
+view,div{
+	display: flex;
+	flex-direction: column;
+	color: #323232;
+	box-sizing: border-box;
+	flex-shrink:0;
+	font-size: 14px;
+}
+
+ 
+text{
+	display: inline-block;
+	line-height: 1.5;
+}
+navigator{
+	display: flex;
+	color: #323232;
+	text-decoration: none;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+ 

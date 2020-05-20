@@ -3,62 +3,34 @@
  */
  /*****定义flex*****/
  
- page{
-	 
- }
- html,body{
-	 margin: 0;
-	 padding: 0;
-	 background-color: #efeff4;
-}
-p,ol,ul,li{
-	margin: 0;
-	padding: 0;
-}
-a{
-	text-decoration: none;
-}
-[gourl]{
-	cursor: pointer;
-}	
-.iconfont:before{
-	line-height: 1.5;
-}
-view,div{
-	color: #323232;
-	box-sizing: border-box;
-	font-size: 14px;
-}
-/*
-view,div{
-	display: flex;
-	flex-direction: column;
-	color: #323232;
-	box-sizing: border-box;
-	flex-shrink:0;
-	font-size: 14px;
-}
-*/
- 
-text{
-	display: inline-block;
-	line-height: 1.5;
-}
-navigator{
-	display: flex;
-	color: #323232;
-	text-decoration: none;
-	flex-direction: column;
-	box-sizing: border-box;
-}
-image{
-	display: flex;
-}
- 
+
 .pointer{
 	cursor: pointer;
 }
 .none{display: none !important;}
+.yes,.no{
+	cursor: pointer;
+}
+.yes:after,.no:after{
+	display: inline-block;
+	font-family: iconfont;
+	font-size: 16px;
+	color: #15aba5;
+	
+}
+.yes:after{
+	content: "\e645";
+}
+.no:after{
+	content: "\e646";
+	color: #ccc;
+}
+.block{
+	display: block;
+}
+.inlineblock{
+	display: inline-block;
+}
 .flex{
  	display: flex!important;
  	flex-direction: row!important;
@@ -110,6 +82,7 @@ image{
  .wh-150{width: 150px; height: 150px;}
  .wh-200{width: 200px; height: 200px;}
  .wmax{ max-width: 100%; height:auto;}
+ .w50{width: 50px !important;}
  .w60{width: 60px !important;}
  .w100{width: 100px !important;}
  .w150{width: 150px !important;}
@@ -146,6 +119,7 @@ image{
  .cl-white{color: #fff !important;}
  .cl-money{color: #FF6600!important;}
  .cl-num{color: #f70!important;}
+ .cl-status{color: #f70!important;}
  /***background-color***/
  .bg-ef{ background-color: #efefef !important;}
  .bg-fff{background-color: #fff!important;}

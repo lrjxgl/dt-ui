@@ -17,6 +17,7 @@
 	 z-index: 998;
 	 box-shadow: 0 1px 6px #ccc;
 	 height: 44px;
+	 box-sizing: border-box;
  }
  
  .header-logo{
@@ -133,16 +134,27 @@
 	border:1px solid #969696;
 	border-radius: 5px;
 	cursor: pointer;
+	position: absolute;
+    right: 5px;
 }
 
 .header-fixtop{
 	position: fixed;
 	top:0px;
+	left:0px;
 	right: 0;
 	display: flex;
 	flex-direction: row; 
 	z-index: 9990;
  }
+ .header-fixtop-right{
+ 	position: fixed;
+ 	top:0px;
+ 	right: 0;
+ 	display: flex;
+ 	flex-direction: row; 
+ 	z-index: 9990;
+  }
  .header-fixtop-icon:before{
 	 font-family: iconfont;
 	 color: #fff;
@@ -255,140 +267,32 @@
  	right: 0px;
  	z-index: 100;
  } 
-/*****详情******/
-.d-userbox{
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 5px;
-	padding-bottom: 5px;
-	border-bottom: 1px solid #eee;
-	align-items: center;
-}
-.d-userbox-head{
-	width: 60px;
-	height: 60px;
-	margin-right: 10px;
+
+.back-top{
+	position: fixed;
+	right: 10px;
+	bottom:100px;
+	background-color: #009688;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
-}
-.d-userbox-nick{
-	font-size: 16px;
-	color: #323232;
-	margin-bottom: 5px;
-}
-.d-userbox-follows{
 	display: flex;
-	flex-direction: row;
-	color: #646464;
-	 
-}
-.d-img{
-	width: 100%;
-	height: auto;
-}
-.d-title{
-	font-size: 16px;
-	margin-bottom: 8px;
-	color: #323232;
-}
-.d-tools{
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 10px;
-	color: #555;
-	font-size: 14px;
-}
-.d-img{
-	width: 100%;
-}
-.d-content{
-	font-size: 14px;
-	color: #646464;
-	line-height: 1.5;
-	margin-bottom: 10px;
-}
-.d-content img{
-	max-width: 100%;
-}
-.market-price{
-	color: #929292;
-	text-decoration: line-through;
-	font-style: italic;
-	font-size: 14px;
-}
-/***row-box***/
- .row-box{
-	 display: flex;
-	 flex-direction: column;
-	 background-color: #fff;
-	 padding: 10px;
- }
- .row-box-hd{
-	 display: flex;
-	 flex-direction: row;
-	 border-bottom: 1px solid #eee;
-	 padding-top: 8px;
-	 padding-bottom: 8px;
-	 font-size: 16px;	 
- }
- .row-box-more{
-	 display: flex;
-	flex-direction: row;
-	 align-items: center;
-	 font-size: 14px;
-	 margin-right: 5px;
-	 color: #646464;
- }
- .row-box-more:after{
-	 display: inline-flex;
-    font-family: iconfont;
-    content: "\e6a3";
-    color: #999;
-	font-size: 16px;
- }
- /***支付方式****/
- .paylist{
-	 display: flex;
- 	flex-direction: row;
- 	flex-wrap: wrap;
- }
- .paylist-item{
- 	border: 1px solid #eee;
- 	border-radius: 20px;
- 	margin-bottom: 10px;
- 	text-align: center;
- 	padding: 10px;
- 	color: #646464;
- 	cursor: pointer;
- 	width: 31%;
- 	margin-right: 2%;
- 	
- }
- .paylist-item-active{
- 	color: #f60;
- 	border: 1px solid #f60;
- }
- .emptyData{
-	 padding: 20px;
-	 font-size: 20px;
-	 text-align: center;
-	 color: #646464;
- }
-/**kslist**/
-.kslist{
-	display: flex;
-	flex-direction: row;		
+	justify-content: center;
 	align-items: center;
-	padding-left: 10px;
+	cursor: pointer;
 }
-.kslist-label{
-	margin-right: 6px;
-	color: #646464;
+.back-top-icon{
+	font-family: iconfont;
+	line-height: 1;
 }
-.kslist-item{
-	border: 1px solid #eee;
-	padding: 4px 8px;
-	margin-right: 10px;
+.back-top-icon:after{
+	content:"\e603";
+	font-size: 12px;
+	color: #fff;
 }
-.kslist-active{
-	color: #007AFF;
+.back-top-text{
+	font-size: 12px;
+	line-height: 1;
+	font-weight: 300;
+	color: #fff;
 } 
